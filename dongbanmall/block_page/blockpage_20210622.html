@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <title>block page</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html,
+        body,
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 55px 20px 52px;
+            width: 100vw;
+            height: 100vh;
+        }
+        .wrap-page {
+            width: 640px;
+        }
+        .logo {
+            text-align: right;
+            border-bottom: 1px solid #a91313;
+            padding-bottom: 2px;
+        }
+        .logo::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #a91313;
+        }
+        .logo img {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .con-top {
+            margin-top: 50px;
+            display:flex;
+            align-items:center;
+        }
+        .con-top::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .con-1 {
+            float: left;
+            width: 16%;
+        }
+        .con-1 img {
+            width:100%;
+        }
+        .con-2 {
+            float: left;
+            margin-left: 20px;
+            width:calc(80% - 20px);
+        }
+        .con-2 .txt-1 {
+            font-size: 34px;
+            color: #d41b1b;
+            line-height:40px;
+            letter-spacing:-0.01em;
+        }
+        .con-mid {
+            padding-left:calc(16% + 20px);
+        }
+        .con-mid .txt-2 {
+            font-size: 20px;
+            color: #000;
+        }
+        .con-mid button {
+            margin-top: 23px;
+            padding: 5px 30px;
+            height: 50px;
+            font-weight: 600;
+            font-size:16px;
+            color:#fff;
+            background-color: #452e28;
+            border:0;
+            cursor: pointer;
+            box-shadow:2px 0 2px rgba(0,0,0,.5);
+        }
+        .con-btm {
+            margin-top:90px;
+            padding:20px 40px;
+            background:#f2f2f2;
+            border-radius: 4px;
+        }
+        .con-btm .tel {
+            padding-left:86px;
+            background: url(images/tel.png) no-repeat 0 50%;
+        }
+        .con-btm .tel p {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing:-0.05em;
+        }
+        .con-btm .tel p.tel-num {
+            font-size: 16px;
+            color: #555;
+        }
+        .only-m {
+            display:none;
+        }
+
+        @media only screen and (max-width: 640px) {
+            .wrap-page {
+                width: 100%;
+                height: 100%;
+            }
+            .content {
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            .con-top {
+                margin-top:35px;
+            }
+            .con-1 img {
+                width: 90%;
+                height: 90%;
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            .con-2 {
+                margin-left:10px;
+                width:calc(83% - 10px);
+            }
+            .con-2 .txt-1 {
+                font-size: 20px;
+                line-height:24px;
+            }
+            .con-mid {
+                padding-left:0;
+                text-align:center;
+            }
+            .con-mid .txt-2 {
+                margin-top:25px;
+                font-size: 15px;
+            }
+            .con-mid button {
+                padding-right:50px;
+                padding-left:50px;
+            }
+            .con-btm {
+                padding:15px 20px;
+            }
+            .con-btm .tel {
+                padding-left:0;
+                padding-right:70px;
+                background-position:100% 50%;
+            }
+            .con-btm .tel p {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing:-0.04em;
+            }
+            .con-btm .tel p.tel-num {
+                font-size: 12px;
+                margin-top: 8px;
+            }
+            .only-m {
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+      <div class="wrap-page">
+           <div class="logo">
+               <img src="images/logo.png" alt="가치삽시다">
+           </div>
+           <div class="content">
+              <div class="con-top">
+                  <p class="con-1"><img src="images/mark.png" alt="경고"></p>
+                  <div class="con-2">
+                      <p class="txt-1">연속된 새로고침&#40;F5&#41; 클릭으로<br><b>잠시 서비스가 중지</b>되었습니다.</p>
+                  </div>
+              </div>
+               <div class="con-mid">
+                   <p class="txt-2">잠시후에 다시 연결을 해주시기를 바랍니다.</p>
+                   <button type="button">가치삽시다로 이동</button>
+               </div>
+              <div class="con-btm">
+                  <div class="tel">
+                      <p>정상 사용중 차단된 경우 아래 연락처로<br class="only-m"> 문의주시기를 바랍니다.</p>
+                      <p class="tel-num">가치삽시다 고객센터 <span>1899-4049</span></p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
