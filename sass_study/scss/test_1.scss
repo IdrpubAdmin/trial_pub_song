@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@mixin display{
+    display: flex;
+    justify-content: center;
+}
+
+$fontW:500;
+$width_100:100%;
+
+html,
+body,
+p{
+    @extend .reset;
+}
+
+.wrap {
+    @include display;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    & .content{
+        @include display;
+        max-width: 993px;
+        width:$width_100;
+        background:url(../images/captcha_bg_pc.png) no-repeat 50% 32px;
+        background-size:contain;
+    
+        & .con-box{
+            margin-top:46%;
+            padding:36px 15px 28px;
+            max-width:660px;
+            width:$width_100;
+            text-align:center;
+            background:#fff;
+            border:2px solid #00349a;
+            border-radius:20px;
+            box-shadow:3px 2.7px 0 rgba(0,140,214,0.43);
+        
+            & .main-txt {
+                font-weight:$fontW;
+                font-size:36px;
+                line-height:44px;
+                color:#1d2088;
+
+                & span {
+                    text-decoration:underline;
+                }
+            }
+
+            & .sub-txt {
+                padding-top:25px;
+                font-weight:$fontW;
+                font-size:24px;
+                line-height:32px;
+                color:#000;
+            }
+            & .captcha-box {
+                margin-top:20px;
+                display:inline-block;
+                max-width:300px;
+                width:$width_100;
+                height:76px;
+                background:#eee;
+            }
+        }
+    }    
+}
+
+@import "../../Styles/mixins";
+@include mobile {
+  .wrap {
+        align-items:flex-start;
+        & .content {
+            background:url(../images/captcha_bg_m.png) no-repeat 50% 0;
+            background-size:cover;
+            & .con-box {
+                margin-top:40vh;
+                margin-right:25px;
+                margin-left:25px;
+                padding-top:32px;
+                padding-bottom:37px;
+                & .main-txt {
+                    font-size:21px;
+                    line-height:25px;
+                }
+                & .sub-txt {
+                    font-size:17px;
+                    line-height:22px;
+                }
+            }
+        }
+    }
+}
