@@ -1,0 +1,65 @@
+
+$lineWidth: 500px;
+$fontWeight: 600;
+$backColorBar: #00b3ff;
+$backColorIcon: #c5eeff;
+$backColorHover: #ffffff;
+$fontColorHover: #fd0000;
+$iconSize: 38px;
+$iconMargin: 12px;
+$topGrid: 60px;
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    @include display;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    div.row1 {
+    @include display;
+    background-color: $backColorBar;
+    max-width: 993px;
+    width:100%;
+    position: relative;
+    height: $lineWidth;
+    &:hover{
+        border:2px solid $fontColorHover;
+        background-color: $backColorHover;
+    }
+    a {
+        background-color: $backColorIcon;
+        display: block;
+        position: absolute;
+        width: $iconSize;
+        height: $iconSize;
+        top: $iconMargin;
+        text-align: center;
+        line-height: $iconSize;
+        &:hover{
+            background-color: $backColorHover;
+            color: $fontColorHover;
+            font-weight: $fontWeight;
+        }
+    }
+    a.icon1 {
+        right: $iconMargin + ($iconSize + $iconSize) * 2;
+    }
+    a.icon2 {
+        right: $iconMargin + ($iconSize + $iconSize)
+    }
+    a.icon3 {
+        right: $iconMargin;
+    }
+    }
+}
