@@ -28,12 +28,21 @@ p{
     width: 100vw;
     height: 100vh;
 
+    @media only screen and (max-width: 640px){
+        align-items:flex-start;
+    }
+
     & .content{
         @include display;
         max-width: 993px;
         width:$width_100;
         background:url(../images/captcha_bg_pc.png) no-repeat 50% 32px;
         background-size:contain;
+
+        @media only screen and (max-width: 640px){
+            background:url(../images/captcha_bg_m.png) no-repeat 50% 0;
+            background-size:cover;
+        }
     
         & .con-box{
             margin-top:46%;
@@ -45,12 +54,25 @@ p{
             border:2px solid #00349a;
             border-radius:20px;
             box-shadow:3px 2.7px 0 rgba(0,140,214,0.43);
+
+            @media only screen and (max-width: 640px){
+                margin-top:40vh;
+                margin-right:25px;
+                margin-left:25px;
+                padding-top:32px;
+                padding-bottom:37px;
+            }
         
             & .main-txt {
                 font-weight:$fontW;
                 font-size:36px;
                 line-height:44px;
                 color:#1d2088;
+
+                @media only screen and (max-width: 640px){
+                    font-size:21px;
+                    line-height:25px;
+                }
 
                 & span {
                     text-decoration:underline;
@@ -63,6 +85,11 @@ p{
                 font-size:24px;
                 line-height:32px;
                 color:#000;
+
+                @media only screen and (max-width: 640px){
+                    font-size:17px;
+                    line-height:22px;
+                }
             }
             & .captcha-box {
                 margin-top:20px;
@@ -76,28 +103,3 @@ p{
     }    
 }
 
-@import "../../Styles/mixins";
-@include mobile {
-  .wrap {
-        align-items:flex-start;
-        & .content {
-            background:url(../images/captcha_bg_m.png) no-repeat 50% 0;
-            background-size:cover;
-            & .con-box {
-                margin-top:40vh;
-                margin-right:25px;
-                margin-left:25px;
-                padding-top:32px;
-                padding-bottom:37px;
-                & .main-txt {
-                    font-size:21px;
-                    line-height:25px;
-                }
-                & .sub-txt {
-                    font-size:17px;
-                    line-height:22px;
-                }
-            }
-        }
-    }
-}

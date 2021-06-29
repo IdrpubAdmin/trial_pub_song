@@ -25,6 +25,14 @@ p {
   height: 100vh;
 }
 
+@media only screen and (max-width: 640px) {
+  .wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .wrap .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,6 +44,13 @@ p {
   width: 100%;
   background: url(../images/captcha_bg_pc.png) no-repeat 50% 32px;
   background-size: contain;
+}
+
+@media only screen and (max-width: 640px) {
+  .wrap .content {
+    background: url(../images/captcha_bg_m.png) no-repeat 50% 0;
+    background-size: cover;
+  }
 }
 
 .wrap .content .con-box {
@@ -51,11 +66,28 @@ p {
           box-shadow: 3px 2.7px 0 rgba(0, 140, 214, 0.43);
 }
 
+@media only screen and (max-width: 640px) {
+  .wrap .content .con-box {
+    margin-top: 40vh;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 32px;
+    padding-bottom: 37px;
+  }
+}
+
 .wrap .content .con-box .main-txt {
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   color: #1d2088;
+}
+
+@media only screen and (max-width: 640px) {
+  .wrap .content .con-box .main-txt {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .wrap .content .con-box .main-txt span {
@@ -68,6 +100,13 @@ p {
   font-size: 24px;
   line-height: 32px;
   color: #000;
+}
+
+@media only screen and (max-width: 640px) {
+  .wrap .content .con-box .sub-txt {
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
 
 .wrap .content .con-box .captcha-box {
