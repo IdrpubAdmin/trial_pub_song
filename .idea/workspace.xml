@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a318d64d-7182-49e4-b452-8d7bda29ac78" name="Default Changelist" comment="- 폰트수정">
-      <change beforePath="$PROJECT_DIR$/dongbanmall/block_page/blockpage_20210622.html" beforeDir="false" afterPath="$PROJECT_DIR$/dongbanmall/block_page/blockpage_20210622.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,8 @@
       <updated>1624372443836</updated>
       <workItem from="1624372445032" duration="6643000" />
       <workItem from="1624409398410" duration="941000" />
+      <workItem from="1625578067790" duration="99000" />
+      <workItem from="1625578206866" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="- 가치삽시다 block-page / captcha-page">
       <created>1624379055694</created>
