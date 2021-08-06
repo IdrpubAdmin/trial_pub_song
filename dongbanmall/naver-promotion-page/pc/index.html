@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- 삭제해야함 폰트  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <style>
       *{font-family: 'Source Sans Pro', sans-serif;}
@@ -64,59 +65,294 @@
           </header>
           
           <div id="container" class="container">
+            <nav class="breadcrumb">
+              <ol>
+                <li>
+                  <a href="/main" class="">홈 </a>
+                </li>
+                <li>
+                  <a href="#" class="nuxt-link-active">네이버 홍보관</a>
+                </li>
+              </ol>
+            </nav>
+            <div class="naver-slide-wrap">
+              <div class="viewport">
+                  <ul>
+                      <li><a href="#"><img src="images/common/rolling-img.png" alt="소상공인라이브마켓"></a></li>
+                      <li><a href="#"><img src="images/common/naver-simbol.png" alt="슬라이드 이미지"></a></li>
+                      <li><a href="#"><img src="images/common/5.png" alt="슬라이드 이미지"></a></li>
+                  </ul>
+              </div><!--//viewport 사진영역-->
+              <ul class="naver-slide-dot">
+                <li class="dot on">1</li>
+                <li class="dot">2</li>
+                <li class="dot">3</li>
+              </ul>
+              <ul class="btn-wrap">
+                  <li class="prev">이전</li>
+                  <li class="next">다음</li>
+              </ul>
+          </div><!--//slide-wrap-->
             <div class="naver-promo">
-
-              <div data-style-scope-main-midbanner="true">
+              <div class="naver-banner">
                 <div class="inner">
                   <ul>
                     <li>
                       <a href="#" class="">
-                        <img src="https://image.dongbanmall.com/bannerImage/bannerImage/202012/10/fe5132cc-8492-4276-a868-8b631d97594a.jpg" alt="네이버홍보관"></a>
+                        <img src="images/common/banner.png" alt="네이버스마트스토어"></a>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                <div class="special-price" data-style-scope-main-midbanner="true">
-                  <div class="special-price-tit">
-                    <p>이번주 신상품 특가</p>
-                    <p>가치삽시다에서 강력추천 상품을 네이버스토어에서 만나보세요.</p>
+                <div class="special-price">
+                  <div class="special-wrap">
+                    <div class="special-price-tit">
+                      <p>이번주 신상품 특가</p>
+                      <p>가치삽시다에서 강력추천 상품을 네이버스토어에서 만나보세요.</p>
+                    </div>
+                    <ul class="special-product">
+                      <li>
+                        <a href="#">
+                          <div class="left-img">
+                            <img src="images/common/5.png">
+                          </div>
+                          <div class="right-txt">
+                            <p>담꽃 구움찰떡 5종 세트</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="left-img">
+                            <img src="images/common/5.png">
+                          </div>
+                          <div class="right-txt">
+                            <p>니덕내덕 6년근 더덕스틱 맑은 <br>숨을 위한 더덕스틱</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="left-img">
+                            <img src="images/common/5.png">
+                          </div>
+                          <div class="right-txt">
+                            <p>6년근 더덕 국내산 강원도정선 <br>산지직송 제철</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="left-img">
+                            <img src="images/common/5.png">
+                          </div>
+                          <div class="right-txt">
+                            <p>더덕무침 100g 씹을수록 맛있는 <br>반찬</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="special-product">
-                    <li>
-                      <a href="#">
-                        <img src="assets/logo.png">
-                        <spna>담꽃 구움찰떡5종세트</spna>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="assets/logo.png">
-                        <spna>담꽃 구움찰떡5종세트</spna>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="assets/logo.png">
-                        <spna>담꽃 구움찰떡5종세트</spna>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="assets/logo.png">
-                        <spna>담꽃 구움찰떡5종세트</spna>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
 
                 <div class="best-product-wrap">
                   <div class="naver-title">
                     <h3><span class="naver-color">네이버</span>에서도 <span class="together">가치삽시다</span>의 상품을 구매할 수 있습니다.</h3>
                   </div>
+                  <div class="naver-menu-list" data-style-scope-best-category="true">
+                    <div class="slide-bx swiper-container swiper-container-initialized swiper-container-horizontal naver-view-slide">
+                      <div class="swiper-wrapper naver-list-icon" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-active" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item active">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="images/common/category_icon_all.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>전체보기</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/45866275-afe7-4889-962e-500e53a28398.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>생활/가구/주방</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/37f0f5fd-8583-4307-9f1d-605d7811e7f2.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>뷰티</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/d97f8e05-3e8f-4ffd-908c-064b29ced8d4.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>식품</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/32bd396b-1917-4905-977e-2b5ce5269b78.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>가전/디지털</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/a765cf5e-ce39-4706-97ad-c80548e5a179.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>스포츠/레저/자동차</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/baa3e6b4-e99b-4735-b13e-9c970926523c.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>패션/언더웨어</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/07/f0c7ca8e-a0ff-4804-96c4-f6598fd1f199.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>문구/오피스</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/09/311f7cd6-67a8-46ff-bb00-cc6884641162.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>라이브커머스</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-slide naver-list-icon" style="width: 100.2px; margin-right: 2px;">
+                          <div class="category-item">
+                            <a href="#" class="category-link">
+                              <div class="category-icon">
+                                <img src="https://image.dongbanmall.com/category/iconImage/202012/09/311f7cd6-67a8-46ff-bb00-cc6884641162.png" alt="">
+                              </div>
+                              <div class="category-name">
+                                <span>네이버 홍보관</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <div class="naver-controls-direction">
+                      <a href="#" class="prev">이전</a>
+                      <a href="#" class="next">다음</a>
+                    </div>
+                  </div>
+                  <div class="naver-search">
+                    <ul class="naver-menu">
+                      <li class="active">
+                        <a href="#">최신순</a>
+                      </li>
+                      <li class="">
+                        <a href="#">조회순</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product-area naver-list">
+                    <ul data-style-scope-product-list="true" class="column-4 gallery-view">
+                      <li data-style-scope-product-item="true" class="naver">
+                        <a href="#" class="thumb naver">
+                          <img src="https://image.dongbanmall.com/imageResource/fileValue/202104/22/82229bae-ed70-4c47-8d8d-60bd9f525cbf.jpg" alt="춘천 신선 한입 닭갈비 1kg 3~4인분">
+                        </a>
+                        <div class="desc">
+                          <a href="#">
+                            <span class="txt">춘천 신선 한입 닭갈비 1kg 3~4인분</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li data-style-scope-product-item="true" class="naver">
+                        <a href="#" class="thumb naver">
+                          <img src="https://image.dongbanmall.com/imageResource/fileValue/202104/22/82229bae-ed70-4c47-8d8d-60bd9f525cbf.jpg" alt="춘천 신선 한입 닭갈비 1kg 3~4인분">
+                        </a>
+                        <div class="desc">
+                          <a href="#">
+                            <span class="txt">춘천 신선 한입 닭갈비 1kg 3~4인분</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li data-style-scope-product-item="true" class="naver">
+                        <a href="#" class="thumb naver">
+                          <img src="https://image.dongbanmall.com/imageResource/fileValue/202104/22/82229bae-ed70-4c47-8d8d-60bd9f525cbf.jpg" alt="춘천 신선 한입 닭갈비 1kg 3~4인분">
+                        </a>
+                        <div class="desc">
+                          <a href="#">
+                            <span class="txt">춘천 신선 한입 닭갈비 1kg 3~4인분</span>
+                          </a>
+                        </div>
+                      </li>
+                      <li data-style-scope-product-item="true" class="naver">
+                        <a href="#" class="thumb naver">
+                          <img src="https://image.dongbanmall.com/imageResource/fileValue/202104/22/82229bae-ed70-4c47-8d8d-60bd9f525cbf.jpg" alt="춘천 신선 한입 닭갈비 1kg 3~4인분">
+                        </a>
+                        <div class="desc">
+                          <a href="#">
+                            <span class="txt">춘천 신선 한입 닭갈비 1kg 3~4인분</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn-more-wrap">
+                    <a href="#" class="btn-more">
+                      <span>상품 더보기</span>
+                    </a>
+                  </div>
                 </div>
 
-
+              
             </div> <!-- //naver -->
           </div>
 
@@ -152,5 +388,89 @@
         </div>
       </div>
     </div>
+
+
+    
+    <script>
+      // 상단 슬라이드 제이쿼리
+      $(function(){
+
+      var $slider = $('.viewport ul'),
+      $firstSlide = $slider.find('li').first() // 첫번째 슬라이드
+      .stop(true).animate({'opacity':1},200); // 첫번째 슬라이드만 보이게 하기
+
+      function PrevSlide(){ // 이전버튼 함수
+        stopSlide();startSlide(); //타이머 초기화
+        var $lastSlide = $slider.find('li').last() //마지막 슬라이드
+        .prependTo($slider); //마지막 슬라이드를 맨 앞으로 보내기  
+        $secondSlide = $slider.find('li').eq(1)//두 번째 슬라이드 구하기
+        .stop(true).animate({'opacity':0},300); //밀려난 두 번째 슬라이드는 fadeOut 시키고
+        $firstSlide = $slider.find('li').first() //맨 처음 슬라이드 다시 구하기
+        .stop(true).animate({'opacity':1},300);//새로 들어온 첫 번째 슬라이드는 fadeIn 시키기
+
+
+        var $lastdot = $slider.find('li').last() //마지막 슬라이드
+        .prependTo($slider); //마지막 슬라이드를 맨 앞으로 보내기  
+        $secondSlide = $slider.find('li').eq(1)//두 번째 슬라이드 구하기
+        .stop(true).animate({'opacity':0},300); //밀려난 두 번째 슬라이드는 fadeOut 시키고
+        $firstSlide = $slider.find('li').first() //맨 처음 슬라이드 다시 구하기
+        .stop(true).animate({'opacity':1},300);//새로 들어온 첫 번째 슬라이드는 fadeIn 시키기
+      }
+      
+      function NextSlide(){ // 다음 버튼 함수
+        stopSlide();startSlide(); //타이머 초기화
+        $firstSlide = $slider.find('li').first() // 첫 번째 슬라이드
+        .appendTo($slider); // 맨 마지막으로 보내기
+        var $lastSlide = $slider.find('li').last() // 맨 마지막으로 보낸 슬라이드
+        .stop(true).animate({'opacity':0},300); // fadeOut시키기
+        $firstSlide = $slider.find('li').first()// 맨 처음 슬라이드
+        .stop(true).animate({'opacity':1},300);// fadeIn 시키기
+        
+      }
+      var count = $(".naver-slide-wrap .viewport ul li").length;
+      var lastIdx = $(".naver-slide-wrap .viewport ul li").length-1;
+      var i = 0;
+
+      $('.next').on('click', function(){ //다음버튼 클릭
+        NextSlide();
+        if(i==lastIdx){i = -1}
+        i++;
+
+        $(".naver-slide-dot .dot").removeClass("on");
+        $(".naver-slide-dot .dot").eq(i).addClass("on");
+      });
+      $('.prev').on('click', function(){ //이전 버튼 클릭
+        PrevSlide();
+        if(i==0){i = count}
+        i--;
+
+        $(".naver-slide-dot .dot").removeClass("on");
+        $(".naver-slide-dot .dot").eq(i).addClass("on");
+      });
+
+      startSlide(); // 자동 슬라이드 시작
+      
+      var theInterval;
+
+      function startSlide() {
+        theInterval = setInterval(NextSlide, 5000); //자동 슬라이드 설정
+      }
+
+      function stopSlide() { //자동 멈추기
+        clearInterval(theInterval);
+      }
+      
+      $('.viewport ul').hover(function(){ //마우스 오버시 슬라이드 멈춤
+        stopSlide();
+      }, function (){
+        startSlide();
+      });
+    });
+
+
+    // 전체보기 메뉴 슬라이드
+    
+
+  </script>
   </body>
 </html>
