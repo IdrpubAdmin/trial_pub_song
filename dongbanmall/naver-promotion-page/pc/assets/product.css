@@ -513,9 +513,10 @@
 .naver-slide-wrap .viewport{width:1020px; box-sizing:border-box; overflow-x:hidden;}
 .naver-slide-wrap .viewport ul{height:450px; overflow:hidden;}
 .naver-slide-wrap .viewport ul::after{content:""; display:block; clear:both;}
-.naver-slide-wrap .viewport ul li{position:absolute; top:0; left:0; width:1020px; height:450px; opacity:0;}
+.naver-slide-wrap .viewport ul li{position:absolute; top:0; left:0; width:1020px; height:450px; display: none;}
+.naver-slide-wrap .viewport ul li:first-child{display: block;}
 .naver-slide-wrap .viewport ul li a img{display: inline-block; width:1020px; height: 450px; border-radius: 10px;}
-.naver-slide-dot {position:absolute; left:0; bottom:-40px; width:100%; text-align:center; z-index:20;}
+.naver-slide-dot {position:absolute; left:0; bottom:-40px; width:100%; text-align:center; z-index:30;}
 .naver-slide-dot .dot{display:inline-block; width:10px; height:10px; background-color: #bebebe; border-radius:50%; text-indent:-9999px; margin-right:5px; cursor:pointer;}
 .naver-slide-dot .dot:last-child{margin-right:0;}
 .naver-slide-dot .dot.on{background-color:#000;}
@@ -545,18 +546,16 @@
 .naver-title .together{color: #448ce9; font-weight: bold;}
 
 .naver-menu-list{width:817px; margin: 0 auto;}
-
-.naver-controls-direction{}
-.naver-controls-direction a{position: absolute;width: 26px; height: 26px; text-indent: -9999px; cursor: pointer; background-color: #fbfcfd; top: 250px; border: 1px solid #e0e5e8; -webkit-box-sizing: border-box; box-sizing: border-box;}
-.naver-controls-direction a.prev{left: -1%; top: 50%;transform: translateY(-50%); background: rgb(255, 255, 255) url(../images/common/left-btn.png) 50% 50% no-repeat; z-index: 4;}
-.naver-controls-direction a.next{right: -1%; top: 50%; transform: translateY(-50%); background: rgb(255, 255, 255) url(../images/common/right-btn.png) 50% 50% no-repeat; z-index: 3;}
+.naver-controls-direction p{position: absolute;width: 26px; height: 26px; text-indent: -9999px; cursor: pointer; background-color: #fbfcfd; top: 250px; border: 1px solid #e0e5e8; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.naver-controls-direction p.prev{left: -1%; top: 50%;transform: translateY(-50%); background: rgb(255, 255, 255) url(../images/common/left-btn.png) 50% 50% no-repeat; z-index: 4; opacity: 0;}
+.naver-controls-direction p.next{right: -1%; top: 50%; transform: translateY(-50%); background: rgb(255, 255, 255) url(../images/common/right-btn.png) 50% 50% no-repeat; z-index: 3;}
 
 .naver-search{border-top: 1px solid #464646; border-bottom: 1px solid #ddd; height: 57px; margin-bottom: 50px;}
-.naver-search .naver-menu{display: flex; justify-content: flex-end;}
-.naver-search .naver-menu::before{display: inline-block; content: ""; clear: both;}
-.naver-search .naver-menu li{float: left; padding: 10px 20px;}
-.naver-search .naver-menu li:last-child{padding-left: 0px;}
-.naver-menu li a{display: inline-block; height: 35px; line-height: 35px; padding-left: 23px; color: #888; font-size: 14px;}
-.naver-menu .active a::before{position: absolute; top: 11px; left: -5px; content: ""; width: 19px; height: 14px; background: url(../images/common/active.png) 0 0 no-repeat;}
-.naver-menu .active a{position: relative; color: #333; font-size: 14px; font-weight: 700;}
+.naver-search ul{display: flex; justify-content: flex-end;}
+.naver-search ul::before{display: inline-block; content: ""; clear: both;}
+.naver-search ul li{float: left; padding: 10px 20px;}
+.naver-search ul li:last-child{padding-left: 0px;}
+.naver-search ul li a{display: inline-block; height: 35px; line-height: 35px; padding-left: 23px; color: #888; font-size: 14px;}
+.naver-search ul li.active a::before{position: absolute; top: 11px; left: -5px; content: ""; width: 19px; height: 14px; background: url(../images/common/active.png) 0 0 no-repeat;}
+.naver-search ul li.active a{position: relative; color: #333; font-size: 14px; font-weight: 700;}
 .naver-list ul .naver::before{background: url(../images/common/naver-simbol.png) no-repeat 0 0; content: ""; display: inline-block; height: 40px; width: 40px; position: absolute; border-radius: 10px 0 0 0;}
