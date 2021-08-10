@@ -538,6 +538,7 @@
 .special-product li a .right-txt{font-size: 19px; color: #222; text-align: left; padding-left: 30px;}
 .special-product li a .left-img::before{background: url(../images/common/naver-simbol.png) no-repeat 0 0; content: ""; display: inline-block; height: 40px; width: 40px; position: absolute; border-radius: 10px 0 0 0;}
 .special-product li a .left-img img{width: 190px; height: 190px; border-radius: 10px 0 0 10px;}
+.special-product li a .left-img .dim{position: absolute; top: 0px; left: 0px; width: 190px; height: 109px; z-index: 100; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.09),rgba(0, 0, 0, 0));}
 
 .naver-purchase{margin-top: 115px;}
 .best-product-wrap .naver-title{text-align: center; margin:115px 0 57px 0;}

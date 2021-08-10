@@ -11368,3 +11368,101 @@ a:visited {
     padding-top: 60%;
     background: hsla(0, 0%, 100%, .5)
 }
+
+
+
+
+
+/* 네이버홍보관 모바일 */
+.naver-slide-wrap{padding: .75rem 1.25rem 0; margin: 0 0 1.6rem;}
+.naver-slide-wrap .viewport{}
+.naver-slide-wrap .viewport ul{position: relative;}
+.naver-slide-wrap .viewport ul::after{content:""; display:block; clear:both;}
+.viewport .visual li{position:absolute; left:0; top: 0;}
+.viewport .visual li a{display: inline-block; width: 100%; height: auto;}
+.viewport .visual li a img{max-width: 100%; height: 100%; border-radius: 10px; }
+
+.naver-slide-dot {position:absolute; left:0; bottom:0px; width:100%; text-align:center; z-index:30;}
+.naver-slide-dot .dot{display:inline-block; width:10px; height:10px; background-color: #bebebe; border-radius:50%; text-indent:-9999px; margin-right:5px; cursor:pointer;}
+.naver-slide-dot .dot:last-child{margin-right:0;}
+.naver-slide-dot .dot.on{background-color:#000;}
+
+.naver-promo{position: relative;}
+.naver-promo::before{display: inline-block; content: ""; clear: both;}
+.naver-banner{margin:18px 0 56px 0; text-align: center;}
+.naver-banner .inner {padding:0 1.25rem;}
+.naver-banner .inner img{width: 100%;}
+.special-price{background-color: #f0f0f0; border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; display: flex; justify-content: center; padding:0 1.25rem;}
+.special-price .special-price-tit{margin: 2rem 0 1rem 0; text-align: center;}
+.special-price .special-price-tit p:first-child{font-size: 1.24rem; color: #222222; font-weight: bold;}
+.special-price .special-price-tit p:last-child{font-size: 0.7rem; color:rgba(34, 34, 34, 0.8); margin-top: .6rem;}
+
+.product-area{margin-bottom: 2rem;}
+.product-area ul .naver{border-radius: 10px;}
+.product-area ul .naver .thumb::after{display: block; content: ""; clear: both;}
+.product-area ul .naver .thumb .dim{position: absolute; top: 0px; left: 0px; width: calc(50% - -5.8rem); height: 109px; z-index: 100; background: linear-gradient(to bottom,rgba(0, 0, 0, 0.09),rgba(0, 0, 0, 0));}
+.product-area ul .naver .nuxt-link-prefetched .info-wrap{padding:1.2rem 1.1rem 2rem 1.1rem;}
+
+.best-product-wrap{padding:2.1rem 0 1rem 0; background-color: #fff; border-bottom: 1px solid #ddd;}
+.best-product-wrap .naver-title{text-align: center;}
+.naver-title h3{font-weight: 500; font-size:  1.25rem;}
+.naver-title .naver-color{color: #03cf5d; font-weight: bold;}
+.naver-title .together{color: #448ce9; font-weight: bold;}
+.best-product-wrap .naver-buy-list {padding: 0 1.25rem; margin: 1rem 0 0 0;}
+[data-style-scope-category-icon] .naver-icon{padding-bottom: 1rem;}
+[data-style-scope-category-icon] li a span.naver-icon-txt {bottom: -1.9rem;}
+[data-style-scope-category-icon] .naver-icon li a.naver-link-list {width: 4.13rem; height: 4.13rem; font-size: .67rem;}
+[data-style-scope-category-icon] li a.naver-link-list:before {height: 4.13rem;}
+[data-style-scope-category-icon] .naver-icon li a.naver-link-list:after {width: 3rem; height: 3rem;}
+[data-style-scope-category-icon] .naver-icon li a.naver-link-list.list-on{border:1px solid #4b4b4b; border-radius: 50%;}
+[data-style-scope-category-icon] .naver-icon li a.naver-link-list.list-on::before{background-color: #fff; width: 0;}
+
+[data-style-scope-category-icon] .naver-icon li:first-child a.naver-link-list:after {
+    background: url(../images/common/icon-all-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(2) a.naver-link-list:after {
+    background: url(../images/common/icon-kettle-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(3) a.naver-link-list:after {
+    background: url(../images/common/icon-beauty-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(4) a.naver-link-list:after {
+    background: url(../images/common/icon-food-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(5) a.naver-link-list:after {
+    background: url(../images/common/icon-digital-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(6) a.naver-link-list:after {
+    background: url(../images/common/icon-car-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(7) a.naver-link-list:after {
+    background: url(../images/common/icon-fashion-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+[data-style-scope-category-icon] .naver-icon li:nth-child(8) a.naver-link-list:after {
+    background: url(../images/common/icon-office-mo.png) 50% no-repeat;
+    background-size: 2.6rem;
+}
+
+.btn-custom-select, .naver-select {background: url(../images/common/sel_arrow_down.png) no-repeat 95% 50%;}
+.btn-view-type.naver-view {background-image: url(../images/common/icon_gallery_view.png);}
+.product-area ul .naver .thumb{border-radius: 10px;}
+.product-area ul .naver::before {background: url(../images/common/naver-simbol.png) no-repeat 0 0; content: ""; display: inline-block; height: 40px; width: 40px; position: absolute; border-radius: 10px 0 0 0; z-index: 3;}
+.video-product-list .naver .info-wrap .pdt-name{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+
+
+#naver-tab-content-2{display:none;}
+
+
+
+
+
+
+
+
