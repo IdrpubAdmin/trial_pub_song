@@ -11413,7 +11413,8 @@ a:visited {
 .naver-title h3{font-weight: 500; font-size:  1.25rem;}
 .naver-title .naver-color{color: #03cf5d; font-weight: bold;}
 .naver-title .together{color: #448ce9; font-weight: bold;}
-.best-product-wrap .naver-buy-list {padding: 0 0 0 1.25rem; margin: 1rem 0 0 0;}
+.best-product-wrap .naver-buy-list {padding:0; margin: 1rem 0 0 0;}
+.best-product-wrap .naver-buy-list ul li:first-child{padding-left:1.25rem;}
 [data-style-scope-category-icon] li+li:last-child{margin-right: .75rem;}
 [data-style-scope-category-icon] .naver-icon{padding-bottom: 1rem;}
 [data-style-scope-category-icon] li a span.naver-icon-txt {bottom: -2.5rem;}

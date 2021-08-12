@@ -538,7 +538,7 @@
 .special-product li::before{display: inline-block; content: ""; width: 45px; height: 45px; background: url(../images/common/btn.png) 0 0 no-repeat; position: absolute; right: 20px; bottom: 20px; cursor: pointer;}
 .special-product li a{cursor: pointer; display: flex; align-items: center;}
 .special-product li a .right-txt{width: 77%; font-size: 19px; color: #222; text-align: left; padding-left: 21px;}
-.special-product li a .left-img{width: 50%; height: 190px; overflow: hidden;}
+.special-product li a .left-img{width: 50%; height: 190px; overflow: hidden; border-radius: 10px 0 0 10px;}
 .special-product li a .left-img::before{background: url(../images/common/naver-simbol.png) no-repeat 0 0; content: ""; display: inline-block; height: 40px; width: 40px; position: absolute; border-radius: 10px 0 0 0; z-index: 101;}
 .special-product li a .left-img img{width: 100%; height: 100%; border-radius: 10px 0 0 10px; transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;}
 .special-product li a .left-img:hover img{transform: scale(1.05);}
