@@ -466,65 +466,22 @@
       </div>
     </div>
 
-    <style>
-      .slick-slide {
-        position:relative;
-      }
-      .slick-slide::before {
-        content:'';
-        display:block;
-        padding-bottom:100%;
-      }
-      .slick-slide > a {
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-      }
-    </style>
-
     <script>
 
       // 상단 슬라이드 제이쿼리
         $(document).ready(function(){
 
           $('.slick-items').slick({
-            autoplay : false,
+            autoplay : true,
             dots: true,
-            // speed : 100 /* 이미지가 슬라이딩시 걸리는 시간 */,
+            speed : 250 /* 이미지가 슬라이딩시 걸리는 시간 */,
             infinite: true,
-            // autoplaySpeed: 1000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
+            autoplaySpeed: 2500 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            fade: false
+            fade: true
         });
-        // var count = $(".visual li").length;
-        // var lastIdx = $(".visual li").length-1;
-        // var i = 0;
-
-
-        // setInterval(function(){
-        //   i++;
-        //   if(i==count){i=-1}
-          
-        //   $(".naver-slide-dot li")
-        //       .eq(i)
-        //       .addClass("on")
-        //       .siblings()
-        //       .removeClass("on");
-          
-        //   $(".visual li")
-        //       .eq(i)
-        //       .fadeIn("slow")
-        //       .css({'display':'block'})
-        //       .siblings()
-        //       .fadeOut("slow")
-        //       .css({'display':'none'});
-        //     },3000);
-
-
 
       /*네이버에서 구매가능 상품리스트 탭 */
       var tm=$(".naver-icon li");

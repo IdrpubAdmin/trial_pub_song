@@ -11374,8 +11374,10 @@ a:visited {
 
 
 /* 네이버홍보관 모바일 */
-
-.container{background-color: #fff;}
+.container{background-color: #fff; overflow: hidden;}
+.slick-slide {position:relative;}
+.slick-slide::before {content:''; display:block; padding-bottom:100%;}
+.slick-slide > a {position:absolute; top:0; left:0; width:100%; height:100%;}
 .slick-items{width: 100%; height: 100%; margin:0 auto;}
 .slick-slide img{width: 100%; height: 100%; border-radius: 10px;}
 .naver-slide-wrap{padding: .75rem 1.25rem 0;}
@@ -11448,15 +11450,11 @@ a:visited {
     background-size: 2.6rem;
 }
 
-.btn-custom-select, .naver-select {background: url(../images/common/sel_arrow_down.png) no-repeat 95% 50%; background-color: #f7f7f7;}
+.btn-custom-select, .naver-select {background: url(../images/common/sel_arrow_down.png) no-repeat 94% 50%; background-color: #f7f7f7;}
 .btn-view-type.naver-view {background-image: url(../images/common/icon_gallery_view.png);}
 .video-product-list .naver .info-wrap .pdt-name{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 #naver-tab-content-2{display:none;}
-
-
-
-
 
 
 
