@@ -466,7 +466,23 @@
       </div>
     </div>
 
-
+    <style>
+      .slick-slide {
+        position:relative;
+      }
+      .slick-slide::before {
+        content:'';
+        display:block;
+        padding-bottom:100%;
+      }
+      .slick-slide > a {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+      }
+    </style>
 
     <script>
 
@@ -474,7 +490,7 @@
         $(document).ready(function(){
 
           $('.slick-items').slick({
-            autoplay : true,
+            autoplay : false,
             dots: true,
             // speed : 100 /* 이미지가 슬라이딩시 걸리는 시간 */,
             infinite: true,
