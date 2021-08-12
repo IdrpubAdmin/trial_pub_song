@@ -118,7 +118,7 @@
                     </div>
                     <div class="product-area">
                       <ul class="product-list lay-st-col gallery-view">
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -131,7 +131,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -144,7 +144,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -157,7 +157,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -494,12 +494,12 @@
           
           $(".visual li")
               .eq(i)
-              .fadeIn()
-              .css({'z-index':'20'})
+              .fadeIn("slow")
+              .css({'display':'block'})
               .siblings()
-              .fadeOut()
-              .css({'z-index':'10'});
-            },2000);
+              .fadeOut("slow")
+              .css({'display':'none'});
+            },3000);
 
 
 
