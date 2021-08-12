@@ -18,13 +18,12 @@
     <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://v.dongbanmall.com/images/product/onnuri_main.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 삭제해야함 폰트  -->
+    <!-- 네이버홍보관에 사용한 제이쿼리, slickslider  -->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-      *{font-family: Noto Sans KR,돋움,Dotum,Apple SD Gothic Neo,Sans-serif;}
-      
-    </style>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+            
   </head>
 
   <body>
@@ -78,21 +77,12 @@
             </nav>
             <div class="naver-slide-wrap">
               <div class="viewport">
-                  <ul class="visual">
-                      <li><a href="#"><img src="images/common/rolling-img.png" alt="소상공인라이브마켓"></a></li>
-                      <li><a href="#"><img src="images/common/naver-simbol.png" alt="슬라이드 이미지"></a></li>
-                      <li><a href="#"><img src="images/common/5.png" alt="슬라이드 이미지"></a></li>
-                  </ul>
-              </div><!--//viewport 사진영역-->
-              <ul class="naver-slide-dot">
-                <li class="dot on">1</li>
-                <li class="dot">2</li>
-                <li class="dot">3</li>
-              </ul>
-              <ul class="btn-wrap">
-                  <li class="prev">이전</li>
-                  <li class="next">다음</li>
-              </ul>
+                  <div class="slick-items visual">
+                    <div><a href="#"><img src="images/common/rolling-img.png" alt="소상공인라이브마켓"></a></div>
+                    <div><a href="#"><img src="images/common/5.png" alt="슬라이드 이미지"></a></div>
+                    <div><a href="#"><img src="images/common/naver-simbol.png" alt="슬라이드 이미지"></a></div>
+                  </div>
+              </div>
             </div><!--//slide-wrap-->
             <div class="naver-promo">
               <div class="naver-banner">
@@ -131,7 +121,7 @@
                             <img src="images/common/5.png">
                           </div>
                           <div class="right-txt">
-                            <p>니덕내덕 6년근 더덕스틱 맑은 <br>숨을 위한 더덕스틱</p>
+                            <p>니덕내덕 6년근 더덕스틱 맑은 숨을 위한 더덕스틱</p>
                           </div>
                         </a>
                       </li>
@@ -142,7 +132,7 @@
                             <img src="images/common/5.png">
                           </div>
                           <div class="right-txt">
-                            <p>6년근 더덕 국내산 강원도정선 <br>산지직송 제철</p>
+                            <p>6년근 더덕 국내산 강원도정선 산지직송 제철</p>
                           </div>
                         </a>
                       </li>
@@ -153,7 +143,7 @@
                             <img src="images/common/5.png">
                           </div>
                           <div class="right-txt">
-                            <p>더덕무침 100g 씹을수록 맛있는 <br>반찬</p>
+                            <p>더덕무침 100g 씹을수록 맛있는 반찬</p>
                           </div>
                         </a>
                       </li>
@@ -456,54 +446,18 @@
     <script>
       // 상단 슬라이드 제이쿼리
       $(document).ready(function(){
-        var count = $(".visual li").length;
-        var lastIdx = $(".visual li").length-1;
-        var i = 0;
 
-
-        setInterval(function(){
-          i++;
-          if(i==count){i=-1}
-          
-          $(".naver-slide-dot li")
-              .eq(i)
-              .addClass("on")
-              .siblings()
-              .removeClass("on");
-          
-          $(".visual li")
-              .eq(i)
-              .fadeIn()
-              .css({'z-index':'20'})
-              .siblings()
-              .fadeOut()
-              .css({'z-index':'10'});
-            },2500);
-            /*자동으로 슬라이드가 돌아감*/
-
-          $(".btn-wrap .next").click(function(e){
-            e.preventDefault();
-            if(i==lastIdx){i = -1}
-            i++;
-            
-            $(".visual li").eq(i).fadeIn().css({'z-index':'20'})
-                .siblings().fadeOut().css({'z-index':'10'});
-            $(".naver-slide-dot .dot").removeClass("on");
-            $(".naver-slide-dot .dot").eq(i).addClass("on");
-            
-        });/*next click*/
-
-        $(".btn-wrap .prev").click(function(e){
-          e.preventDefault();
-          if(i==0){i = count}
-          i--;
-            
-            $(".visual li").eq(i).fadeIn().css({'z-index':'20'})
-                .siblings().fadeOut().css({'z-index':'10'});
-            $(".naver-slide-dot .dot").removeClass("on");
-            $(".naver-slide-dot .dot").eq(i).addClass("on");
-              
-          });/*prev click*/
+        $('.slick-items').slick({
+            autoplay : true,
+            dots: true,
+            speed : 200 /* 이미지가 슬라이딩시 걸리는 시간 */,
+            infinite: true,
+            autoplaySpeed: 2000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: false
+        });
 
           //최신순,조회순 클릭시 이벤트
          $(".naver-search ul li").on("click", function() {
@@ -562,5 +516,7 @@
     
 
   </script>
-  </body>
+  
+
+</body>
 </html>
