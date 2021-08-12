@@ -508,21 +508,8 @@
 }
 
 /* 네이버 홍보관 content  */
-
-.naver-slide-wrap{position:relative; width:1020px; margin:0 auto;}
-.naver-slide-wrap .viewport{width:1020px; box-sizing:border-box; overflow-x:hidden;}
-.naver-slide-wrap .viewport ul{height:450px; overflow:hidden;}
-.naver-slide-wrap .viewport ul::after{content:""; display:block; clear:both;}
-.naver-slide-wrap .viewport ul li{position:absolute; top:0; left:0; width:1020px; height:450px; display: none;}
-.naver-slide-wrap .viewport ul li:first-child{display: block;}
-.naver-slide-wrap .viewport ul li a img{display: inline-block; width:1020px; height: 450px; border-radius: 10px;}
-.naver-slide-dot {position:absolute; left:0; bottom:-40px; width:100%; text-align:center; z-index:30;}
-.naver-slide-dot .dot{display:inline-block; width:9px; height:9px; background-color: #bebebe; border-radius:50%; text-indent:-9999px; margin-right:4px; cursor:pointer;}
-.naver-slide-dot .dot:last-child{margin-right:0;}
-.naver-slide-dot .dot.on{background-color:#000;}
-.naver-slide-wrap .btn-wrap li{position:absolute; width:50px; height:50px; text-indent:-9999px; cursor: pointer;}
-.naver-slide-wrap .btn-wrap .prev{left:-10%; top:50%; transform:translateY(-50%); background: url(../images/common/rolling-prev.png) no-repeat 50%;}
-.naver-slide-wrap .btn-wrap .next{right:-10%; top:50%; transform:translateY(-50%); background: url(../images/common/rolling-next.png) no-repeat 50%;}
+.slick-items{width: 1020px; margin:0 auto;}
+.slick-slide img{width: 1020px; height: 450px; border-radius: 10px;}
 
 .naver-banner{margin:80px 0 56px 0; text-align: center;}
 .special-price{background-color: #f0f0f0; border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; height: 676px; display: flex; justify-content: center; align-items: center; }

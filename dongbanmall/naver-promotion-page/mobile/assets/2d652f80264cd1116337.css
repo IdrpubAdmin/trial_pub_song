@@ -11374,20 +11374,11 @@ a:visited {
 
 
 /* 네이버홍보관 모바일 */
-.container{background-color: #fff;}
-.naver-slide-wrap{padding: .75rem 1.25rem 0; position: relative;}
-.naver-slide-wrap .viewport{}
-.naver-slide-wrap .viewport .naver-slider{margin: 0 auto; position: relative;  overflow: hidden;}
-.naver-slide-wrap .viewport .naver-slider .visual{}
-.naver-slide-wrap .viewport .naver-slider .visual li{width: 100%; height: 100%; position: relative; overflow: hidden; display: none;}
-.naver-slide-wrap .viewport .naver-slider .visual li:first-child{display: block;}
-.naver-slide-wrap .viewport .naver-slider .visual li a{display: block; width: 100%; height: 100%; padding-top: 56.25%; padding-bottom: 5.25rem;}
-.naver-slide-wrap .viewport .naver-slider .visual li a img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;}
 
-.naver-slide-dot {position:absolute; left:0; bottom:0px; width:100%; text-align:center; z-index:30;}
-.naver-slide-dot .dot{display:inline-block; width:9px; height:9px; background-color: #bebebe; border-radius:50%; text-indent:-9999px; margin-right:5px; cursor:pointer;}
-.naver-slide-dot .dot:last-child{margin-right:0;}
-.naver-slide-dot .dot.on{background-color:#000;}
+.container{background-color: #fff;}
+.slick-items{width: 100%; height: 100%; margin:0 auto;}
+.slick-slide img{width: 100%; height: 100%; border-radius: 10px;}
+.naver-slide-wrap{padding: .75rem 1.25rem 0;}
 
 .naver-banner{margin:18px 0 18px 0; text-align: center;}
 .naver-banner .inner {padding:0 1.25rem;}
