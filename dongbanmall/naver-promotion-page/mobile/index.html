@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="./assets/2d652f80264cd1116337.css">
     <link rel="stylesheet" href="./assets/4c2d2768af4f0119462e.css">
     <link href="https://www.google-analytics.com/" rel="preconnect">
-    <!-- 삭제해야함 폰트  -->
+    <!-- 네이버홍보관에 사용한 제이쿼리, slickslider  -->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
   </head>
 
   <body>
@@ -84,20 +86,13 @@
             <div class="container naver-con">
               <div class="naver-slide-wrap">
                 <div class="viewport">
-                  <div  class="naver-slider">
-                    <ul class="visual">
-                        <li><a href="#"><img src="images/common/2.png" alt="소상공인라이브마켓"></a></li>
-                        <li><a href="#"><img src="images/common/53.png" alt="소상공인라이브마켓"></a></li>
-                        <li><a href="#"><img src="images/common/tab-img.png" alt="소상공인라이브마켓"></a></li>
-                    </ul>
-                  </div>
-                </div><!--//viewport 사진영역-->
-                <ul class="naver-slide-dot">
-                  <li class="dot on">1</li>
-                  <li class="dot">2</li>
-                  <li class="dot">3</li>
-                </ul>
-              </div>
+                    <div class="slick-items visual">
+                      <div><a href="#"><img src="images/common/2.png" alt="소상공인라이브마켓"></a></div>
+                      <div><a href="#"><img src="images/common/-e-banner04.png" alt="슬라이드 이미지"></a></div>
+                      <div><a href="#"><img src="images/common/-e-banner03.png" alt="슬라이드 이미지"></a></div>
+                    </div>
+                </div>
+              </div><!--//slide-wrap-->
 
               <div class="naver-promo">
                 <div class="naver-banner">
@@ -118,7 +113,7 @@
                     </div>
                     <div class="product-area">
                       <ul class="product-list lay-st-col gallery-view">
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -131,7 +126,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -144,7 +139,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -157,7 +152,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="naver">
+                        <li class="naver naver-aera">
                           <a href="/product/190930" class="nuxt-link-prefetched">
                             <div class="thumb">
                               <div class="dim"></div>
@@ -213,12 +208,12 @@
                     </li>
                     <li>
                       <a href="/category/10376" class="nuxt-link-prefetched naver-link-list">
-                        <span>기타</span>
+                        <span>패션/언더웨어</span>
                       </a>
                     </li>
                     <li>
                       <a href="/category/10376" class="nuxt-link-prefetched naver-link-list">
-                        <span>기타</span>
+                        <span>문구/오피스</span>
                       </a>
                     </li>
                   </ul>
@@ -471,37 +466,22 @@
       </div>
     </div>
 
-
-
     <script>
 
       // 상단 슬라이드 제이쿼리
         $(document).ready(function(){
-        var count = $(".visual li").length;
-        var lastIdx = $(".visual li").length-1;
-        var i = 0;
 
-
-        setInterval(function(){
-          i++;
-          if(i==count){i=-1}
-          
-          $(".naver-slide-dot li")
-              .eq(i)
-              .addClass("on")
-              .siblings()
-              .removeClass("on");
-          
-          $(".visual li")
-              .eq(i)
-              .fadeIn()
-              .css({'z-index':'20'})
-              .siblings()
-              .fadeOut()
-              .css({'z-index':'10'});
-            },2000);
-
-
+          $('.slick-items').slick({
+            autoplay : true,
+            dots: true,
+            speed : 250 /* 이미지가 슬라이딩시 걸리는 시간 */,
+            infinite: true,
+            autoplaySpeed: 2500 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true
+        });
 
       /*네이버에서 구매가능 상품리스트 탭 */
       var tm=$(".naver-icon li");
