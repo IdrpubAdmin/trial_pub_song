@@ -7,5 +7,42 @@
 /* ---------------------------------------------------------- */
 /* container s ============================================== */
 
+$lineWidth: 400px;
+$fontWeight: 600;
+$backColorBar: #b3b5fa;
+$backColorIcon: #c5eeff;
+$backColorHover: #f5f7a0;
+$fontColorHover: #fd0000;
+$iconSize: 38px;
+$iconMargin: 12px;
+$topGrid: 60px;
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width:$lineWidth;
+    margin:0 auto;
+}
+
+.id{
+    margin-top: 10px;
+}
+
+#userid{
+    padding:5px 10px;
+}
+
+#btnSubmit{
+    background-color: $backColorBar;
+    padding:6px 10px;
+}
 /* container e ============================================== */
 /* ---------------------------------------------------------- */
