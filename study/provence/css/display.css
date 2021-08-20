@@ -6,61 +6,9 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* Noto Sans KR s =========================================== */
-@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap");
-@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Thin.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Thin.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Thin.otf") format("opentype"); font-weight: 100; font-style: normal; }
-
-@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Light.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Light.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Light.otf") format("opentype"); font-weight: 300; font-style: normal; }
-
 @font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Regular.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Regular.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; }
 
-@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Medium.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Medium.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; }
-
-@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Bold.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Bold.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; }
-
-@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Black.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Black.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Black.otf") format("opentype"); font-weight: 900; font-style: normal; }
-
 /* font : Noto Sans KR e ==================================== */
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-/* font : Noto Serif KR s =================================== */
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-ExtraLight.woff") format("woff"); font-weight: 100; font-style: normal; }
-
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-Light.woff") format("woff"); font-weight: 300; font-style: normal; }
-
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
-
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-Regular.woff") format("woff"); font-weight: 400; font-style: normal; }
-
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-SemiBold.woff") format("woff"); font-weight: 600; font-style: normal; }
-
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-Bold.woff") format("woff"); font-weight: 700; font-style: normal; }
-
-@font-face { font-family: 'Noto Serif KR'; src: url("fonts/NotoSerifCJKkr-Black.woff") format("woff"); font-weight: 900; font-style: normal; }
-
-/* font : Noto Serif KR e =================================== */
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-/* font : Nanum Gothic s ==================================== */
-@font-face { font-family: 'Nanum Gothic'; src: url("fonts/NanumGothicLight.eot"); src: url("fonts/NanumGothicLight.eot?#iefix") format("embedded-opentype"), url("fonts/NanumGothicLight.woff2") format("woff2"), url("fonts/NanumGothicLight.woff") format("woff"), url("fonts/NanumGothicLight.ttf") format("truetype"); font-weight: 300; font-style: normal; }
-
-@font-face { font-family: 'Nanum Gothic'; src: url("fonts/NanumGothic.eot"); src: url("fonts/NanumGothic.eot?#iefix") format("embedded-opentype"), url("fonts/NanumGothic.woff2") format("woff2"), url("fonts/NanumGothic.woff") format("woff"), url("fonts/NanumGothic.ttf") format("truetype"); font-weight: 400; font-style: normal; }
-
-@font-face { font-family: 'Nanum Gothic'; src: url("fonts/NanumGothicBold.eot"); src: url("fonts/NanumGothicBold.eot?#iefix") format("embedded-opentype"), url("fonts/NanumGothicBold.woff2") format("woff2"), url("fonts/NanumGothicBold.woff") format("woff"), url("fonts/NanumGothicBold.ttf") format("truetype"); font-weight: 700; font-style: normal; }
-
-@font-face { font-family: 'Nanum Gothic'; src: url("fonts/NanumGothicExtraBold.eot"); src: url("fonts/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/NanumGothicExtraBold.woff2") format("woff2"), url("fonts/NanumGothicExtraBold.woff") format("woff"), url("fonts/NanumGothicExtraBold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
-
-/* font : Nanum Gothic e ==================================== */
-/* ---------------------------------------------------------- */
-/* NanumSquareRound s ======================================= */
-@font-face { font-family: "NanumSquareRound"; font-style: normal; font-weight: 300; src: local("fonts/NanumSquareRoundL"); /* computer */ src: url("fonts/NanumSquareRoundL.eot"); /* IE9 Compat Modes */ src: url("fonts/NanumSquareRoundL.woff2") format("woff2"), url("fonts/NanumSquareRoundL.woff") format("woff"), url("fonts/NanumSquareRoundL.ttf") format("truetype"); /* Safari, Android, iOS */ }
-
-@font-face { font-family: "NanumSquareRound"; font-style: normal; font-weight: 400; src: local("fonts/NanumSquareRoundR"); /* computer */ src: url("fonts/NanumSquareRoundR.eot"); /* IE9 Compat Modes */ src: url("fonts/NanumSquareRoundR.woff2") format("woff2"), url("fonts/NanumSquareRoundR.woff") format("woff"), url("fonts/NanumSquareRoundR.ttf") format("truetype"); /* Safari, Android, iOS */ }
-
-@font-face { font-family: "NanumSquareRound"; font-style: normal; font-weight: 700; src: local("fonts/NanumSquareRoundB"); /* computer */ src: url("fonts/NanumSquareRoundB.eot"); /* IE9 Compat Modes */ src: url("fonts/NanumSquareRoundB.woff2") format("woff2"), url("fonts/NanumSquareRoundB.woff") format("woff"), url("fonts/NanumSquareRoundB.ttf") format("truetype"); /* Safari, Android, iOS */ }
-
-@font-face { font-family: "NanumSquareRound"; font-style: normal; font-weight: 800; src: local("fonts/NanumSquareRoundEB"); /* computer */ src: url("fonts/NanumSquareRoundEB.eot"); /* IE9 Compat Modes */ src: url("fonts/NanumSquareRoundEB.woff2") format("woff2"), url("fonts/NanumSquareRoundEB.woff") format("woff"), url("fonts/NanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */ }
-
-/* NanumSquareRound s ======================================= */
 /* ---------------------------------------------------------- */
 /* NanumSquare s ======================================= */
 @font-face { font-family: "NanumSquare"; font-style: normal; font-weight: normal; src: local("../../fonts/NanumSquare/NanumSquare"); /* computer */ src: url("../../fonts/NanumSquare/NanumSquare.eot"); /* IE9 Compat Modes */ src: url("../../fonts/NanumSquare/NanumSquare.woff2") format("woff2"), url("../../fonts/NanumSquare/NanumSquare.woff") format("woff"), url("../../fonts/NanumSquare/NanumSquare.ttf") format("truetype"); /* Safari, Android, iOS */ }
@@ -197,7 +145,7 @@ td, th { padding: 0; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* base s =================================================== */
-* { font-weight: normal; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; font-weight: normal; font-style: normal; }
+* { -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; font-style: normal; }
 
 html { font-size: 62.5%; }
 
@@ -256,6 +204,66 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* header s ================================================= */
+.header { width: 100%; font-size: 1.8rem; }
+
+.header .header_wrap { max-width: 1200px; margin: 0 auto; position: relative; }
+
+.header .header_wrap::before { content: ""; display: inline-block; clear: both; }
+
+.header .header_wrap .lang { float: left; margin-top: 35px; }
+
+.header .header_wrap .lang li { display: inline-block; margin-right: 12px; }
+
+.header .header_wrap .lang li a { display: block; padding-left: 23px; height: 10px; line-height: 10px; font-weight: 900; font-size: 1.1rem; color: #969496; }
+
+.header .header_wrap .lang li.eng a { background: url("../images/vector-smart-object_6.png") no-repeat; }
+
+.header .header_wrap .lang li.chn a { background: url("../images/vector-smart-object_5.png") no-repeat; }
+
+.header .header_wrap .logo { position: absolute; left: 50%; top: 23px; width: 166px; margin-left: -83px; }
+
+.header .header_wrap .sns_list { float: right; margin-top: 35px; }
+
+.header .header_wrap .sns_list li { float: left; text-indent: -5000px; font-size: 0; width: 30px; height: 30px; border: 1px solid #969496; border-radius: 5px; margin-left: 3px; }
+
+.header .header_wrap .sns_list li a { display: block; width: 100%; height: 100%; }
+
+.header .header_wrap .sns_list li.face a { background: url("../images/vector-smart-object_8.png") no-repeat 50% 50%; }
+
+.header .header_wrap .sns_list li.blog a { background: url("../images/vector-smart-object_7.png") no-repeat 50% 50%; }
+
+.header .header_wrap .sns_list li.instar a { background: url("../images/vector-smart-object_4.png") no-repeat 50% 50%; }
+
+.header .header_wrap .sns_list li.youtube a { background: url("../images/vector-smart-object_3.png") no-repeat 50% 50%; }
+
+.header .header_wrap .mo_menu_btn { display: none; float: right; width: 55px; margin: auto; background: #718d5a; }
+
+.header .header_wrap .mo_menu_btn .menu_wrap { position: relative; width: 30px; height: 22px; margin: 20px auto 20px; }
+
+.header .header_wrap .mo_menu_btn .menu_wrap .border { position: absolute; left: 0; display: inline-block; width: 100%; height: 2px; border-radius: 5px; background: #fff; }
+
+.header .header_wrap .mo_menu_btn .menu_wrap .border_1 { top: 0; }
+
+.header .header_wrap .mo_menu_btn .menu_wrap .border_2 { top: 0; bottom: 0; margin: auto; }
+
+.header .header_wrap .mo_menu_btn .menu_wrap .border_3 { bottom: 0; }
+
+.header .nav { clear: both; margin-top: 95px; border-top: 1px solid #afafaf; }
+
+.header .nav .nav_menu { width: 1200px; margin: 0 auto; }
+
+.header .nav .nav_menu li { float: left; width: 16.666%; }
+
+.header .nav .nav_menu li a { display: block; width: 100%; height: 55px; line-height: 55px; }
+
+.header .nav .nav_menu li a span.ko { display: none; }
+
+/*모바일 지정 */
+@media only screen and (max-width: 414px) { .header .header_wrap .lang { display: none; }
+  .header .header_wrap .logo { top: 0; }
+  .header .header_wrap .sns_list { display: none; }
+  .header .header_wrap .mo_menu_btn { display: block; } }
+
 /* header e ================================================= */
 /* ---------------------------------------------------------- */
 /* ========================================================== */
