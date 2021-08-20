@@ -7,17 +7,17 @@
 /* ---------------------------------------------------------- */
 /* Noto Sans KR s =========================================== */
 @import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap");
-@font-face { font-family: 'Noto Sans KR'; src: url("fonts/NotoSansKR-Thin.woff2") format("woff2"), url("fonts/NotoSansKR-Thin.woff") format("woff"), url("fonts/NotoSansKR-Thin.otf") format("opentype"); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Thin.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Thin.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Thin.otf") format("opentype"); font-weight: 100; font-style: normal; }
 
-@font-face { font-family: 'Noto Sans KR'; src: url("fonts/NotoSansKR-Light.woff2") format("woff2"), url("fonts/NotoSansKR-Light.woff") format("woff"), url("fonts/NotoSansKR-Light.otf") format("opentype"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Light.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Light.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Light.otf") format("opentype"); font-weight: 300; font-style: normal; }
 
-@font-face { font-family: 'Noto Sans KR'; src: url("fonts/NotoSansKR-Regular.woff2") format("woff2"), url("fonts/NotoSansKR-Regular.woff") format("woff"), url("fonts/NotoSansKR-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Regular.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Regular.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; }
 
-@font-face { font-family: 'Noto Sans KR'; src: url("fonts/NotoSansKR-Medium.woff2") format("woff2"), url("fonts/NotoSansKR-Medium.woff") format("woff"), url("fonts/NotoSansKR-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Medium.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Medium.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: 'Noto Sans KR'; src: url("fonts/NotoSansKR-Bold.woff2") format("woff2"), url("fonts/NotoSansKR-Bold.woff") format("woff"), url("fonts/NotoSansKR-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Bold.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Bold.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; }
 
-@font-face { font-family: 'Noto Sans KR'; src: url("fonts/NotoSansKR-Black.woff2") format("woff2"), url("fonts/NotoSansKR-Black.woff") format("woff"), url("fonts/NotoSansKR-Black.otf") format("opentype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: 'Noto Sans KR'; src: url("../../fonts/NotoSansKr/NotoSansKR-Black.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Black.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Black.otf") format("opentype"); font-weight: 900; font-style: normal; }
 
 /* font : Noto Sans KR e ==================================== */
 /* ---------------------------------------------------------- */
@@ -61,9 +61,15 @@
 @font-face { font-family: "NanumSquareRound"; font-style: normal; font-weight: 800; src: local("fonts/NanumSquareRoundEB"); /* computer */ src: url("fonts/NanumSquareRoundEB.eot"); /* IE9 Compat Modes */ src: url("fonts/NanumSquareRoundEB.woff2") format("woff2"), url("fonts/NanumSquareRoundEB.woff") format("woff"), url("fonts/NanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */ }
 
 /* NanumSquareRound s ======================================= */
+/* ---------------------------------------------------------- */
+/* NanumSquare s ======================================= */
+@font-face { font-family: "NanumSquare"; font-style: normal; font-weight: normal; src: local("../../fonts/NanumSquare/NanumSquare"); /* computer */ src: url("../../fonts/NanumSquare/NanumSquare.eot"); /* IE9 Compat Modes */ src: url("../../fonts/NanumSquare/NanumSquare.woff2") format("woff2"), url("../../fonts/NanumSquare/NanumSquare.woff") format("woff"), url("../../fonts/NanumSquare/NanumSquare.ttf") format("truetype"); /* Safari, Android, iOS */ }
+
+/* NanumSquare s ======================================= */
+/* ---------------------------------------------------------- */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /** 1. 기본 글꼴을 sans-serif로 설정. 2. iOS와 IE에서 기기 회전시에 사용자가 확대하지 않아도 글씨 크기가 재조정되는 것을 예방. */
-html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+html { font-family: 'Nanum Square','Nanum Gothic', sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /** 기본 마진값을 제거. */
 body { margin: 0; }
@@ -199,7 +205,7 @@ html, body { width: 100%; height: 100%; }
 
 html.back, body.back { background-color: #f5f5f5; }
 
-body { -webkit-font-smoothing: antialiased; font-family: 'Malgun gothic','Apple Gothic', Dotum ,Gulim, Helvetica, sans-serif; font-weight: normal; color: #222; }
+body { -webkit-font-smoothing: antialiased; font-family: 'Nanum Square','Nanum Gothic', sans-serif; font-weight: normal; color: #222; }
 
 body.hidden { overflow: hidden; }
 
