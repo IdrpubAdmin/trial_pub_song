@@ -46,7 +46,7 @@
             width: 166px;
             margin-left: -83px;
         }
-        .sns_list{
+        .sns-list{
             float: right;
             margin-top:35px;
             li{
@@ -77,13 +77,13 @@
                 }
             }
         }
-        .mo_menu_btn{
+        .mo-menu-btn{
             display: none;
             float: right;
             width: 55px;
             margin: auto;
             background: #718d5a;
-            .menu_wrap{
+            .menu-wrap{
                 position: relative;
                 width: 30px;
                 height: 22px;
@@ -113,7 +113,7 @@
     .nav{
         margin-top: 5px;
         border-top: 1px solid rgb(175, 175, 175);
-        .nav_menu{
+        .nav-menu{
             width: 1200px;
             margin: 0 auto;
             li{
@@ -146,10 +146,10 @@
             .logo{
                 top: 0;
             }
-            .sns_list{
+            .sns-list{
                 display: none;
             }
-            .mo_menu_btn{
+            .mo-menu-btn{
                 display: block;
             }
         }

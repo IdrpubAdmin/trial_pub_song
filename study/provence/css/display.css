@@ -222,47 +222,47 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .wrap .wrap-inner .logo { position: absolute; left: 50%; top: 23px; width: 166px; margin-left: -83px; }
 
-.wrap .wrap-inner .sns_list { float: right; margin-top: 35px; }
+.wrap .wrap-inner .sns-list { float: right; margin-top: 35px; }
 
-.wrap .wrap-inner .sns_list li { float: left; text-indent: -5000px; font-size: 0; width: 30px; height: 30px; border: 1px solid #969496; border-radius: 5px; margin-left: 3px; }
+.wrap .wrap-inner .sns-list li { float: left; text-indent: -5000px; font-size: 0; width: 30px; height: 30px; border: 1px solid #969496; border-radius: 5px; margin-left: 3px; }
 
-.wrap .wrap-inner .sns_list li a { display: block; width: 100%; height: 100%; }
+.wrap .wrap-inner .sns-list li a { display: block; width: 100%; height: 100%; }
 
-.wrap .wrap-inner .sns_list li.face a { background: url("../images/vector-smart-object_8.png") no-repeat 50% 50%; }
+.wrap .wrap-inner .sns-list li.face a { background: url("../images/vector-smart-object_8.png") no-repeat 50% 50%; }
 
-.wrap .wrap-inner .sns_list li.blog a { background: url("../images/vector-smart-object_7.png") no-repeat 50% 50%; }
+.wrap .wrap-inner .sns-list li.blog a { background: url("../images/vector-smart-object_7.png") no-repeat 50% 50%; }
 
-.wrap .wrap-inner .sns_list li.instar a { background: url("../images/vector-smart-object_4.png") no-repeat 50% 50%; }
+.wrap .wrap-inner .sns-list li.instar a { background: url("../images/vector-smart-object_4.png") no-repeat 50% 50%; }
 
-.wrap .wrap-inner .sns_list li.youtube a { background: url("../images/vector-smart-object_3.png") no-repeat 50% 50%; }
+.wrap .wrap-inner .sns-list li.youtube a { background: url("../images/vector-smart-object_3.png") no-repeat 50% 50%; }
 
-.wrap .wrap-inner .mo_menu_btn { display: none; float: right; width: 55px; margin: auto; background: #718d5a; }
+.wrap .wrap-inner .mo-menu-btn { display: none; float: right; width: 55px; margin: auto; background: #718d5a; }
 
-.wrap .wrap-inner .mo_menu_btn .menu_wrap { position: relative; width: 30px; height: 22px; margin: 20px auto 20px; }
+.wrap .wrap-inner .mo-menu-btn .menu-wrap { position: relative; width: 30px; height: 22px; margin: 20px auto 20px; }
 
-.wrap .wrap-inner .mo_menu_btn .menu_wrap .border { position: absolute; left: 0; display: inline-block; width: 100%; height: 2px; background: #fff; }
+.wrap .wrap-inner .mo-menu-btn .menu-wrap .border { position: absolute; left: 0; display: inline-block; width: 100%; height: 2px; background: #fff; }
 
-.wrap .wrap-inner .mo_menu_btn .menu_wrap .border_1 { top: 0; }
+.wrap .wrap-inner .mo-menu-btn .menu-wrap .border_1 { top: 0; }
 
-.wrap .wrap-inner .mo_menu_btn .menu_wrap .border_2 { top: 0; bottom: 0; margin: auto; }
+.wrap .wrap-inner .mo-menu-btn .menu-wrap .border_2 { top: 0; bottom: 0; margin: auto; }
 
-.wrap .wrap-inner .mo_menu_btn .menu_wrap .border_3 { bottom: 0; }
+.wrap .wrap-inner .mo-menu-btn .menu-wrap .border_3 { bottom: 0; }
 
 .wrap .nav { margin-top: 5px; border-top: 1px solid #afafaf; }
 
-.wrap .nav .nav_menu { width: 1200px; margin: 0 auto; }
+.wrap .nav .nav-menu { width: 1200px; margin: 0 auto; }
 
-.wrap .nav .nav_menu li { float: left; width: 16.666%; text-align: center; }
+.wrap .nav .nav-menu li { float: left; width: 16.666%; text-align: center; }
 
-.wrap .nav .nav_menu li a { display: block; width: 100%; height: 55px; line-height: 55px; }
+.wrap .nav .nav-menu li a { display: block; width: 100%; height: 55px; line-height: 55px; }
 
-.wrap .nav .nav_menu li a span.ko { display: none; }
+.wrap .nav .nav-menu li a span.ko { display: none; }
 
 /*모바일 지정 */
 @media only screen and (max-width: 720px) { .wrap .wrap-inner .lang { display: none; }
   .wrap .wrap-inner .logo { top: 0; }
-  .wrap .wrap-inner .sns_list { display: none; }
-  .wrap .wrap-inner .mo_menu_btn { display: block; }
+  .wrap .wrap-inner .sns-list { display: none; }
+  .wrap .wrap-inner .mo-menu-btn { display: block; }
   .wrap .nav { display: none; } }
 
 /* header e ================================================= */
@@ -425,6 +425,38 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
+.post-slider { border: 1px solid red; }
+
+.post-slider .post-wrapper { width: 84%; height: 350px; margin: 0px auto; border: 1px dashed red; }
+
+.post-slider .post-wrapper .post { width: 300px; height: 350px; display: inline-block; background: gray; }
+
+.section { text-align: center; }
+
+.section .sub-tit { color: #2a2f2f; }
+
+.section .sub-tit .title { font-size: 3.6rem; position: relative; }
+
+.section .sub-tit .title::after { content: ""; display: inline-block; width: 500px; height: 1px; background-color: #2a2f2f; position: absolute; left: 50%; bottom: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.section .sub-tit p:last-child { font-size: 1.4rem; }
+
+.section-3 { background: url("../images/3.png") no-repeat 0 0; width: 100%; padding: 80px 0; }
+
+.section-3 .review-more { display: inline-block; font-size: 1.6rem; background-color: #73905b; padding: 10px; color: #fff; }
+
+.section-3 .review-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 1200px; margin: 0 auto; }
+
+.section-3 .review-list li { width: 25%; background-color: #fff; margin-left: 4px; padding: 26px 30px 45px; position: relative; }
+
+.section-3 .review-list li:first-child { margin-left: 0; }
+
+.section-3 .review-list li .review-1 { position: relative; width: 100%; text-align: center; }
+
+.section-3 .review-list li .review-1 .sns-icon { position: absolute; left: 10%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 30px; height: 30px; background: #4b8041 url("../images/vector-smart-object_7.png") no-repeat 50% 50%; }
+
+.section-3 .review-list li .review-1 .sns-profile { width: 60px; height: 60px; margin: 0 auto; background: url("../images/layer-1005.png") no-repeat; }
+
 /* main e =================================================== */
 /* ---------------------------------------------------------- */
 /*# sourceMappingURL=display.css.map */

@@ -6,6 +6,93 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* main s =================================================== */
+.post-slider{
+    border:1px solid red;
+    .post-wrapper{
+        width:84%;
+        height:350px;
+        margin:0px auto;
+        border:1px dashed red;
+        .post{
+            width:300px;
+            height:350px;
+            display:inline-block;
+            background:gray;
+        }
+    }
+}
 
+.section{
+    text-align: center;
+    .sub-tit{
+        color: #2a2f2f;
+        .title{
+            font-size: $font-36r;
+            position: relative;
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 500px;
+                height: 1px;
+                background-color: #2a2f2f;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform:translateX(-50%);
+            }
+        }
+        p:last-child{
+            font-size: $font-14r;
+        }
+    }
+}
+.section-3{
+    background: url('../images/3.png') no-repeat 0 0;
+    width: 100%;
+    padding:80px 0;
+    .review-more{
+        display: inline-block;
+        font-size: $font-16r;
+        background-color: #73905b;
+        padding: 10px;
+        color: #fff;
+    }
+    .review-list{
+        display: flex;
+        justify-content: center;
+        width: 1200px;
+        margin: 0 auto;
+        li{
+            width: 25%;
+            background-color: #fff;
+            margin-left: 4px;
+            padding: 26px 30px 45px;
+            position: relative;
+            &:first-child{
+                margin-left: 0;
+            }
+            .review-1{
+                position: relative;
+                width: 100%;
+                text-align: center;
+                .sns-icon{
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 30px;
+                    height: 30px;
+                    background:#4b8041 url('../images/vector-smart-object_7.png') no-repeat 50% 50%;
+                }
+                .sns-profile{
+                    width: 60px;
+                    height: 60px;
+                    margin: 0 auto;
+                    background: url('../images/layer-1005.png') no-repeat;
+                }
+            }
+        }
+    }
+}
 /* main e =================================================== */
 /* ---------------------------------------------------------- */
