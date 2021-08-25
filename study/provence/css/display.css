@@ -449,10 +449,33 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .section .section-wrap .sub-tit p:last-child { font-size: 1.4rem; margin-bottom: 26px; }
 
-/*with provence */
-.section-2 .slider-2 ul { overflow: hidden; }
+/*main-top slider */
+.section-1 .main-wrap { width: 100%; }
 
-.section-2 .slider-2 ul li { float: left; }
+/*with provence */
+.section-2 .section-wrap { position: relative; }
+
+.section-2 .section-wrap .swiper-container { overflow: hidden; }
+
+.section-2 .section-wrap .slider-2 ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+
+.section-2 .section-wrap .slider-2 ul li { width: 382px !important; margin-right: 18px; }
+
+.section-2 .section-wrap .slider-2 ul li .list-item .item-img { width: 400px; height: 310px; margin-bottom: 16px; padding: 0 10px; }
+
+.section-2 .section-wrap .slider-2 ul li .list-item .item-img img { width: 100%; height: 100%; }
+
+.section-2 .section-wrap .slider-2 ul li .list-item .item-tit { font-size: 2rem; color: #2a2f2f; }
+
+.section-2 .section-wrap .slider-2 ul li .list-item .item-day { font-size: 1.2rem; color: #969496; }
+
+.section-2 .section-wrap .swiper-button-next { position: absolute; right: -70px; width: 54px; height: 54px; border: 1px solid #cacbca; color: #2a2f2f; }
+
+.section-2 .section-wrap .swiper-button-next::after { font-size: 1.9rem; }
+
+.section-2 .section-wrap .swiper-button-prev { position: absolute; left: -70px; width: 54px; height: 54px; border: 1px solid #cacbca; color: #2a2f2f; }
+
+.section-2 .section-wrap .swiper-button-prev::after { font-size: 1.9rem; }
 
 /*sns */
 .section-3 { background: url("../images/3.png") no-repeat 0 0; }
@@ -535,7 +558,9 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 .section-4 .section-wrap .location-info .location-price .parking-info ol li:nth-child(3) { text-indent: -1em; margin-left: 1em; }
 
 /*모바일 지정 */
-@media only screen and (max-width: 720px) { .section .section-wrap .sub-tit .title::after { width: calc(100% - 40px); }
+@media only screen and (max-width: 720px) { /* 공통 */
+  .section { padding-top: 0; }
+  .section .section-wrap .sub-tit .title::after { width: calc(100% - 40px); }
   .section .section-wrap .sub-tit p:last-child { font-size: 1.2rem; }
   .section-3 { background: none; width: 100%; margin: 0 auto; }
   .section-3 .review-list { display: inline-block; width: 100%; }
@@ -550,7 +575,17 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
   .section-4 .section-wrap .location-info .location-wrap a { line-height: 73px; }
   .section-4 .section-wrap .location-info .location-price { margin-top: 60px; }
   .section-4 .section-wrap .location-info .location-price .parking-tite span { font-size: 1.6rem; }
-  .section-4 .section-wrap .location-info .location-price .parking-price th, .section-4 .section-wrap .location-info .location-price .parking-price td { font-size: 1.2rem; } }
+  .section-4 .section-wrap .location-info .location-price .parking-price th, .section-4 .section-wrap .location-info .location-price .parking-price td { font-size: 1.2rem; }
+  .section-2 { width: 100%; margin: 0 auto; }
+  .section-2 .section-wrap { position: relative; }
+  .section-2 .section-wrap .slider-2 ul { display: block; height: 1200px; }
+  .section-2 .section-wrap .slider-2 ul li { width: 100% !important; margin-right: 18px; }
+  .section-2 .section-wrap .slider-2 ul li .list-item .item-img { width: 100%; height: 310px; margin-bottom: 16px; padding: 0 10px; }
+  .section-2 .section-wrap .slider-2 ul li .list-item .item-img img { width: 100%; height: 100%; }
+  .section-2 .section-wrap .slider-2 ul li .list-item .item-tit { font-size: 2rem; color: #2a2f2f; }
+  .section-2 .section-wrap .slider-2 ul li .list-item .item-day { font-size: 1.2rem; color: #969496; }
+  .section-2 .section-wrap .swiper-button-next { right: 20px; -webkit-transform: rotate(90deg); transform: rotate(90deg); background-color: #fff; }
+  .section-2 .section-wrap .swiper-button-prev { left: 20px; -webkit-transform: rotate(90deg); transform: rotate(90deg); background-color: #fff; } }
 
 /* main e =================================================== */
 /* ---------------------------------------------------------- */

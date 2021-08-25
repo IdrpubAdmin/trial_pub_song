@@ -56,13 +56,86 @@
     }
 }
 
+/*main-top slider */
+.section-1{
+    .main-wrap{
+        width: 100%;
+        .slider-2{
+            .swiper-wrapper{
+                .swiper-slide{
+                }
+            }
+            // .main-swiper-next{
+            //     width: 50px;
+            //     height: 50px;
+            //     background-color: #4b8041;
+            //     color: #fff;
+            //     &::after{
+            //         content: ">";
+            //     }
+            // }
+        }
+    }
+}
+
 /*with provence */
 .section-2{
-    .slider-2{
-        ul{
-            overflow: hidden;
-            li{
-                float: left;
+    .section-wrap{
+        position: relative;
+        .swiper-container{
+            overflow:hidden;
+        }
+        .slider-2{
+            ul{
+                display: flex;
+                justify-content:space-between;
+                flex-wrap: nowrap;
+                li{
+                    width: 382px !important;
+                    margin-right: 18px;
+                    .list-item{
+                        .item-img{
+                            width: 400px;
+                            height: 310px;
+                            margin-bottom: 16px;
+                            padding:0 10px;
+                            img{
+                                width: 100%;
+                                height: 100%; 
+                            }
+                        }
+                        .item-tit{
+                            font-size: $font-20r;
+                            color: #2a2f2f;
+                        }
+                        .item-day{
+                            font-size: $font-12r;
+                            color:#969496;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-next{
+            position: absolute;
+            right: -70px;
+            width: 54px;
+            height: 54px;
+            border:1px solid #cacbca;
+            color: #2a2f2f;
+            &::after{
+                font-size: $font-19r;
+            }
+        }
+        .swiper-button-prev{
+            position: absolute;
+            left: -70px;
+            width: 54px;
+            height: 54px;
+            border:1px solid #cacbca;
+            color: #2a2f2f;
+            &::after{
+                font-size: $font-19r;
             }
         }
     }
@@ -273,7 +346,9 @@
 /*모바일 지정 */
 @media only screen and (max-width: 720px) {
 
+/* 공통 */
 .section{
+    padding-top:0;
     .section-wrap{
         .sub-tit{
             .title{
@@ -348,6 +423,57 @@
             }
         }
     }   
+}
+
+.section-2{
+    width: 100%;
+    margin: 0 auto;
+    .section-wrap{
+        position: relative;
+        .swiper-container{
+            
+        }
+        .slider-2{
+            ul{
+                display: block;
+                height: 1200px;
+                li{
+                    width: 100% !important;
+                    margin-right: 18px;
+                    .list-item{
+                        .item-img{
+                            width: 100%;
+                            height: 310px;
+                            margin-bottom: 16px;
+                            padding:0 10px;
+                            img{
+                                width: 100%;
+                                height: 100%; 
+                            }
+                        }
+                        .item-tit{
+                            font-size: $font-20r;
+                            color: #2a2f2f;
+                        }
+                        .item-day{
+                            font-size: $font-12r;
+                            color:#969496;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-next{
+            right: 20px;
+            transform: rotate(90deg);
+            background-color: #fff;
+        }
+        .swiper-button-prev{
+            left: 20px;
+            transform: rotate(90deg);
+            background-color: #fff;
+        }
+    }
 }
 
 }

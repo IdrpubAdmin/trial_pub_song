@@ -9,23 +9,41 @@
 		<script src="../js/common.js"></script>
 		<link rel="stylesheet" type="text/css" href="../css/display.css">
 		<!-- swiper -->
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
 	
 	<body>
 		<div class="wrap">
-			
+			<section class="section-1 section">
+				<div class="main-wrap">
+					<div class="slider-2 swiper-container swiper1">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="list-item">
+										<div class="item-img">
+											<img src="../images/main-img.png" alt="images">
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="main-swiper-next"></div>
+						<div class="main-swiper-prev"></div>
+					</div>
+				</div>
+			</section>
+			<!-- // -->
 			<section class="section-2 section">
 				<div class="section-wrap">
 					<div class="sub-tit">
 						<p class="title">with <b>provence</b></p>
 						<p>파주프로방스에서 진행되는 다양한 이벤트로 많은 혜택을 누리세요.</p>
 					</div>
-					<div class="slider-2">
-						<ul>
-							<li>
+					<div class="slider-2 swiper-container swiper2">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
@@ -36,7 +54,7 @@
 									</div>
 								</a>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
@@ -47,7 +65,29 @@
 									</div>
 								</a>
 							</li>
-							<li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="list-item">
+										<div class="item-img">
+											<img src="../images/layer-43.png" alt="images">
+										</div>
+										<p class="item-tit">이 달 최고의 포토제닉 상!</p>
+										<p class="item-day">2019.08.27</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="list-item">
+										<div class="item-img">
+											<img src="../images/layer-43.png" alt="images">
+										</div>
+										<p class="item-tit">이 달 최고의 포토제닉 상!</p>
+										<p class="item-day">2019.08.27</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
@@ -60,8 +100,11 @@
 							</li>
 						</ul>
 					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
 			</section>
+			<!-- // -->
 			<section class="section-3 section">
 				<div class="section-wrap">
 					<div class="sub-tit">
@@ -140,6 +183,7 @@
 					</ul>
 				</div>
 			</section>
+			<!-- // -->
 			<section class="section-4 section">
 				<div class="section-wrap">
 					<div class="sub-tit">
@@ -231,5 +275,53 @@
 				</div>
 			</section>
 		</div>
+
+		<script>
+			//<!--Swiper JS 메인 전체 슬라이더 -->
+			var swiper = new Swiper(".swiper2", {
+				slidesPerView: 1,
+				loop:true,
+				direction: getDirection(),
+				navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+				},
+				on: {
+				resize: function () {
+					swiper.changeDirection(getDirection());
+				}
+				}
+			});
+
+			function getDirection() {
+				var windowWidth = window.innerWidth;
+				var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+				return direction;
+			}
+
+			//<!--Swiper JS 메인 두번째 슬라이더 -->
+			var swiper = new Swiper(".swiper1", {
+				slidesPerView: 3,
+				loop:true,
+				direction: getDirection(),
+				navigation: {
+				nextEl: ".main-swiper-next",
+				prevEl: ".main-swiper-prev"
+				},
+				on: {
+				resize: function () {
+					swiper.changeDirection(getDirection());
+				}
+				}
+			});
+
+			function getDirection() {
+				var windowWidth = window.innerWidth;
+				var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+				return direction;
+			}
+		</script>
 	</body>
 </html>
