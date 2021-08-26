@@ -42,12 +42,13 @@
 						<p>파주프로방스에서 진행되는 다양한 이벤트로 많은 혜택을 누리세요.</p>
 					</div>
 					<div class="slider-2 swiper-container swiper2">
-						<ul class="swiper-wrapper">
+						<ul class="swiper-wrapper with-hover">
 							<li class="swiper-slide">
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
 											<img src="../images/1.png" alt="images">
+											<span class="btn-more">more</span>
 										</div>
 										<p class="item-tit">파주 프로방스 365일 불빛 축제</p>
 										<p class="item-day">2019.08.27</p>
@@ -59,6 +60,7 @@
 									<div class="list-item">
 										<div class="item-img">
 											<img src="../images/layer-43_2.png" alt="images">
+											<span class="btn-more">more</span>
 										</div>
 										<p class="item-tit">세계 명화를 파주 프로방스 한 곳에서!</p>
 										<p class="item-day">2019.08.27</p>
@@ -70,28 +72,7 @@
 									<div class="list-item">
 										<div class="item-img">
 											<img src="../images/layer-43.png" alt="images">
-										</div>
-										<p class="item-tit">이 달 최고의 포토제닉 상!</p>
-										<p class="item-day">2019.08.27</p>
-									</div>
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#">
-									<div class="list-item">
-										<div class="item-img">
-											<img src="../images/layer-43.png" alt="images">
-										</div>
-										<p class="item-tit">이 달 최고의 포토제닉 상!</p>
-										<p class="item-day">2019.08.27</p>
-									</div>
-								</a>
-							</li>
-							<li class="swiper-slide">
-								<a href="#">
-									<div class="list-item">
-										<div class="item-img">
-											<img src="../images/layer-43.png" alt="images">
+											<span class="btn-more">more</span>
 										</div>
 										<p class="item-tit">이 달 최고의 포토제닉 상!</p>
 										<p class="item-day">2019.08.27</p>
@@ -277,9 +258,24 @@
 		</div>
 
 		<script>
-			//<!--Swiper JS 메인 전체 슬라이더 -->
-			var swiper = new Swiper(".swiper2", {
+			//<!--Swiper JS 메인 top 슬라이더 -->
+			var swiper = new Swiper(".swiper1", {
 				slidesPerView: 1,
+				loop:true,
+				// autoplay: {
+				// 	delay: 3000,
+				// 	disableOnInteraction: false,
+				// },
+				direction: getDirection(),
+				navigation: {
+				nextEl: ".main-swiper-next",
+				prevEl: ".main-swiper-prev"
+				}
+			});
+
+			//<!--Swiper JS with provence 슬라이더 -->
+			var swiper = new Swiper(".swiper2", {
+				slidesPerView: 3,
 				loop:true,
 				direction: getDirection(),
 				navigation: {
@@ -300,28 +296,6 @@
 				return direction;
 			}
 
-			//<!--Swiper JS 메인 두번째 슬라이더 -->
-			var swiper = new Swiper(".swiper1", {
-				slidesPerView: 3,
-				loop:true,
-				direction: getDirection(),
-				navigation: {
-				nextEl: ".main-swiper-next",
-				prevEl: ".main-swiper-prev"
-				},
-				on: {
-				resize: function () {
-					swiper.changeDirection(getDirection());
-				}
-				}
-			});
-
-			function getDirection() {
-				var windowWidth = window.innerWidth;
-				var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
-
-				return direction;
-			}
 		</script>
 	</body>
 </html>
