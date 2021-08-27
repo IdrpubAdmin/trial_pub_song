@@ -1,5 +1,19 @@
-
-		<header class="wrap">
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>프로방스</title>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/display.css">
+		<!-- swiper -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	</head>
+		
+        <header class="wrap">
             <div class="wrap-inner header">
                 <ul class="lang">
                     <li class="eng"><a href="#"><span>ENG</span></a></li>
@@ -42,37 +56,37 @@
             </div>
             <nav class="nav">
                 <ul class="nav-menu">
-                    <li>
-                        <a href="#">
-                            <span class="ko">프로방스</span>
+                    <li class="menu">
+                        <a href="#" onclick="dp_menu()">
                             <span class="en">PROVENCE</span>
                         </a>
+                        <ul id="drop-content" class="sub-menu" >
+                            <li><a href="#">프로방스 소개</a></li>
+                            <li><a href="#">단지안내도</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a href="#">
-                            <span class="ko">마을동</span>
                             <span class="en">VILLAGE</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a href="#">
-                            <span class="ko">주차타워</span>
                             <span class="en">TOWER</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a href="#">
-                            <span class="ko">힐링테마</span>
                             <span class="en">THEME</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a href="#">
-                            <span class="ko">고객센터</span>
-                            <span class="en">CUSTOMER</span>
+                            <span class="en">CUSTOMER</span> 
                         </a>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a href="#">
                             <span class="en">SITEMAP</span>
                         </a>
@@ -80,3 +94,5 @@
                 </ul>
             </nav>
         </header>
+	</body>
+</html>

@@ -113,28 +113,59 @@
     .nav{
         margin-top: 5px;
         border-top: 1px solid rgb(175, 175, 175);
+        height: 60px;
         .nav-menu{
             width: 1200px;
             margin: 0 auto;
-            li{
+            .menu{
                 float: left;
                 width: 16.666%;
                 text-align: center;
-                a{
+                position: relative;
+                &>a{
                     display: block;
                     width: 100%;
                     height: 55px;
                     line-height: 55px;
-                    span{
+                    &span{
                         &.ko{
                             display: none;
                         }
                     }
                 }
+                .sub-menu{
+                    display: none;
+                    position:absolute; 
+                    left:0px; 
+                    top:56px; 
+                    width:198px;
+                    li{
+                        text-align: left;
+                        padding:10px 20px;
+                        a{
+                            display: inline-block;
+                            color: #fff;
+                            font-size: $font-16r;
+                            padding:10px;
+                        }
+                    }
+                }
+            }
+            .on{
+                border-top:1px solid #81984e;
+                border-bottom:1px solid #81984e;
             }
         }
     }
 }
+
+.active {
+    display: block !important; }
+
+.active_02 {
+    background-color: #0b0306; }
+
+
 
 /*모바일 지정 */
 @media only screen and (max-width: 720px) {

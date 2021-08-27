@@ -70,7 +70,7 @@
                 select{
                     width: 16rem;
                     padding:1.3rem 0 1.3rem 1rem;
-                    margin-left: 6px;
+                    margin-left: 3px;
                     appearance:none;
                     border: 0;
                     background: #333 url('../images/layer-98.png') no-repeat 90% 50%;
@@ -111,7 +111,7 @@
 /*모바일 지정 */
 @media only screen and (max-width: 720px) {
     .footer{
-        padding:7px 7px 45px 7px;
+        padding:7px 7px 45px 30px;
         .wrap-inner{
             display: block;
             .f-common{
