@@ -259,21 +259,25 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .wrap .nav .nav-menu .menu { float: left; width: 16.666%; text-align: center; position: relative; }
 
-.wrap .nav .nav-menu .menu > a { display: block; width: 100%; height: 55px; line-height: 55px; }
+.wrap .nav .nav-menu .menu > a { display: block; width: 100%; height: 59px; line-height: 59px; }
 
 .wrap .nav .nav-menu .menu > aspan.ko { display: none; }
 
-.wrap .nav .nav-menu .menu .sub-menu { display: none; position: absolute; left: 0px; top: 56px; width: 198px; }
+.wrap .nav .nav-menu .menu .on { border-top: 5px solid #81984e; border-bottom: 5px solid #81984e; }
+
+.wrap .nav .nav-menu .menu .ko { position: absolute; left: 0px; top: 0; display: none; }
+
+.wrap .nav .nav-menu .menu .sub-menu { display: none; position: absolute; left: 0px; top: 59px; width: 198px; background-color: #0b0306; z-index: 20; }
 
 .wrap .nav .nav-menu .menu .sub-menu li { text-align: left; padding: 10px 20px; }
 
 .wrap .nav .nav-menu .menu .sub-menu li a { display: inline-block; color: #fff; font-size: 1.6rem; padding: 10px; }
 
-.wrap .nav .nav-menu .on { border-top: 1px solid #81984e; border-bottom: 1px solid #81984e; }
+.wrap .nav .nav-menu .menu .sub-menu li .active_02 { color: #81984e; }
 
-.active { display: block !important; }
+.wrap .nav .nav-menu .menu .sub-menu li .active_02::before { content: "-"; color: #81984e; font-size: 1.8rem; padding: 4px 5px 0 0; }
 
-.active_02 { background-color: #0b0306; }
+.wrap .nav .nav-menu .menu .active { display: block !important; }
 
 /*모바일 지정 */
 @media only screen and (max-width: 720px) { .wrap .wrap-inner .lang { display: none; }
