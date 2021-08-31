@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .wrap .nav .nav-menu .menu > aspan.ko { display: none; }
 
-.wrap .nav .nav-menu .menu .on { border-top: 5px solid #81984e; border-bottom: 5px solid #81984e; }
+.wrap .nav .nav-menu .menu .on { border-top: 3px solid #81984e; border-bottom: 3px solid #81984e; }
 
 .wrap .nav .nav-menu .menu .ko { position: absolute; left: 0px; top: 0; display: none; }
 

@@ -9,16 +9,12 @@
 
 document.addEventListener('DOMContentLoaded',  () => {
     const toggleBtns = document.querySelectorAll('.nav-menu>li');
-    console.log(toggleBtns)
 
     toggleBtns.forEach(function(navItem,idx,list){
-        console.log(navItem)
 
         let navItem1d = navItem.querySelector('.nav-menu>li>a');
         let navItem2d = navItem.querySelector('.sub-menu');
         let navItem3d = navItem.querySelector('.sub-menu>li>a');
-
-       // console.log(navItem2d)
 
         // 1depth에 마우스 오버시 메뉴 노출
         navItem.addEventListener('mouseover', function () {
@@ -43,8 +39,6 @@ document.addEventListener('DOMContentLoaded',  () => {
 })
 
 
-/*----------------------------------------------------------- */
-/* ready s -------------------------------------------------- */
 
 /* ready e -------------------------------------------------- */
 /*----------------------------------------------------------- */

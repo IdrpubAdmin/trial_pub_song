@@ -53,10 +53,21 @@ gulp.task('babel', function () {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('css_dev/**/*.scss', gulp.series('sass')),
 	gulp.watch('page_dev/**/*.html', gulp.series('extend'));
-	gulp.watch('page_include/**/*.html', gulp.series('extend'));
-	gulp.watch('js_dev/*.js', gulp.series('babel'));
+	gulp.watch('page/**/*.html', gulp.series('extend'));
+	gulp.watch('js/*.js', gulp.series('babel'));
 });
 
+var fileinclude = require('gulp-file-include'),
+    gulp = require('gulp');
+ 
+gulp.task('fileinclude', function() {
+    gulp.src(['./provence/page/index.html', './provence/page/*.html'], {base : './'})
+    .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
+});
+ 
 gulp.task('default',gulp.parallel(['watch']));
