@@ -27,18 +27,18 @@ document.addEventListener('DOMContentLoaded',  () => {
             navItem1d.classList.remove('on');
         })
 
-        // 2depth에 마우스 오버시 폰트컬러 변경
+        /* 2depth에 마우스 오버시 폰트컬러 변경
         navItem2d.addEventListener('mouseover', function () {
             navItem3d.classList.add('active_02');
         })
         navItem2d.addEventListener('mouseout', function () {
             navItem3d.classList.remove('active_02');
-        })
+        })*/
     });
 
 })
 
 
 
-/* ready e -------------------------------------------------- */
+/* ready e -------------------------------------------------- 
 /*----------------------------------------------------------- */

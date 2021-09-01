@@ -154,17 +154,16 @@
                     li{
                         text-align: left;
                         padding:10px 20px;
-                        a{
+                        > a{
                             display: inline-block;
                             color: #fff;
                             font-size: $font-16r;
                             padding:10px;
                         }
-                        .active_02 {
+                        a:hover {
                             color: #81984e;
-                            &::before{
+                            &::before {
                                 content: "-";
-                                color: #81984e;
                                 font-size: $font-18r;
                                 padding:4px 5px 0 0;
                             }
