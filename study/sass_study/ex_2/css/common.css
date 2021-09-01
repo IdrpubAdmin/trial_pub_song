@@ -1,20 +1,77 @@
-* { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100vw; height: 100vh; }
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
 
-.wrap div.row1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #3437f3; max-width: 993px; width: 100%; position: relative; height: 500px; }
+.wrap div.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3437f3;
+  max-width: 993px;
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
 
-.wrap div.row1:hover { border: 2px solid #fd0000; background-color: #f5f7a0; }
+.wrap div.row1:hover {
+  border: 2px solid #fd0000;
+  background-color: #f5f7a0;
+}
 
-.wrap div.row1 a { background-color: #c5eeff; display: block; position: absolute; width: 38px; height: 38px; top: 12px; text-align: center; line-height: 38px; }
+.wrap div.row1 a {
+  background-color: #c5eeff;
+  display: block;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 12px;
+  text-align: center;
+  line-height: 38px;
+}
 
-.wrap div.row1 a:hover { background-color: #f5f7a0; color: #fd0000; font-weight: 600; }
+.wrap div.row1 a:hover {
+  background-color: #f5f7a0;
+  color: #fd0000;
+  font-weight: 600;
+}
 
-.wrap div.row1 a.icon1 { right: 164px; }
+.wrap div.row1 a.icon1 {
+  right: 164px;
+}
 
-.wrap div.row1 a.icon2 { right: 88px; }
+.wrap div.row1 a.icon2 {
+  right: 88px;
+}
 
-.wrap div.row1 a.icon3 { right: 12px; }
+.wrap div.row1 a.icon3 {
+  right: 12px;
+}
 
-.txt { font-size: 38px; width: 500px; height: 500px; margin: 0 auto; border: 2px solid #3437f3; }
+.txt {
+  font-size: 38px;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 2px solid #3437f3;
+}
 /*# sourceMappingURL=common.css.map */
