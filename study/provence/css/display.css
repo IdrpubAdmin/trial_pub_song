@@ -229,8 +229,7 @@ figure {
  * Firefox와 다른 브라우저들 사이의 차이점 해결.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -345,8 +344,7 @@ input {
  */
 input[type='checkbox'],
 input[type='radio'] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -430,6 +428,7 @@ th {
 /* base s =================================================== */
 * {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
   font-style: normal;
@@ -845,12 +844,8 @@ h6 {
 }
 
 .footer .wrap-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer .wrap-inner .f-common {
@@ -922,9 +917,7 @@ h6 {
   width: 16rem;
   padding: 1.3rem 0 1.3rem 1rem;
   margin-left: 3px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   background: #333 url("../images/layer-98.png") no-repeat 90% 50%;
 }
@@ -1098,8 +1091,7 @@ h6 {
   position: absolute;
   left: 50%;
   bottom: -5px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .section .section-wrap .sub-tit p:last-child {
@@ -1127,23 +1119,16 @@ h6 {
 .section-1 .main-wrap .slider-2 .swiper-wrapper .swiper-slide {
   background: url("../images/dsc-2817-copy-3.png") no-repeat;
   height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-1 .main-wrap .slider-2 .main-swiper-next {
   position: absolute;
   right: 52px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 50px;
   height: 57px;
   z-index: 10;
@@ -1162,8 +1147,7 @@ h6 {
   position: absolute;
   left: 52px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 50px;
   height: 57px;
   z-index: 10;
@@ -1188,14 +1172,9 @@ h6 {
 }
 
 .section-2 .section-wrap .slider-2 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .section-2 .section-wrap .slider-2 ul li {
@@ -1228,8 +1207,7 @@ h6 {
   position: absolute;
   left: 50%;
   top: 35%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 10px 20px;
@@ -1287,12 +1265,8 @@ h6 {
 }
 
 .section-3 .review-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .section-3 .review-list li {
@@ -1552,8 +1526,7 @@ h6 {
   .section-1 .main-wrap .slider-2 .swiper-wrapper .swiper-slide .item-img img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .section-1 .main-wrap .slider-2 .main-swiper-next {
     right: 0;
@@ -1596,14 +1569,12 @@ h6 {
   }
   .section-2 .section-wrap .swiper-button-next {
     right: 20px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
     background-color: #fff;
   }
   .section-2 .section-wrap .swiper-button-prev {
     left: 20px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
     background-color: #fff;
   }
   .section-3 {
@@ -1620,8 +1591,7 @@ h6 {
     padding: 0;
     width: calc(100% - 40px);
     border: 1px solid #eee;
-    -webkit-box-shadow: 3px 3px 3px 0px #4e4e4e6e;
-            box-shadow: 3px 3px 3px 0px #4e4e4e6e;
+    box-shadow: 3px 3px 3px 0px #4e4e4e6e;
   }
   .section-3 .review-list li .review-1 {
     width: 18%;

@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .reset, html,
@@ -12,34 +11,22 @@ p {
 }
 
 .wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
 
 @media only screen and (max-width: 640px) {
   .wrap {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: flex-start;
   }
 }
 
 .wrap .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   max-width: 993px;
   width: 100%;
   background: url(../images/captcha_bg_pc.png) no-repeat 50% 32px;
@@ -62,8 +49,7 @@ p {
   background: #fff;
   border: 2px solid #00349a;
   border-radius: 20px;
-  -webkit-box-shadow: 3px 2.7px 0 rgba(0, 140, 214, 0.43);
-          box-shadow: 3px 2.7px 0 rgba(0, 140, 214, 0.43);
+  box-shadow: 3px 2.7px 0 rgba(0, 140, 214, 0.43);
 }
 
 @media only screen and (max-width: 640px) {

@@ -378,8 +378,7 @@ figure {
  * Firefox와 다른 브라우저들 사이의 차이점 해결.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -494,8 +493,7 @@ input {
  */
 input[type='checkbox'],
 input[type='radio'] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -580,6 +578,7 @@ th {
 * {
   font-weight: normal;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
   font-weight: normal;
