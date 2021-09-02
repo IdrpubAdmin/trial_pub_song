@@ -1,0 +1,22 @@
+{
+  "name": "provence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-include": "^2.4.1"
+  }
+}
