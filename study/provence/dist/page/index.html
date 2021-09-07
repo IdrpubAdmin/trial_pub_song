@@ -1,130 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
-<html>
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/display.css">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<title>프로방스</title>
-		<script src="../js/common.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/display.css">
-		<!-- swiper -->
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
 	<body>
-		<!-- <header class="wrap">
-            <div class="wrap-inner header">
-                <ul class="lang">
-                    <li class="eng"><a href="#"><span>ENG</span></a></li>
-                    <li class="chn"><a href="#"><span>CHN</span></a></li>
-                </ul>
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="../images/logo.png" alt="프로방스">
-                    </a>
-                </h1>
-                <ul class="sns-list">
-                    <li class="face">
-                        <a href="#" target="_blank">
-                            <span>페이스북</span>
-                        </a>
-                    </li>
-                    <li class="blog">
-                        <a href="#" target="_blank">
-                            <span>블로그</span>
-                        </a>
-                    </li>
-                    <li class="instar">
-                        <a href="#" target="_blank">
-                            <span>인스타그램</span>
-                        </a>
-                    </li>
-                    <li class="youtube">
-                        <a href="#" target="_blank">
-                            <span>유튜브</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="mo-menu-btn">
-                    <div class="menu-wrap">
-                        <span class="border border_1"></span>
-                        <span class="border border_2"></span>
-                        <span class="border border_3"></span>
-                    </div>
-                </div>
+        <header class="wrap">
+    <div class="wrap-inner header">
+        <ul class="lang">
+            <li class="eng"><a href="#"><span>ENG</span></a></li>
+            <li class="chn"><a href="#"><span>CHN</span></a></li>
+        </ul>
+        <h1 class="logo">
+            <a href="#">
+                <img src="../../images/logo.png" alt="프로방스">
+            </a>
+        </h1>
+        <ul class="sns-list">
+            <li class="face">
+                <a href="#" target="_blank">
+                    <span>페이스북</span>
+                </a>
+            </li>
+            <li class="blog">
+                <a href="#" target="_blank">
+                    <span>블로그</span>
+                </a>
+            </li>
+            <li class="instar">
+                <a href="#" target="_blank">
+                    <span>인스타그램</span>
+                </a>
+            </li>
+            <li class="youtube">
+                <a href="#" target="_blank">
+                    <span>유튜브</span>
+                </a>
+            </li>
+        </ul>
+        <div class="mo-menu-btn">
+            <div class="menu-wrap">
+                <span class="border border_1"></span>
+                <span class="border border_2"></span>
+                <span class="border border_3"></span>
             </div>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="menu">
-                        <a href="#" class="en">
-                            <span>PROVENCE</span>
-                        </a>
-						<a href="#" class="ko">
-                            <span>프로방스</span>
-                        </a>
-                        <ul id="drop-content" class="sub-menu" >
-                            <li><a href="#">프로방스 소개</a></li>
-                            <li><a href="#">단지안내도</a></li>
-                            <li><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a href="#" class="en">
-                            <span>VILLAGE</span>
-                        </a>
-						<ul id="drop-content" class="sub-menu" >
-                            <li><a href="#">프로방스 소개</a></li>
-                            <li><a href="#">단지안내도</a></li>
-                            <li><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a href="#" class="en">
-                            <span>TOWER</span>
-                        </a>
-						<ul id="drop-content" class="sub-menu" >
-                            <li><a href="#">프로방스 소개</a></li>
-                            <li><a href="#">단지안내도</a></li>
-                            <li><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a href="#" class="en">
-                            <span>THEME</span>
-                        </a>
-						<ul id="drop-content" class="sub-menu" >
-                            <li><a href="#">프로방스 소개</a></li>
-                            <li><a href="#">단지안내도</a></li>
-                            <li><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a href="#" class="en">
-                            <span>CUSTOMER</span> 
-                        </a>
-						<ul id="drop-content" class="sub-menu" >
-                            <li><a href="#">프로방스 소개</a></li>
-                            <li><a href="#">단지안내도</a></li>
-                            <li><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a href="#" class="en">
-                            <span>SITEMAP</span>
-                        </a>
-						<ul id="drop-content" class="sub-menu" >
-                            <li><a href="#">프로방스 소개</a></li>
-                            <li><a href="#">단지안내도</a></li>
-                            <li><a href="#">오시는길</a></li>
-                        </ul>
-                    </li>
+        </div>
+    </div>
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li class="menu">
+                <a href="#" onclick="dp_menu()">
+                    <span class="en">PROVENCE</span>
+                </a>
+                <ul id="drop-content" class="sub-menu" >
+                    <li><a href="#">프로방스 소개</a></li>
+                    <li><a href="#">단지안내도</a></li>
+                    <li><a href="#">오시는길</a></li>
                 </ul>
-            </nav>
-        </header> -->
-
-		@@include('./page_dev/header_gnb.html')
-
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <span class="en">VILLAGE</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <span class="en">TOWER</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <span class="en">THEME</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <span class="en">CUSTOMER</span> 
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#">
+                    <span class="en">SITEMAP</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
 		<div class="wrap">
 			<section class="section-1 section">
 				<div class="main-wrap">
@@ -134,7 +102,7 @@
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
-											<img src="../images/main-img.png" alt="images">
+											<img src="../../images/main-img.png" alt="images">
 										</div>
 									</div>
 								</a>
@@ -158,7 +126,7 @@
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
-											<img src="../images/1.png" alt="images">
+											<img src="../../images/1.png" alt="images">
 											<span class="btn-more">more</span>
 										</div>
 										<p class="item-tit">파주 프로방스 365일 불빛 축제</p>
@@ -170,7 +138,7 @@
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
-											<img src="../images/layer-43_2.png" alt="images">
+											<img src="../../images/layer-43_2.png" alt="images">
 											<span class="btn-more">more</span>
 										</div>
 										<p class="item-tit">세계 명화를 파주 프로방스 한 곳에서!</p>
@@ -182,7 +150,7 @@
 								<a href="#">
 									<div class="list-item">
 										<div class="item-img">
-											<img src="../images/layer-43.png" alt="images">
+											<img src="../../images/layer-43.png" alt="images">
 											<span class="btn-more">more</span>
 										</div>
 										<p class="item-tit">이 달 최고의 포토제닉 상!</p>
@@ -210,7 +178,7 @@
 								<div class="review-1">
 									<span class="sns-icon sns-blog"></span>
 									<span class="sns-profile blog">
-										<img src="../images/layer-1005.png">
+										<img src="../../images/layer-1005.png">
 									</span>
 								</div>
 								<p class="sns-name">홍길동 고객님</p>
@@ -226,14 +194,14 @@
 								<div class="review-1">
 									<span class="sns-icon sns-youtube"></span>
 									<span class="sns-profile">
-										<img src="../images/layer-1042.png">
+										<img src="../../images/layer-1042.png">
 									</span>
 								</div>
 								<p class="sns-name">김삼순 고객님</p>
 								<div class="review-content">
 									<p class="content-tit">파주 프로방스를 다녀와서..</p>
 									<p class="content-main">
-										<img src="../images/layer-1054.png">
+										<img src="../../images/layer-1054.png">
 									</p>
 								</div>
 							</div>
@@ -243,14 +211,14 @@
 								<div class="review-1">
 									<span class="sns-icon sns-instar"></span>
 									<span class="sns-profile">
-										<img src="../images/layer-1040.png">
+										<img src="../../images/layer-1040.png">
 									</span>
 								</div>
 								<p class="sns-name">이철수 고객님</p>
 								<div class="review-content">
 									<p class="content-tit">파주 프로방스를 다녀와서..</p>
 									<p class="content-main">
-										<img src="../images/3_2.png">
+										<img src="../../images/3_2.png">
 									</p>
 								</div>
 							</div>
@@ -260,14 +228,14 @@
 								<div class="review-1">
 									<span class="sns-icon sns-face"></span>
 									<span class="sns-profile">
-										<img src="../images/layer-1041.png">
+										<img src="../../images/layer-1041.png">
 									</span>
 								</div>
 								<p class="sns-name">박수용 고객님</p>
 								<div class="review-content">
 									<p class="content-tit"> 잊지 못할 추억 선사해주셔서 감사!</p>
 									<p class="content-main">
-										<img src="../images/1.png">
+										<img src="../../images/1.png">
 									</p>
 								</div>
 							</div>
@@ -308,7 +276,7 @@
 						</div>
 						<div class="location-price">
 							<div class="parking-tite">
-								<img src="../images/icon.png">
+								<img src="../../images/icon.png">
 								<span>파주프로방스마을 주차장 이용안내</span>
 							</div>
 							<table class="parking-price">
@@ -373,9 +341,7 @@
 			</div>
 		</div>
 
-		<!-- @@include('../page_dev/footer.html') -->
-
-		<footer class="wrap footer">
+			    <footer class="wrap footer">
             <div class="wrap-inner">
                 <div class="contact f-common">
                     <p class="info">
