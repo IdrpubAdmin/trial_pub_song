@@ -11464,6 +11464,18 @@ a:visited {
 #naver-tab-content-2{display:none;}
 
 
+/* 구독경제 모바일 css */
+.sub-slide-wrap{padding: .75rem 1.25rem 0;}
+.subscribe-banner{margin-top:23px; text-align: center;}
+.subscribe-banner .inner {padding:0 1.25rem;}
+.subscribe-banner .inner ul li{margin-bottom: 23px;}
+.subscribe-banner .inner img{width: 100%; border-radius: 10px;}
+
+
+
+.special-price .subscribe-tit{margin: 2rem 0 1rem 0; text-align: center;}
+.special-price .subscribe-tit p{font-size: 1.85rem; color: #222222; font-weight: bold;}
+
 
 
 
