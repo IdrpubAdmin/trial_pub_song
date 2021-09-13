@@ -123,3 +123,27 @@
 
 
 .btn-top{position:fixed;bottom:70px;right:20px;width:50px;height:50px;border:0;outline:0;text-indent:-99999px;overflow:hidden;background:#fff url('../images/product/btn_top.png') 50% no-repeat;}
+
+
+/* 구독경제-상품 상세 content */
+.detail-info .btn-subscription a {
+    display: inline-block;
+    width: 86px;
+    height: 30px;
+    line-height: 25px;
+    border: 1px solid #d5d5d5;
+    margin-right: 6px;
+    text-align: center;
+    color: #b6b6b6;
+    background-color: #f2f2f2;
+}
+
+.detail-info .btn-subscription a.active {
+    color: #ffffff;
+    background-color: #445be9;
+    border-color: #2b41cd;
+}
+
+.detail-info .btn-subscription.day a {
+    width: 40px;
+}
