@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded',  () => {
 
         let navItem1d = navItem.querySelector('.nav-menu>li>a');
         let navItem2d = navItem.querySelector('.sub-menu');
-        let navItem3d = navItem.querySelector('.sub-menu>li>a');
 
         // 1depth에 마우스 오버시 메뉴 노출
         navItem.addEventListener('mouseover', function () {
@@ -26,14 +25,6 @@ document.addEventListener('DOMContentLoaded',  () => {
             navItem2d.classList.remove('active');
             navItem1d.classList.remove('on');
         })
-
-        /* 2depth에 마우스 오버시 폰트컬러 변경
-        navItem2d.addEventListener('mouseover', function () {
-            navItem3d.classList.add('active_02');
-        })
-        navItem2d.addEventListener('mouseout', function () {
-            navItem3d.classList.remove('active_02');
-        })*/
     });
 
 })

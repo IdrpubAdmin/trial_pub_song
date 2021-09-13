@@ -435,6 +435,7 @@
             .swiper-wrapper{
                 .swiper-slide{
                     height: 450px;
+                    background-size: cover;
                     .item-img{
                         img{
                             width: 100%;
@@ -459,9 +460,6 @@
     margin: 0 auto;
     .section-wrap{
         position: relative;
-        .swiper-container{
-            
-        }
         .slider-2{
             ul{
                 display: block;

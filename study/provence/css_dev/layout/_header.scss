@@ -115,7 +115,7 @@
         border-top: 1px solid rgb(175, 175, 175);
         height: 60px;
         .nav-menu{
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             .menu{
                 float: left;
@@ -184,6 +184,9 @@
 /*모바일 지정 */
 @media only screen and (max-width: 720px) {
     .wrap{
+        .header{
+            height: 62px;
+        }
         .wrap-inner{
             .lang{
                 display: none;
