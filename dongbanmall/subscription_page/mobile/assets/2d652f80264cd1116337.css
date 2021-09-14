@@ -11470,12 +11470,26 @@ a:visited {
 .subscribe-banner .inner {padding:0 1.25rem;}
 .subscribe-banner .inner ul li{margin-bottom: 23px;}
 .subscribe-banner .inner img{width: 100%; border-radius: 10px;}
-
-
-
-.special-price .subscribe-tit{margin: 2rem 0 1rem 0; text-align: center;}
+.special-price .subscribe-tit{margin: 3rem 0rem; text-align: center;}
 .special-price .subscribe-tit p{font-size: 1.85rem; color: #222222; font-weight: bold;}
+.product-list.gallery-view.lay-st-col.sub-benefit>li:first-child, .product-list.gallery-view.lay-st-col.sub-benefit>li:nth-child(2){margin:0;}
+.product-list.gallery-view.lay-st-col.sub-benefit>li{margin:5rem 0 0;}
+.product-list.gallery-view.lay-st-col.sub-benefit>li:nth-child(2n){margin-left: .8333334rem;}
+.product-area .sub-benefit li{position: relative; background: transparent;}
+.product-area .sub-benefit li .sub-desc{width: 100%; background-color: #fff; position: absolute; left: 0; bottom: -61px; padding: 15px 9px; border-radius: 10px; text-align: center;}
+.product-area .sub-benefit li .desc{color:#e63d3e;}
+.subscribe-btn{margin-top:75px; text-align: center;} 
+.subscribe-btn .btn-more{border: 1px solid #b1b1b1; display: inline-block; background: none; border-radius: 30px; line-height: 48px; padding: 0 28px; font-size: 15px;}
+.subscribe-btn .btn-more span {position: relative; padding-right: 10px;}
+.subscribe-btn .btn-more span:after {position: absolute; display: block; bottom: 8px; right: -10px; content: ""; border: solid #676767; border-width: 0 2px 2px 0; margin: -8px 0 0 0; padding: 3px; transform: rotate(45deg);}
 
 
+/* 정기배송icon */
+.delivery-icon::before{background: url(../images/common/badge-regular-delivery.png) no-repeat 5px 6px; background-size: 100%; content: ""; display: inline-block; position: absolute; z-index: 50;}
+.delivery-icon.large::before{width: 10.3rem; height: 10.3rem; }
+.delivery-icon.medium::before{width: 4.625rem; height: 4.625rem;}
+.delivery-icon.small::before{width: 4.4rem; height: 4.4rem;}
 
+.subscribe ul li .thumb{border-radius: 10px;}
+.subscribe ul li .desc{padding: 1.2rem 1.1rem 2rem .83rem;}
 
