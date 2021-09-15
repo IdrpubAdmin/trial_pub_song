@@ -584,10 +584,6 @@
 .subscribe-btn .btn-more{border: 1px solid #b1b1b1;}
 .subscribe-btn .btn-more span:after {bottom: 6px; border: solid #676767; border-width: 0 2px 2px 0;}
 /* 정기배송icon */
-/*.delivery-icon::before{background: url(../images/common/badge-regular-delivery.png) no-repeat 5px 6px; background-size: 100%; content: ""; display: inline-block; position: absolute; z-index: 50;}*/
-/*.delivery-icon.large::before{ height: 79px; width: 79px;}*/
-/*.delivery-icon.medium::before{ height: 64px; width: 64px;}*/
-/*.delivery-icon.small::before{ height: 45px; width: 45px;}*/
 .delivery-icon::before{content: ""; position: absolute; margin-top: 6px; margin-left: 5px; z-index: 50;}
 .delivery-icon.small::before{background: url(../images/common/badge-small-delivery.png) no-repeat;  height: 45px; width: 45px;}
 .delivery-icon.medium::before{background: url(../images/common/badge-regular-delivery.png) no-repeat;  height: 64px; width: 64px;}

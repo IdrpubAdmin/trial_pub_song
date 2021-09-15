@@ -11483,17 +11483,40 @@ a:visited {
 .subscribe-btn .btn-more span {position: relative; padding-right: 10px;}
 .subscribe-btn .btn-more span:after {position: absolute; display: block; bottom: 8px; right: -10px; content: ""; border: solid #676767; border-width: 0 2px 2px 0; margin: -8px 0 0 0; padding: 3px; transform: rotate(45deg);}
 
-
 /* 정기배송icon */
-/*.delivery-icon::before{background: url(../images/common/badge-regular-delivery.png) no-repeat 5px 6px; background-size: 100%; content: ""; display: inline-block; position: absolute; z-index: 50;}*/
-/*.delivery-icon.large::before{width: 10.3rem; height: 10.3rem; }*/
-/*.delivery-icon.medium::before{width: 4.625rem; height: 4.625rem;}*/
-/*.delivery-icon.small::before{width: 4.4rem; height: 4.4rem;}*/
-.delivery-icon::before{content: ""; position: absolute; margin-top: 2%; margin-left: 2%; background: url(../images/common/badge-regular-delivery.png) no-repeat; background-size: 100%;  z-index: 50;}
-.delivery-icon.large::before{width: 10.3rem; height: 10.3rem; margin-top: 3.5%; margin-left: 3.5%; }
+.delivery-icon::before{content: ""; position: absolute; margin-top: 2%; margin-left: 2%; background: url(../images/common/badge-regular-delivery-mo.png) no-repeat; background-size: 100%;  z-index: 50;}
+.delivery-icon.large::before{width: 7.5rem; height: 7.5rem; margin-top: 2%; margin-left: 2%;}
 .delivery-icon.medium::before{width: 3rem; height: 3rem;}
 .delivery-icon.small::before{width: 2rem; height: 2rem;}
 
 .subscribe ul li .thumb{border-radius: 10px;}
 .subscribe ul li .desc{padding: 1.2rem 1.1rem 2rem .83rem;}
+
+/* 구독경제 모바일 상세페이지 */
+.pdt-top-wrap .pdt-img-gallery .swiper-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;}
+.bot-quick-menu.open {top: calc(100% - 28.29167rem);}
+.bot-quick-menu.open .option-box:before {background-image: url(../images/common/bg_option_box_on.png)}
+.bot-quick-menu.subscribe-order.open {top: calc(100% - 28.29167rem);}
+.bot-quick-menu.subscribe-order .option-box {display: block; width: 100%; height: 24.958333rem; padding-top: .58334rem; background: #fff;}
+.bot-quick-menu.subscribe-order .option-box .inner {width: auto; height: 24.375rem; margin: 0; padding: .66667rem 1.25rem 1.25rem; overflow-y: auto;}
+
+.subscription-option li{padding:.6rem 0;}
+.subscription-option .info-tit{font-size: 1.083334rem;}
+.subscription-option .subscription-select{margin-top: .5rem; font-size: 1rem;}
+.subscription-option .subscription-select:last-child{justify-content: flex-start;}
+.subscription-option .btn-wrap a {display: inline-block; width: 8rem; height: 2.5rem; line-height: 2.5rem; border: 1px solid #d5d5d5; margin-right: 6px; text-align: center; color: #b6b6b6; background-color: #f2f2f2;}
+.subscription-option .btn-wrap a:last-child {margin-right: 0;}
+.subscription-option .btn-wrap a.active {color: #fff; background-color: #445be9; border-color: #2b41cd;}
+.subscription-option .btn-wrap.small a {width: 3.4rem;}
+
+.subscription-option .txt {font-size: 0.8rem; color: #555; padding:0 0 1.25rem 0;}
+.subscription-option .result {padding: 20px 0; text-align: center; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; color: #222; font-size: 1.2rem;}
+.subscription-option .result span {color: #445be9; font-weight: 600;}
+.subscription-option .tooltip-wrap {position: relative}
+.subscription-option .tooltip-icon {position: absolute; top: 0px; left: 0px; width: 19px; height: 19px; margin-top: 0.2rem; margin-left: 5.3rem; overflow: hidden; background: url(../images/common/icon_tooltip.png) no-repeat 0 0;}
+.subscription-option .tooltip-box {display: none; position: absolute; top: 30px; left: 0; width: 250px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 12px; background-color: #ffffff; z-index: 10;}
+.subscription-option .tooltip-box::before {content: ''; width: 10px; height: 10px; transform: rotate(315deg); position: absolute; top: -5px;  left: 50%; margin-left: -5px; background-color: #ffffff; border-top: 1px solid #99999929; border-right: 1px solid #99999929;}
+.subscription-option .tooltip-box .list-01 li{font-size: 12px; color: #555;}
+.subscription-option .tooltip-box .list-01 li:first-child{font-size: 13px; color: #222;}
+
 
