@@ -119,7 +119,10 @@
                                     </div>
                                     <div class="gallery-top">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="https://image.dongbanmall.com/imageResource/fileValue/202102/01/74be3394-6d63-48ba-94f4-11e23abdfe0a.jpg" alt="상품상세 이미지 ID: 1458224"></div>
+                                            <!-- to Dev 정기배송 아이콘 [toggle Class] : delivery-icon, large -->
+                                            <div class="swiper-slide delivery-icon large">
+                                                <img src="https://image.dongbanmall.com/imageResource/fileValue/202102/01/74be3394-6d63-48ba-94f4-11e23abdfe0a.jpg" alt="상품상세 이미지 ID: 1458224">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -176,21 +179,24 @@
                                         </div>
                                     </li>
                                 </ul>
-
-                                <!-- 21.09.13 구독 경제 관련 추가 작업 -->
+                                <!-- to Dev 구독 경제 상품 상세페이지 작업 -->
                                 <ul class="info-list subscription-option">
                                     <li>
-                                        <div><em class="info-tit">구독기간</em>
-                                        <div class="info-cont btn-wrap">
-                                            <a href="#self">2주</a>
-                                            <a href="#self">4주</a>
-                                            <a href="#self" class="active">8주</a>
+                                        <div>
+                                            <em class="info-tit">구독기간</em>
+                                            <div class="info-cont btn-wrap">
+                                                <!-- to Dev [toggle Class] : active -->
+                                                <a href="#self">2주</a>
+                                                <a href="#self">4주</a>
+                                                <a href="#self" class="active">8주</a>
+                                            </div>
                                         </div>
-                                    </div>
                                     </li>
                                     <li>
-                                        <div><em class="info-tit">배송주기</em>
+                                        <div>
+                                            <em class="info-tit">배송주기</em>
                                             <div class="info-cont btn-wrap">
+                                                <!-- to Dev [toggle Class] : active -->
                                                 <a href="#self" class="active">1주에 한번</a>
                                                 <a href="#self">2주에 한번</a>
                                                 <a href="#self">4주에 한번</a>
@@ -198,10 +204,9 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
-                                            <em class="info-tit tooltip-tit">배송예정일</em>
-
-                                            <a class="js-tooltip"></a>
+                                        <div class="tooltip-wrap">
+                                            <em class="info-tit">배송예정일</em>
+                                            <a class="tooltip-icon"></a>
                                             <div class="tooltip-box">
                                                 <ul class="list-01">
                                                     <li>배송을 받고 싶은 요일을 선택해주세요.</li>
@@ -211,6 +216,7 @@
                                             </div>
 
                                             <div class="info-cont btn-wrap small">
+                                                <!-- to Dev [toggle Class] : active -->
                                                 <a href="#self">월</a>
                                                 <a href="#self" class="active">수</a>
                                                 <a href="#self">금</a>
@@ -226,15 +232,9 @@
                                        </div>
                                     </li>
                                 </ul>
+                                <!-- // to Dev 구독 경제 상품 상세페이지 작업 -->
                                 <ul class="info-list"></ul>
                             </div>
-<!--                            <div class="option-result">-->
-<!--                                <ul>-->
-<!--                                    <li><em class="option-name">주문수량</em>-->
-<!--                                        <div class="count"><button type="button" class="btn-minus">수량감소</button><span><label for="customQuantity" class="blind">직접입력</label><input type="text" id="customQuantity" autocomplete="off" placeholder="" class="num"></span><button type="button" class="btn-plus">수량증가</button></div><span class="price">25,900원</span>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
                             <div class="total-price">총 합계금액<span class="price"><strong>25,900</strong>원</span></div>
                             <div class="btn-wrap"><button type="button" class="btn btn-lg like">찜하기</button><button type="button" class="btn btn-lg bg-dark btn-cart" style="margin-left: auto; cursor: pointer;">장바구니</button><button type="button" class="btn btn-lg bg-blue order btn-order">바로주문</button></div>
                         </div>
