@@ -577,7 +577,7 @@
 .subscribe-benefits ul .subscribe:first-child{margin-left:0;}
 .sub-benefit-list li .sub-thumb {position: relative; float: left; width: 240px; height: 240px;}
 .sub-benefit-list li .sub-thumb img{border-radius: 10px; width: 100%; height: 100%;}
-.sub-benefit-list li .subscribe-desc{position: absolute; left: 0; bottom: -80px; width: 240px; height: 95px; background-color: #fff; border-radius: 14px; box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.19); display: flex; align-items: center; flex-direction: column; justify-content: center; line-height: 27px;}
+.sub-benefit-list li .subscribe-desc{position: absolute; left: 0; bottom: -80px; width: 240px; height: 95px; background-color: #fff; border-radius: 14px; box-shadow: 0px 1px 9px 0 rgba(0, 0, 0, 0.06); display: flex; align-items: center; flex-direction: column; justify-content: center; line-height: 27px;}
 .subscribe-desc .sub-tit-txt{font-size: 19px; color: #222; font-weight: 600;}
 .subscribe-desc .price-txt{font-size: 17px; color: #e63d3e; font-weight: bold;}
 .subscribe-btn{margin-top:125px;} 
