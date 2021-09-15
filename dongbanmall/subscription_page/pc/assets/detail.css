@@ -136,7 +136,7 @@
 .subscription-option .result span {color: #445be9; font-weight: 600;}
 
 .subscription-option .tooltip-wrap {position: relative}
-.subscription-option .tooltip-icon {position: absolute; top: 6px; left: 59px; width: 19px; height: 19px; overflow: hidden; background: url(../images/common/icon_tooltip.png) no-repeat 0 0;}
+.subscription-option .tooltip-icon {position: absolute; top: 0px; left: 0px; width: 19px; height: 19px; margin-top: 5px; margin-left: 62px; overflow: hidden; background: url(../images/common/icon_tooltip.png) no-repeat 0 0;}
 .subscription-option .tooltip-icon:hover + .tooltip-box {display: block;}
 .subscription-option .tooltip-box {display: none; position: absolute; top: 35px; left: -56px; width: 250px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 12px; background-color: #ffffff;}
 .subscription-option .tooltip-box::before {content: ''; width: 10px; height: 10px; transform: rotate(315deg); position: absolute; top: -5px;  left: 50%; margin-left: -5px; background-color: #ffffff; border-top: 1px solid #99999929; border-right: 1px solid #99999929;}
