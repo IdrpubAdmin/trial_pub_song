@@ -558,6 +558,7 @@
 .naver-list .naver-search .naver-new-right{float: right;}
 
 .naver-search .naver-select{width: 144px; height: 30px; line-height: 28px; padding: 0 30px 0 8px; border: 1px solid #ccc; color: #222; font-size: 13px;}
+.naver-search .naver-select::-ms-expand{display: none;}
 .naver-new-left div:last-child{width: 125px;}
 .custom-select-menu select{background: url(../images/common/select-arrow.png) no-repeat 95% 50%; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
 
