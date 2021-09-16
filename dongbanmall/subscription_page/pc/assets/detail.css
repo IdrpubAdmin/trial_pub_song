@@ -120,8 +120,7 @@
 .pdt-tab-content .delivery-info .title{margin:-8px 0 18px;color:#222;font-size:14px;font-weight:400;}
 .btn-top{position:fixed;bottom:70px;right:20px;width:50px;height:50px;border:0;outline:0;text-indent:-99999px;overflow:hidden;background:#fff url('../images/product/btn_top.png') 50% no-repeat;}
 
-
-/* 구독경제-상품 상세 content */
+/* 21.09.16 구독경제-상품 상세 - 옵션 버튼 content */
 .subscription-option {margin-top: -24px; margin-bottom: -50px}
 .subscription-option li {margin: 6px 0;}
 .subscription-option li .info-tit {line-height: 27px;}
@@ -130,15 +129,12 @@
 .subscription-option .btn-wrap a:last-child {margin-right: 0;}
 .subscription-option .btn-wrap a.active {color: #ffffff; background-color: #445be9; border-color: #2b41cd;}
 .subscription-option .btn-wrap.small a {width: 40px;}
-
 .subscription-option .txt {font-size: 12px; color: #555; margin: -10px 0 18px 120px;}
 .subscription-option .result {padding: 20px 0 20px 120px; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; color: #222; font-size: 16px; font-weight: 500;}
 .subscription-option .result span {color: #445be9; font-weight: 600;}
-
 /* tooltip */
 .tooltip-wrap {position: relative}
 .tooltip-icon {position: absolute; top: 0px; left: 0px; width: 19px; height: 19px; margin-top: 5px; margin-left: 62px; overflow: hidden; background: url(../images/common/icon_tooltip.png) no-repeat 0 0;}
-
 .tooltip-icon:hover + .tooltip-box {display: block;}
 /* 툴팁버전 (tooltip-box클래스 사용시 상위태그에 tooltip-wrap클래스도 같이 넣어야합니다)*/
 .tooltip-box {display: none; position: absolute; top: 35px; left: -56px; width: 250px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 12px; background-color: #ffffff; z-index: 20;}
@@ -146,8 +142,5 @@
 /* 툴팁박스 위쪽방향일때 */
 .tooltip-box.under {top: -138px; left: -56px;}
 .tooltip-box.under::before {transform: rotate(130deg); top: 128px;  left: 50%; margin-left: -5px;}
-
 .tooltip-box .list-01 li{font-size: 12px; color: #555;}
 .tooltip-box .list-01 li:first-child{font-size: 13px; color: #222;}
-
-

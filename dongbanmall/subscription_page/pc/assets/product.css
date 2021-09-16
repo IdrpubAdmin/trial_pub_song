@@ -564,12 +564,11 @@
 
 #naver-tab-content-2{display:none;}
 
-/* 구독경제 content  */
+/* 21.09.16 구독경제 content  */
 .subscribe-banner{width: 1020px; margin: 0 auto; padding: 34px 0 37px 0;}
 .subscribe-banner .inner ul{display: flex; justify-content: space-between;}
 .subscribe-banner .inner ul li a img{border-radius: 10px;}
 .subscribe-tit{font-size: 30px; color: #222222; font-weight: 600; margin-bottom: 40px; text-align: center;}
-
 .subscribe-benefits{height: 590px;}
 .subscribe-benefits ul{position: relative; display: flex; justify-content: space-between;}
 .subscribe-benefits ul::after{display:block; content: ""; clear: both;}
@@ -588,7 +587,6 @@
 .delivery-icon.small::before{background: url(../images/common/badge-small-delivery.png) no-repeat;  height: 45px; width: 45px;}
 .delivery-icon.medium::before{background: url(../images/common/badge-regular-delivery.png) no-repeat;  height: 64px; width: 64px;}
 .delivery-icon.large::before{background: url(../images/common/badge-large-delivery.png) no-repeat;  height: 79px; width: 79px; margin-top: 12px; margin-left: 11px;}
-
 .subscribe-top{margin-top: 82px;}
 [data-style-scope-product-item] .subscribe-list-txt{height: 24px;}
 

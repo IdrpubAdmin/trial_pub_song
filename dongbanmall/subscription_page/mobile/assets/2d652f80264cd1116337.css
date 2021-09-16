@@ -11464,7 +11464,7 @@ a:visited {
 #naver-tab-content-2{display:none;}
 
 
-/* 구독경제 모바일 css */
+/* 21.09.16 구독경제 content  */
 .sub-slide-wrap{padding: .75rem 1.25rem 0;}
 .subscribe-banner{margin-top:23px; text-align: center;}
 .subscribe-banner .inner {padding:0 1.25rem;}
@@ -11482,24 +11482,20 @@ a:visited {
 .subscribe-btn .btn-more{border: 1px solid #b1b1b1; display: inline-block; background: none; border-radius: 30px; line-height: 48px; padding: 0 28px; font-size: 15px;}
 .subscribe-btn .btn-more span {position: relative; padding-right: 10px;}
 .subscribe-btn .btn-more span:after {position: absolute; display: block; bottom: 8px; right: -10px; content: ""; border: solid #676767; border-width: 0 2px 2px 0; margin: -8px 0 0 0; padding: 3px; transform: rotate(45deg);}
-
 /* 정기배송icon */
 .delivery-icon::before{content: ""; position: absolute; margin-top: 2%; margin-left: 2%; background: url(../images/common/badge-regular-delivery-mo.png) no-repeat; background-size: 100%;  z-index: 50;}
 .delivery-icon.large::before{width: 7.5rem; height: 7.5rem; margin-top: 2%; margin-left: 2%;}
 .delivery-icon.medium::before{width: 3rem; height: 3rem;}
 .delivery-icon.small::before{width: 2rem; height: 2rem;}
-
 .subscribe ul li .thumb{border-radius: 10px;}
 .subscribe ul li .desc{padding: 1.2rem 1.1rem 2rem .83rem;}
-
-/* 구독경제 모바일 상세페이지 */
+/* 상세페이지-옵션버튼 */
 .pdt-top-wrap .pdt-img-gallery .swiper-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;}
 .bot-quick-menu.open {top: calc(100% - 28.29167rem);}
 .bot-quick-menu.open .option-box:before {background-image: url(../images/common/bg_option_box_on.png)}
 .bot-quick-menu.subscribe-order.open {top: calc(100% - 24.3rem);}
 .bot-quick-menu.subscribe-order .option-box {display: block; width: 100%; height: 21rem; padding-top: .58334rem; background: #fff;}
 .bot-quick-menu.subscribe-order .option-box .inner {width: auto; height: 20.3rem; margin: 0; padding: .66667rem 1.25rem 1.25rem; overflow-y: auto;}
-
 .subscription-option li{padding:.6rem 0;}
 .subscription-option .info-tit{font-size: 1.083334rem;}
 .subscription-option .subscription-select{margin-top: .5rem; font-size: 1rem;}
@@ -11508,12 +11504,10 @@ a:visited {
 .subscription-option .btn-wrap a:last-child {margin-right: 0;}
 .subscription-option .btn-wrap a.active {color: #fff; background-color: #445be9; border-color: #2b41cd;}
 .subscription-option .btn-wrap.small a {width: 3.4rem;}
-
 .subscription-option .txt {font-size: 0.8rem; color: #555; padding:0 0 1.25rem 0;}
 .subscription-option .result {padding: 15px 0; text-align: center; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; color: #222; font-size: 1.1rem; font-weight:500;}
 .subscription-option .result span {color: #445be9; font-weight: 600;}
-
-/* tooltip */
+/* 상세페이지-옵션버튼-tooltip */
 .tooltip-wrap {position: relative;}
 .tooltip-wrap .info-tit {display: flex; align-items: center;}
 .tooltip-wrap .info-tit:after {content: " "; width: 19px; height: 19px; margin-left: 5px; background: url(../images/common/mo-icon_tooltip.png) no-repeat 0 0;}
@@ -11526,6 +11520,11 @@ a:visited {
 .tooltip-box.under::before {transform: rotate(135deg); top: 98%;}
 .tooltip-box .list-01 li{font-size: 12px; color: #555; padding: 0;}
 .tooltip-box .list-01 li:first-child{font-size: 13px; color: #222;}
+
+/* 오픈 관련 확인-추후 삭제 필요*/
+.bot-quick-menu.open {
+    top: calc(100% - 20.29167rem);
+}
 
 
 
