@@ -261,7 +261,11 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .wrap .nav .nav-menu .menu > a { display: block; width: 100%; height: 59px; line-height: 59px; }
 
-.wrap .nav .nav-menu .menu > aspan.ko { display: none; }
+.wrap .nav .nav-menu .menu > a .ko { display: none; margin-left: 60px; font-weight: 500; }
+
+.wrap .nav .nav-menu .menu > a:hover .en { display: none; }
+
+.wrap .nav .nav-menu .menu > a:hover .ko { display: block; }
 
 .wrap .nav .nav-menu .menu .on { border-top: 3px solid #81984e; border-bottom: 3px solid #81984e; }
 
