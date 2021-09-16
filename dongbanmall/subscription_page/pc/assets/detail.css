@@ -135,18 +135,19 @@
 .subscription-option .result {padding: 20px 0 20px 120px; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; color: #222; font-size: 16px; font-weight: 500;}
 .subscription-option .result span {color: #445be9; font-weight: 600;}
 
-.subscription-option .tooltip-wrap {position: relative}
-.subscription-option .tooltip-icon {position: absolute; top: 0px; left: 0px; width: 19px; height: 19px; margin-top: 5px; margin-left: 62px; overflow: hidden; background: url(../images/common/icon_tooltip.png) no-repeat 0 0;}
+/* tooltip */
+.tooltip-wrap {position: relative}
+.tooltip-icon {position: absolute; top: 0px; left: 0px; width: 19px; height: 19px; margin-top: 5px; margin-left: 62px; overflow: hidden; background: url(../images/common/icon_tooltip.png) no-repeat 0 0;}
 
 .tooltip-icon:hover + .tooltip-box {display: block;}
 /* 툴팁버전 (tooltip-box클래스 사용시 상위태그에 tooltip-wrap클래스도 같이 넣어야합니다)*/
-.tooltip-box {display: none; position: absolute; top: 35px; left: -56px; width: 250px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 12px; background-color: #ffffff;}
+.tooltip-box {display: none; position: absolute; top: 35px; left: -56px; width: 250px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); padding: 12px; background-color: #ffffff; z-index: 20;}
 .tooltip-box::before {content: ''; width: 10px; height: 10px; transform: rotate(315deg); position: absolute; top: -5px;  left: 50%; margin-left: -5px; background-color: #ffffff; border-top: 1px solid #99999929; border-right: 1px solid #99999929;}
 /* 툴팁박스 위쪽방향일때 */
-.tooltip-box.under {display: none; position: absolute; top: -138px; left: -56px;}
+.tooltip-box.under {top: -138px; left: -56px;}
 .tooltip-box.under::before {transform: rotate(130deg); top: 128px;  left: 50%; margin-left: -5px;}
 
-.subscription-option .tooltip-box .list-01 li{font-size: 12px; color: #555;}
-.subscription-option .tooltip-box .list-01 li:first-child{font-size: 13px; color: #222;}
+.tooltip-box .list-01 li{font-size: 12px; color: #555;}
+.tooltip-box .list-01 li:first-child{font-size: 13px; color: #222;}
 
 
