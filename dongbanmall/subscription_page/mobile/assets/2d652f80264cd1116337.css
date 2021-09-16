@@ -11496,8 +11496,8 @@ a:visited {
 .pdt-top-wrap .pdt-img-gallery .swiper-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;}
 .bot-quick-menu.open {top: calc(100% - 28.29167rem);}
 .bot-quick-menu.open .option-box:before {background-image: url(../images/common/bg_option_box_on.png)}
-.bot-quick-menu.subscribe-order.open {top: calc(100% - 37.3rem);}
-.bot-quick-menu.subscribe-order .option-box {display: block; width: 100%; height: 34rem; padding-top: .58334rem; background: #fff;}
+.bot-quick-menu.subscribe-order.open {top: calc(100% - 24.3rem);}
+.bot-quick-menu.subscribe-order .option-box {display: block; width: 100%; height: 21rem; padding-top: .58334rem; background: #fff;}
 .bot-quick-menu.subscribe-order .option-box .inner {width: auto; height: 33.38rem; margin: 0; padding: .66667rem 1.25rem 1.25rem; overflow-y: auto;}
 
 .subscription-option li{padding:.6rem 0;}
