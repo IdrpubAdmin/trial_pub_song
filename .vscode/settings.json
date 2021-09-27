@@ -1,7 +1,7 @@
 {
     "git.path": "C:\\프로그램\\g\\Git\\bin",
     "git.autofetch": true,
-    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.includeItems": [],
     "liveSassCompile.settings.formats": [
     
