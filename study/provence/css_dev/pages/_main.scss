@@ -58,6 +58,7 @@
             .swiper-wrapper{
                 .swiper-slide{
                     background: url('../images/dsc-2817-copy-3.png') no-repeat;
+                    background-size: 100%;
                     height: 700px;
                     display: flex;
                     justify-content: center;
@@ -78,7 +79,7 @@
                     content: "";
                     display: inline-block;
                     height: 100%;
-                    width: 100%;    
+                    width: 100%;
                 }
             }
             .main-swiper-prev{
@@ -95,7 +96,7 @@
                     content: "";
                     display: inline-block;
                     height: 100%;
-                    width: 100%;    
+                    width: 100%;
                 }
             }
         }
@@ -117,7 +118,7 @@
                 li{
                     width: 382px !important;
                     margin-right: 18px;
-                   
+
                     .list-item{
                         .item-img{
                             width: 380px;
@@ -133,7 +134,7 @@
                             }
                             img{
                                 width: 100%;
-                                height: 100%; 
+                                height: 100%;
                             }
                             .btn-more{
                                 font-size: $font-16r;
@@ -187,6 +188,7 @@
 /*sns */
 .section-3{
     background: url('../images/3.png') no-repeat 0 0;
+    background-size: 100%;
     .review-more{
         display: inline-block;
         font-size: $font-16r;
@@ -254,7 +256,7 @@
                 }
             }
             .review-content{
-                
+
                 .content-tit{
                     font-size: $font-16r;
                     color: #2a2f2f;
@@ -475,7 +477,7 @@
                             padding:0 10px;
                             img{
                                 width: 100%;
-                                height: 100%; 
+                                height: 100%;
                             }
                         }
                         .item-tit{
@@ -563,7 +565,7 @@
                 }
             }
         }
-    }   
+    }
 }
 
 .top{

@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .section-1 .main-wrap .slider-2 { position: relative; margin: 0 auto; padding: 0; overflow: hidden; }
 
-.section-1 .main-wrap .slider-2 .swiper-wrapper .swiper-slide { background: url("../images/dsc-2817-copy-3.png") no-repeat; height: 700px; display: flex; justify-content: center; align-items: center; }
+.section-1 .main-wrap .slider-2 .swiper-wrapper .swiper-slide { background: url("../images/dsc-2817-copy-3.png") no-repeat; background-size: 100%; height: 700px; display: flex; justify-content: center; align-items: center; }
 
 .section-1 .main-wrap .slider-2 .main-swiper-next { position: absolute; right: 52px; top: 50%; transform: translateY(-50%); width: 50px; height: 57px; z-index: 10; cursor: pointer; }
 
@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 .section-2 .section-wrap .swiper-button-prev::after { font-size: 1.9rem; }
 
 /*sns */
-.section-3 { background: url("../images/3.png") no-repeat 0 0; }
+.section-3 { background: url("../images/3.png") no-repeat 0 0; background-size: 100%; }
 
 .section-3 .review-more { display: inline-block; font-size: 1.6rem; background-color: #73905b; padding: 10px; color: #fff; margin-bottom: 20px; }
 
@@ -640,3 +640,4 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 /* main e =================================================== */
 /* ---------------------------------------------------------- */
+/*# sourceMappingURL=display.css.map */
