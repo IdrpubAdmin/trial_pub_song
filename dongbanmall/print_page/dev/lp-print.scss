@@ -1,0 +1,245 @@
+/* reset s ================================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html, body {
+  height: auto;
+}
+body * {
+  box-sizing: border-box;
+}
+
+/* 테두리 초기화 */
+img, fieldset {
+  border: 0 none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border:0;
+}
+th, td {
+  font-weight: 400;
+  padding:0;
+}
+
+/* reset e ================================================= */
+
+/* common s ================================================= */
+.color-n {
+  color: rgba(255, 0, 0, 0);
+}
+.s-font {
+  font-size: 14px;
+}
+
+/* paddig 공통 */
+.sub-tit,
+.info {
+  padding-left: 7px;
+}
+
+
+
+/* common e ================================================= */
+
+
+/* font s ================================================== */
+@font-face {
+  font-family:MalgunGothic;
+  src:url(../static/font/MalgunGothic.eot);
+  font-weight: 400;
+}
+/* font e ================================================== */
+
+/* print s ================================================== */
+.lp-print-wrap {
+  width: 800px;
+  min-height: 1132px;
+  margin: 0 auto;
+  padding: 70px 40px 58px;
+  border: 1px solid #1d1d1d;
+  font-family: '맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif;
+  font-size: 18px;
+  color: #222;
+
+  .p-header {
+    //background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 49px;
+    .logo-img {
+      position: absolute;
+      top: 0;
+      left: 66px;
+      img {
+        width: 76px;
+        height: 49px;
+      }
+      .title {
+        font-size: 30px;
+        font-width: 600;
+      }
+    }
+  }
+  .p-container {
+    padding-top: 48px;
+    .sub-tit {
+      dl {
+        dt, dd {
+          padding-bottom: 17px;
+          &:last-child {
+            padding-bottom: 15px;
+          }
+        }
+        dt {
+          float: left;
+          min-width: 84px;
+          padding-right: 30px;
+          clear: both;
+        }
+      }
+    }
+
+    .content {
+      border-top: 1px solid #222;
+      clear: both;
+      padding-top: 15px;
+      padding-bottom: 24px;
+
+      .info {
+        li {
+          padding-top: 24px;
+          line-height: 22px;
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+
+      .table-wrap {
+        padding-top: 45px;
+        padding-bottom: 34px;
+        .txt {
+          text-align: center;
+        }
+        .txt2 {
+          padding: 3px 0 9px;
+          text-align: right;
+          font-size: 12px;
+        }
+        .table-type1 {
+          border: 1px solid #222;
+          border-left: none;
+          border-right: none;
+          th, td {
+            padding: 16px 0;
+            text-align: center;
+            vertical-align: middle;
+            border-left: 1px solid #222;
+            &:first-child {
+              border-left: none;
+            }
+          }
+          thead {
+            tr{
+              border-bottom: 1px solid #222;
+              th {
+                padding: 10px 0;
+                background-color: #f2f2f2;
+              }
+              &:last-child {
+                max-height: 48px;
+                th {
+                  border-left: 1px solid #222;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .stamp-item {
+      position: relative;
+      margin-bottom: 23px;
+      text-align: center;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .txt {
+        font-size: 26px;
+        font-weight: 600;
+        z-index: 200;
+      }
+      .stamp-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 168px;
+        z-index: 0;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+  .p-footer {
+    border-top: 5px solid #e0e0e0;
+  }
+}
+
+
+
+
+@page { size: 210mm 297mm;
+  /*A4*/
+  margin: 0mm; }
+@media print {
+
+  html, body { margin: 0; padding: 0; page-break-after: avoid; page-break-before: avoid; width: 210mm; height: 297mm; overflow: hidden; }
+  body * { visibility: hidden; margin: 0; padding: 0; }
+  /*.not-print {visibility: hidden;}*/
+  .lp-print-wrap * {
+    visibility: visible;
+
+    table th {background-color:#f2f2f2; -webkit-print-color-adjust:exact;}
+
+  }
+
+
+
+}
+/* print e ================================================== */
