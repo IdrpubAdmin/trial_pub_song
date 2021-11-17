@@ -7,10 +7,9 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function(req, res){
-  console.log("안녕하세요")
-  res.render("test_1", {});
+    res.render("test_1", {});
 })
 
 app.listen(port, function(){
-  console.log("실행중..")
+    console.log("실행중..")
 })
