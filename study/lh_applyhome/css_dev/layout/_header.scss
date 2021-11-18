@@ -15,9 +15,11 @@
     .header{
         width: 280px;
         text-align: center;
-        font-size: 2rem;
-        background-color: #fff;
+        border-right: 1px solid #fff;
+        font-size: 1.8rem;
+        background-color: #ededed;
         .logo{
+            background-color: #fff;
             a{
                 vertical-align: baseline;
                 img{
@@ -33,6 +35,72 @@
                 color: #fff;
                 vertical-align: baseline;
             }
+        }
+        .gnb_wrap{
+            background-color: #fff;
+            &>li{
+                border-bottom: 1px solid #ddd;
+                &>a{
+                    display: block;
+                    padding: 8px 0;
+                }
+                &:nth-child(2)>ul{
+                    padding-top: 86px;
+                }
+                &:nth-child(3)>ul{
+                    padding-top: 130px;
+                }
+                &:nth-child(4)>ul{
+                    padding-top: 175px;
+                }
+                &:nth-child(5)>ul{
+                    padding-top: 216px;
+                }
+                &:nth-child(6)>ul{
+                    padding-top: 261px;
+                }
+                &:nth-child(7)>ul{
+                    padding-top: 310px;
+                }
+            }
+            .gnb_lsit{
+                height: 699%;
+                max-height: 700px;
+                padding: 42px 18px 0 18px;
+                position: absolute;
+                /* left: 290px; */
+                top: 40px;
+                z-index: -1;
+                font-size: 1.4rem;
+                text-align: left;
+                &>li{
+                    &>a{
+                        display: block;
+                        padding: 8px 0;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .foot_wrap{
+            margin-top: 1rem;
+            padding-left: 2rem;
+            text-align: left;
+            font-size: 1.5rem;
+            >ul{
+                >li{
+                    padding: 3px;
+                }
+            }
+        }
+        .gnb_bg{
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top:0;
+            // left: 280px;
+            z-index: -1;
+            background-color: #0e4eb2;
         }
     }
 

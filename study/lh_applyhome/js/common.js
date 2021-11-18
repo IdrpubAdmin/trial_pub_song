@@ -1,2 +1,9 @@
 
-console.log('ddd');
+
+window.addEventListener('DOMContentLoaded', function()
+{
+
+});
+
+
+
