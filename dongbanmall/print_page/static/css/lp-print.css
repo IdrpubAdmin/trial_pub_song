@@ -95,49 +95,37 @@ th, td {
 }
 /* font e ================================================== */
 /* print s ================================================== */
-.print-btn-item {
-  margin: 0 auto;
-  width: 800px;
-  padding: 15px 32px;
-  height: 80px;
-  background: #efefef;
-}
-.print-btn-item .btn-print {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #c0c0c0;
-  cursor: pointer;
-}
-
 .lp-print-wrap {
   width: 800px;
   margin: 0 auto;
-  padding: 55px 40px 40px;
   font-family: '맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif;
   font-size: 18px;
   color: #222;
 }
-.lp-print-wrap .p-header {
+.lp-print-wrap .p-container {
+  padding: 55px 40px 40px;
+}
+.lp-print-wrap .p-container .p-header {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 49px;
 }
-.lp-print-wrap .p-header .logo-img {
+.lp-print-wrap .p-container .p-header .logo-img {
   position: absolute;
   top: 0;
   left: 66px;
 }
-.lp-print-wrap .p-header .logo-img img {
+.lp-print-wrap .p-container .p-header .logo-img img {
   width: 76px;
   height: 49px;
 }
-.lp-print-wrap .p-header .logo-img .title {
+.lp-print-wrap .p-container .p-header .logo-img .title {
   font-size: 30px;
   font-width: 600;
 }
-.lp-print-wrap .p-container {
+.lp-print-wrap .p-container .sub-tit {
   padding-top: 48px;
 }
 .lp-print-wrap .p-container .sub-tit dl dt, .lp-print-wrap .p-container .sub-tit dl dd {
@@ -185,7 +173,6 @@ th, td {
 }
 .lp-print-wrap .p-container .content .table-wrap .table-type1 th, .lp-print-wrap .p-container .content .table-wrap .table-type1 td {
   text-align: center;
-  vertical-align: middle;
   border-left: 1px solid #222;
 }
 .lp-print-wrap .p-container .content .table-wrap .table-type1 th:first-child, .lp-print-wrap .p-container .content .table-wrap .table-type1 td:first-child {
@@ -251,9 +238,6 @@ th, td {
   text-align: left;
   line-height: 13px;
 }
-.lp-print-wrap .p-footer .table-wrap .table-type2 th, .lp-print-wrap .p-footer .table-wrap .table-type2 td {
-  vertical-align: middle;
-}
 .lp-print-wrap .p-footer .table-wrap .table-type2 th {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -281,6 +265,35 @@ th, td {
 }
 .lp-print-wrap .p-footer .table-wrap.border-on table:first-child tr:first-child th, .lp-print-wrap .p-footer .table-wrap.border-on table:first-child tr:first-child td {
   border: 1px dashed #ff4040;
+}
+.lp-print-wrap table th, .lp-print-wrap table td {
+  vertical-align: middle;
+}
+.lp-print-wrap .print-btn-item {
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px 32px;
+  height: 80px;
+  background: #efefef;
+}
+.lp-print-wrap .print-btn-item .btn-print {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c0c0c0;
+  cursor: pointer;
+}
+.lp-print-wrap.v2 {
+  width: 1132px;
+}
+.lp-print-wrap.v2 .p-container {
+  padding: 94px 80px  38px;
+}
+.lp-print-wrap.v2 .p-container .table-wrap .table-type3 {
+  width: 100%;
+  border: 2px solid #222;
+}
+.lp-print-wrap.v2 .p-container .table-wrap .table-type3 th, .lp-print-wrap.v2 .p-container .table-wrap .table-type3 td {
+  border: 1px solid #222;
 }
 
 @page {

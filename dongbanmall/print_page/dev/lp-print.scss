@@ -93,51 +93,37 @@ th, td {
 
 /* print s ================================================== */
 
-.print-btn-item {
-  margin: 0 auto;
-  width: 800px;
-  padding: 15px 32px;
-  height: 80px;
-  background:  #efefef;
-  .btn-print{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #c0c0c0;
-    cursor: pointer;
-  }
-}
-
 .lp-print-wrap {
   width: 800px;
   margin: 0 auto;
-  padding: 55px 40px 40px;
   font-family: '맑은 고딕','Malgun Gothic',나눔고딕,돋움,Dotum,굴림,Gulim,'Apple SD Gothic Neo',sans-serif;
   font-size: 18px;
   color: #222;
 
-  .p-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 49px;
-    .logo-img {
-      position: absolute;
-      top: 0;
-      left: 66px;
-      img {
-        width: 76px;
-        height: 49px;
-      }
-      .title {
-        font-size: 30px;
-        font-width: 600;
+  .p-container {
+    padding: 55px 40px 40px;
+    .p-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 49px;
+      .logo-img {
+        position: absolute;
+        top: 0;
+        left: 66px;
+        img {
+          width: 76px;
+          height: 49px;
+        }
+        .title {
+          font-size: 30px;
+          font-width: 600;
+        }
       }
     }
-  }
-  .p-container {
-    padding-top: 48px;
     .sub-tit {
+      padding-top: 48px;
       dl {
         dt, dd {
           padding-bottom: 17px;
@@ -188,7 +174,6 @@ th, td {
           border-right: none;
           th, td {
             text-align: center;
-            vertical-align: middle;
             border-left: 1px solid #222;
             &:first-child {
               border-left: none;
@@ -261,9 +246,6 @@ th, td {
         font-size: 13px;
         text-align: left;
         line-height: 13px;
-        th, td {
-          vertical-align: middle;
-        }
         th {
           padding-top: 8px;
           padding-bottom: 8px;
@@ -308,6 +290,44 @@ th, td {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+   table {
+     th, td {
+       vertical-align: middle;
+     }
+   }
+
+  .print-btn-item {
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px 32px;
+    height: 80px;
+    background:  #efefef;
+    .btn-print{
+      width: 100%;
+      height: 100%;
+      border: 1px solid #c0c0c0;
+      cursor: pointer;
+    }
+  }
+
+  &.v2 {
+    width: 1132px;
+    .p-container {
+      padding: 94px 80px  38px;
+      .table-wrap {
+
+        .table-type3 {
+          width: 100%;
+          border: 2px solid #222;
+
+          th, td {
+            border: 1px solid #222;
           }
         }
       }
