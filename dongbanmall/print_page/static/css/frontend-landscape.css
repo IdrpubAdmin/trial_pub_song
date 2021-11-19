@@ -1,0 +1,4 @@
+@page { size: 297mm 210mm; margin: 0mm; }
+@media print { html, body { width: 297mm; height: auto; } }
+
+/*# sourceMappingURL=frontend-landscape.css.map */

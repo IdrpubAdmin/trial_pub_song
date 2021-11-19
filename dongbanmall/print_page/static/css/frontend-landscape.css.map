@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,KAGC,GAFE,IAAI,EAAE,WAAW,EACjB,MAAM,EAAE,GAAG;AAEd,YAAa,GACX,UAAW,GACT,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,IAAI",
+"sources": ["../../dev/css_dev/pages/_lp-print-landscape.scss"],
+"names": [],
+"file": "frontend-landscape.css"
+}

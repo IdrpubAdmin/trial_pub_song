@@ -5,7 +5,9 @@
     <title>SBDC-동반성장몰 도입기관 이력카드</title>
     <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="IE=edge">
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./static/css/lp-print.css" />
+    <link rel="stylesheet" type="text/css" href="./static/css/frontend.css" />
+    <!-- 가로 프린트 설정 css -->
+    <link rel="stylesheet" media="print" href="./static/css/frontend-landscape.css" />
 </head>
 <body>
 
@@ -17,27 +19,25 @@
 
     <!-- container -->
     <div class="p-container">
+        <h2 class="table-title">동반성장몰 도입기관 이력카드 <span>(NO.공공/민간-00)</span></h2>
 
-        <!--  heading -->
-        <div class="p-header">
-            <h2 class="title">□ 동반성장몰 도입기관 이력카드 (NO.공공/민간-00)</h2>
-        </div>
-        <!--  heading -->
-
+        <!-- to Dev : table > td text 컬러 활성화시 클래스 table-wrap에 txt-on 클래스 추가 -->
+        <!-- to Dev [toggle Class] : txt-on -->
         <div class="table-wrap">
+
             <table class="table-type3">
                 <colgroup>
                     <col width="97px">
-                    <col width="83px">
+                    <col width="108px">
 
-                    <col width="97px">
-                    <col width="auto">
+                    <col width="112px">
+                    <col width="146px">
 
-                    <col width="100px">
-                    <col width="95px">
-                    <col width="95px">
-                    <col width="104px">
-                    <col width="104px">
+                    <col width="108px">
+                    <col width="92px">
+                    <col width="90px">
+                    <col width="101px">
+                    <col width="110px">
                 </colgroup>
                 <thead>
                     <tr>
@@ -57,7 +57,7 @@
                     <tr>
                         <th>기관명</th>
                         <td></td>
-                        <th>대 표</th>
+                        <th class="txt-l pl-20">대&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;표</th>
                         <td></td>
                         <td></td>
                         <td>(책임자)</td>
@@ -93,16 +93,16 @@
             <table class="table-type3">
                 <colgroup>
                     <col width="97px">
-                    <col width="83px">
+                    <col width="108px">
 
-                    <col width="97px">
-                    <col width="auto">
+                    <col width="112px">
+                    <col width="146px">
 
-                    <col width="100px">
-                    <col width="95px">
-                    <col width="95px">
-                    <col width="104px">
-                    <col width="104px">
+                    <col width="108px">
+                    <col width="92px">
+                    <col width="90px">
+                    <col width="101px">
+                    <col width="110px">
                 </colgroup>
                 <thead>
                     <tr>
@@ -120,34 +120,155 @@
                         <th rowspan="3">창립기념일</th>
                         <td rowspan="3"></td>
                         <th rowspan="3">직원선물</th>
-                        <td>창립기념일</td>
-                        <td>o,x</td>
+                        <th>창립기념일</th>
+                        <td>o, x</td>
                     </tr>
 
                     <tr>
                         <th>'19년</th>
                         <td></td>
-                        <td>명절</td>
-                        <td>o,x</td>
+                        <th>명절</th>
+                        <td>o, x</td>
                     </tr>
 
                     <tr>
                         <th>'20년</th>
                         <td></td>
-                        <td>근로자의날</td>
-                        <td>o,x</td>
+                        <th>근로자의날</th>
+                        <td>o, x</td>
                     </tr>
 
                     <tr>
                         <th>'21년</th>
                         <td></td>
-                        <td rowspan="2">동반성장몰<br>링크 방법</td>
+                        <th rowspan="2">동반성장몰<br>링크 방법</th>
                         <td rowspan="2" colspan="4">(그룹웨어)</td>
                     </tr>
 
                     <tr>
                         <th>'22년</th>
+                        <td></td>
                     </tr>
+                </tbody>
+            </table>
+
+            <table class="table-type3">
+
+                <colgroup>
+                    <col width="97px">
+                    <col width="82px">
+                    <col width="82px">
+                    <col width="82px">
+                    <col width="82px">
+                    <col width="82px">
+                    <col width="82px">
+
+                    <col width="124px">
+                    <col width="124px">
+                    <col width="124px">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="10">동반성장몰 연계 현황</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>특이사항</th>
+                        <td colspan="5" class="txt-l">
+                            (친분, 우호적, 부정적 등 특이사항)<br>
+                            유통센터 친분 관계. 담당자 유통센터 관계
+                        </td>
+                        <th>협약일자</th>
+                        <td></td>
+                        <th class="bg-n">몰오픈일자</th>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="2">구분</th>
+                        <th colspan="6">매 출 현 황</th>
+                        <th colspan="3">회원 수</th>
+                    </tr>
+
+                    <tr>
+                        <th>개인<br>구매(a)</th>
+                        <th>대량<br>구매(b)</th>
+                        <th>포인트<br>배정(c)</th>
+                        <th>포인트<br>실적(d)</th>
+                        <th>배정<br>합계<br>(a+b+c)</th>
+                        <th>실적<br>합계<br>(a+b+d)</th>
+                        <th>등록 회원 수</th>
+                        <th>가입자 수</th>
+                        <th>가입률<br>(%)</th>
+                    </tr>
+
+                    <tr>
+                        <th>'18년</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>'19년</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>'20년</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>'21년</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>합 계</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
