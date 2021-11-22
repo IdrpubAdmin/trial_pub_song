@@ -63,16 +63,17 @@
                     padding-top: 310px;
                 }
             }
-            .gnb_lsit{
+            .gnb_list{
                 height: 699%;
                 max-height: 700px;
                 padding: 42px 18px 0 18px;
                 position: absolute;
-                /* left: 290px; */
+                left: 0px;
                 top: 40px;
                 z-index: -1;
                 font-size: 1.4rem;
                 text-align: left;
+                transition: 0.3s;
                 &>li{
                     &>a{
                         display: block;
@@ -80,6 +81,9 @@
                         color: #fff;
                     }
                 }
+                /* &.on{
+                    left: 280px;
+                } */
             }
         }
         .foot_wrap{
@@ -98,9 +102,13 @@
             height: 100%;
             position: fixed;
             top:0;
-            // left: 280px;
-            z-index: -1;
+            left: -280px;
+            z-index: 0;
             background-color: #0e4eb2;
+            transition: 0.3s;
+            &.on_bg{
+                left: 280px;
+            }
         }
     }
 
