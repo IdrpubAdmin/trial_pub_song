@@ -70,10 +70,11 @@
                 position: absolute;
                 left: 0px;
                 top: 40px;
-                z-index: -1;
+                z-index: -5;
+                opacity: 0;
                 font-size: 1.4rem;
                 text-align: left;
-                transition: 0.3s;
+                transition: 0.8s;
                 &>li{
                     &>a{
                         display: block;
@@ -81,9 +82,18 @@
                         color: #fff;
                     }
                 }
-                /* &.on{
+                &.on{
                     left: 280px;
-                } */
+                }
+            }
+            .clcl{
+                &.on{
+                    .gnb_list{
+                        left: 280px;
+                        z-index: 6;
+                        opacity: 1;
+                    }
+                }
             }
         }
         .foot_wrap{
@@ -98,17 +108,15 @@
             }
         }
         .gnb_bg{
-            width: 250px;
+            width: 280px;
             height: 100%;
             position: fixed;
             top:0;
-            left: -280px;
-            z-index: 0;
+            left: 0px;
+            z-index: -1;
+            display: none;
             background-color: #0e4eb2;
-            transition: 0.3s;
-            &.on_bg{
-                left: 280px;
-            }
+            transition: .8s;
         }
     }
 
