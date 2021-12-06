@@ -122,6 +122,16 @@
                 width: 16.666%;
                 text-align: center;
                 position: relative;
+                &:hover {
+                    &>a{
+                        .en{
+                            display: none;
+                        }
+                        .ko {
+                            display: block;
+                        }
+                    }
+                }
                 &>a{
                     display: block;
                     width: 100%;
@@ -133,15 +143,6 @@
                         margin-left: 60px;
                         font-weight: 500;
                     }
-                    &:hover {
-                        .en{
-                            display: none;
-                        }
-                        .ko {
-                            display: block;
-                        }
-                    }
-
                 }
                 .on{
                     border-top: 3px solid #81984e;
@@ -155,9 +156,9 @@
                 }
                 .sub-menu{
                     display: none;
-                    position:absolute; 
-                    left:0px; 
-                    top:59px; 
+                    position:absolute;
+                    left:0px;
+                    top:59px;
                     width:198px;
                     background-color:#0b0306;
                     z-index: 20;

@@ -20,6 +20,18 @@ window.addEventListener('DOMContentLoaded', function()
         });
     }
 
+   /*  const list = document.querySelector('.gnb_list');
+
+    menu.addEventListener('mouseenter', function(){
+        list.style.left = '280px';
+        bg.style.zIndex = '5';
+    });
+
+    menu.addEventListener('mouseleave', function(){
+        list.style.left = '0px';
+        bg.style.zIndex = '-6';
+    }); */
+
     var nav = document.querySelector('.gnb_wrap');
 
     nav.addEventListener('mouseenter', function(){

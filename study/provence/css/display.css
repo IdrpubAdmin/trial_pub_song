@@ -259,13 +259,13 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .wrap .nav .nav-menu .menu { float: left; width: 16.666%; text-align: center; position: relative; }
 
+.wrap .nav .nav-menu .menu:hover > a .en { display: none; }
+
+.wrap .nav .nav-menu .menu:hover > a .ko { display: block; }
+
 .wrap .nav .nav-menu .menu > a { display: block; width: 100%; height: 59px; line-height: 59px; }
 
 .wrap .nav .nav-menu .menu > a .ko { display: none; margin-left: 60px; font-weight: 500; }
-
-.wrap .nav .nav-menu .menu > a:hover .en { display: none; }
-
-.wrap .nav .nav-menu .menu > a:hover .ko { display: block; }
 
 .wrap .nav .nav-menu .menu .on { border-top: 3px solid #81984e; border-bottom: 3px solid #81984e; }
 
@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .section-1 .main-wrap .slider-2 { position: relative; margin: 0 auto; padding: 0; overflow: hidden; }
 
-.section-1 .main-wrap .slider-2 .swiper-wrapper .swiper-slide { background: url("../images/dsc-2817-copy-3.png") no-repeat; background-size: 100%; height: 700px; display: flex; justify-content: center; align-items: center; }
+.section-1 .main-wrap .slider-2 .swiper-wrapper .swiper-slide { background: url("../images/dsc-2817-copy-3.png") no-repeat; height: 700px; display: flex; justify-content: center; align-items: center; }
 
 .section-1 .main-wrap .slider-2 .main-swiper-next { position: absolute; right: 52px; top: 50%; transform: translateY(-50%); width: 50px; height: 57px; z-index: 10; cursor: pointer; }
 
@@ -598,7 +598,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .top { position: relative; }
 
-.top .top-btn { position: fixed; right: 1%; bottom: 22%; display: inline-block; width: 50px; height: 50px; background: #2a302f url("../images/small_arrow_up.gif") no-repeat center 20%; text-align: center; font-size: 1.4rem; cursor: pointer; z-index: 20; }
+.top .top-btn { position: fixed; right: 1%; bottom: 20%; display: inline-block; width: 50px; height: 50px; background: #2a302f url("../images/small_arrow_up.gif") no-repeat center 20%; text-align: center; font-size: 1.4rem; cursor: pointer; z-index: 20; }
 
 .top .top-btn span { color: #fff; padding-top: 22px; display: inline-block; }
 

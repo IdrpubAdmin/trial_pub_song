@@ -58,7 +58,6 @@
             .swiper-wrapper{
                 .swiper-slide{
                     background: url('../images/dsc-2817-copy-3.png') no-repeat;
-                    background-size: 100%;
                     height: 700px;
                     display: flex;
                     justify-content: center;
@@ -393,7 +392,7 @@
     .top-btn{
         position: fixed;
         right: 1%;
-        bottom: 22%;
+        bottom: 20%;
         display: inline-block;
         width: 50px;
         height: 50px;
