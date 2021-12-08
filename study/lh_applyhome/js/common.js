@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function()
 {
     const menu = document.querySelectorAll('.menu');
     const bg = document.querySelector('.gnb_bg');
+    const dim = document.querySelector('.dim');
 
     for (var i = 0; i < menu.length; i++) {
         menu[i].addEventListener('mouseenter', function(){
@@ -23,14 +24,12 @@ window.addEventListener('DOMContentLoaded', function()
     var nav = document.querySelector('.gnb_wrap');
 
     nav.addEventListener('mouseenter', function(){
-        bg.style.left = '280px';
-        bg.style.zIndex = '1';
-        bg.style.display = 'block';
+        bg.classList.add('active');
+        dim.classList.add('_on');
     });
     nav.addEventListener('mouseleave', function(){
-        bg.style.left = '0px';
-        bg.style.zIndex = '-1';
-        bg.style.display = 'none';
+        bg.classList.remove('active');
+        dim.classList.remove('_on');
     });
 
 });

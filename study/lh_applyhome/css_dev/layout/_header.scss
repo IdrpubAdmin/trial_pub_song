@@ -14,10 +14,13 @@
     background: linear-gradient(to bottom, #4eadf4, #add8e6);
     .header{
         width: 280px;
+        height: 100%;
+        position: relative;
+        z-index: 10;
         text-align: center;
         border-right: 1px solid #fff;
-        font-size: 1.8rem;
         background-color: #ededed;
+        font-size: 1.8rem;
         .logo{
             background-color: #fff;
             a{
@@ -37,44 +40,31 @@
             }
         }
         .gnb_wrap{
+            position: relative;
+            z-index: 4;
             background-color: #fff;
             &>li{
+                position: relative;
                 border-bottom: 1px solid #ddd;
+                background-color: #fff;
                 &>a{
                     display: block;
                     padding: 8px 0;
                 }
-                &:nth-child(2)>ul{
-                    padding-top: 86px;
-                }
-                &:nth-child(3)>ul{
-                    padding-top: 130px;
-                }
-                &:nth-child(4)>ul{
-                    padding-top: 175px;
-                }
-                &:nth-child(5)>ul{
-                    padding-top: 216px;
-                }
-                &:nth-child(6)>ul{
-                    padding-top: 261px;
-                }
-                &:nth-child(7)>ul{
-                    padding-top: 310px;
-                }
             }
             .gnb_list{
+                width: 100%;
                 height: 699%;
                 max-height: 700px;
-                padding: 42px 18px 0 18px;
+                padding: 0px 18px 0 18px;
                 position: absolute;
                 left: 0px;
-                top: 40px;
-                z-index: -5;
+                top: 0px;
+                z-index: -1;
                 opacity: 0;
                 font-size: 1.4rem;
                 text-align: left;
-                transition: 0.8s;
+                transition: .7s;
                 &>li{
                     &>a{
                         display: block;
@@ -90,33 +80,39 @@
                 &.on{
                     .gnb_list{
                         left: 280px;
-                        z-index: 6;
                         opacity: 1;
                     }
                 }
             }
         }
         .foot_wrap{
-            margin-top: 1rem;
+            position: relative;
+            z-index: 4;
+            padding-top: 1rem;
             padding-left: 2rem;
             text-align: left;
             font-size: 1.5rem;
+            background-color: #ededed;
             >ul{
                 >li{
                     padding: 3px;
                 }
             }
         }
-        .gnb_bg{
-            width: 280px;
-            height: 100%;
-            position: fixed;
-            top:0;
-            left: 0px;
-            z-index: -1;
-            display: none;
-            background-color: #0e4eb2;
-            transition: .8s;
+    }
+    .gnb_bg{
+        width: 280px;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0px;
+        z-index: 1;
+        opacity: 0;
+        background-color: #0e4eb2;
+        transition: .7s;
+        &.active{
+            left: 280px;
+            opacity: 1;
         }
     }
 
@@ -179,6 +175,99 @@
             }
         }
     }
+}
+.dim{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    transition: .8s;
+    opacity: 0;
+    &._on{
+        opacity: 1;
+    }
+}
+.m_wrap{
+    display: none;
+}
+
+// 모바일
+@media only screen and (max-width:1024px){
+
+    .header{
+        display: none;
+    }
+    .m_logo{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top:0;
+        padding: 15px 0;
+        border-top: 2px solid #ff6c00;
+        text-align: center;
+        background-color: #fff;
+        a{
+            img{
+                display: block;
+                max-width: 250px;
+                line-height: 60px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .box_cnt{
+        width: 100%;
+        &.cnt2{
+            margin-left: 1.5rem;
+        }
+        ul{
+            display: flex;
+            li{
+                width: 50%;
+                &:first-child{
+                    background-color: #fff;
+                }
+                &:nth-child(2){
+                    background-color: #ffd34d;
+                }
+                button{
+                    border:0;
+                    background-color: transparent;
+                    width: 100%;
+                    height: 120px;
+                    padding: 5% 10%;
+                    b{
+                        font-size: 2rem;
+                    }
+                    .today_txt{
+                        display: block;
+                        text-align: left;
+                        font-weight: 700;
+                        span{
+                            font-weight: 400;
+                            display: block;
+                        }
+                    }
+                    .today_cnt{
+                        display: block;
+                        margin-top: -30px;
+                        text-align: right;
+                        font-size: 1.5rem;
+                        color: #000;
+                        font-weight: 400;
+                        span{
+                            font-size: 3.5rem;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
