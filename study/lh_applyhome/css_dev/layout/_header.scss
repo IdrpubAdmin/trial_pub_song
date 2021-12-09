@@ -11,6 +11,8 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 0;
     background: linear-gradient(to bottom, #4eadf4, #add8e6);
     .header{
         width: 280px;
@@ -64,7 +66,7 @@
                 opacity: 0;
                 font-size: 1.4rem;
                 text-align: left;
-                transition: .7s;
+                transition: .9s;
                 &>li{
                     &>a{
                         display: block;
@@ -109,7 +111,7 @@
         z-index: 1;
         opacity: 0;
         background-color: #0e4eb2;
-        transition: .7s;
+        transition: .8s;
         &.active{
             left: 280px;
             opacity: 1;
@@ -183,7 +185,7 @@
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, .6);
-    transition: .8s;
+    transition: .5s;
     opacity: 0;
     &._on{
         opacity: 1;
@@ -195,72 +197,107 @@
 
 // 모바일
 @media only screen and (max-width:1024px){
-
-    .header{
-        display: none;
+    .wrap{
+        .gnb_bg{
+            z-index: -5;
+        }
     }
-    .m_logo{
-        width: 100%;
+    .dim{
+        z-index: -5;
+    }
+    .wrap{
+        display: block;
+        .header{
+            width: 100%;
+            .gnb_wrap{
+                width: 280px;
+                > li{
+                    background-color: #ededed;
+                    > a{
+                        text-align: left;
+                        padding: 10px 15px;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+                    .gnb_list{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .content{
+            padding: 0 1.5rem;
+            margin: 8rem auto;
+            .calen_wrap{
+                display: block;
+                .box_cnt{
+                    width: 100%;
+                    &.cnt2{
+                        margin-top: 1rem;
+                        margin-left: 0rem;
+                    }
+                    ul{
+                        display: flex;
+                        li{
+                            width: 50%;
+                            button{
+                                height: 89px;
+                                b{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .m_wrap{
+        display: block;
         position: absolute;
         left: 0;
-        top:0;
-        padding: 15px 0;
-        border-top: 2px solid #ff6c00;
-        text-align: center;
-        background-color: #fff;
-        a{
-            img{
-                display: block;
-                max-width: 250px;
-                line-height: 60px;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    .box_cnt{
+        top: 0;
         width: 100%;
-        &.cnt2{
-            margin-left: 1.5rem;
+        .m_nav{
+            border-top: 2px solid #ff6c00;
+            .m_logo{
+                width: 100%;
+                text-align: center;
+                .m_logo{
+                    img{
+                        display: block;
+                        max-width: 250px;
+                        line-height: 60px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .m_menu{
+                display: block;
+                position: absolute;
+                right: 1.6rem;
+                top: 1.6rem;
+                width: 24px;
+                height: 24px;
+                background: url(../images/m_open.png) no-repeat 0 0;
+                background-size: contain;
+                span{
+                    display: block;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                &.open{
+                    background-image: url(../images/m_close.png);
+                }
+            }
         }
-        ul{
-            display: flex;
-            li{
-                width: 50%;
-                &:first-child{
-                    background-color: #fff;
-                }
-                &:nth-child(2){
-                    background-color: #ffd34d;
-                }
-                button{
-                    border:0;
-                    background-color: transparent;
-                    width: 100%;
-                    height: 120px;
-                    padding: 5% 10%;
-                    b{
-                        font-size: 2rem;
-                    }
-                    .today_txt{
-                        display: block;
-                        text-align: left;
-                        font-weight: 700;
-                        span{
-                            font-weight: 400;
-                            display: block;
-                        }
-                    }
-                    .today_cnt{
-                        display: block;
-                        margin-top: -30px;
-                        text-align: right;
-                        font-size: 1.5rem;
-                        color: #000;
-                        font-weight: 400;
-                        span{
-                            font-size: 3.5rem;
-                            color: #000;
+        .m_header_wrap{
+            .h_top_menu_wrap{
+                .h_top_menu{
+                    > li{
+                        > a{
+
                         }
                     }
                 }
@@ -268,7 +305,7 @@
         }
     }
 
-}
+} /* //mobile */
 
 
 /* header e ================================================= */
