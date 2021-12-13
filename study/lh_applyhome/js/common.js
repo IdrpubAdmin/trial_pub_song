@@ -52,41 +52,38 @@
  */
 
     /* --------mo-------- */
+    const m_nav = document.querySelectorAll('.menu');
 
-    function initAccordion(accordionElem) {
-        function handlePanelClick(event) {
-            showPanel(event.currentTarget);
-        }
-
-        function showPanel(panelHeader) {
-            let isActive,
-                panel = panelHeader.parentNode,
-                panelBody = panelHeader.nextElementSibling,
-                expandedPanel = document.querySelector('.panel.on');
-
-            isActive = (expandedPanel && panel.classList.contains('on')) ? true : false;
-
-            if(expandedPanel) {
-                expandedPanel.querySelector('.dep-content').style.height = null;
-                expandedPanel.classList.remove('on');
+    for (var i = 0; i < m_nav.length; i++) {
+        m_nav[i].addEventListener('click', function(){
+            for(var x = 0; x < m_nav.length; x++){
+                m_nav[x].classList.remove('m_on');
             }
-            if(panel && !isActive) {
-                panelBody.style.height = panelBody.Height + 'px';
-                panel.classList.add('on');
-            }
-        }
-        let allPanelElements = document.querySelectorAll('.panel');
+            this.classList.add('m_on');
+        });
+    };
 
-        for(let i = 0; i < allPanelElements.length; i++) {
-            allPanelElements[i].querySelector('.dep-inner').addEventListener('click', handlePanelClick);
-        }
-        showPanel(allPanelElements);
+    /* 햄버거메뉴 클릭시  */
+    const open_menu = document.querySelector('.m_menu');
+    const header = document.querySelector('.header');
+
+    open_menu.addEventListener('click', click);
+
+    function click(){
+        open_menu.classList.toggle('open');
+        header.classList.toggle('none');
     }
 
-    initAccordion(document.getElementsByClassName('accordion'));
+    /* 2dep 메뉴 클릭시 아코디언 */
+    const tow_dep = document.querySelectorAll('.lnb_active');
+    const gnb_inner = document.querySelector('.gnb_inner');
 
-
-
+    for(i =0; i<tow_dep.length; i++){
+        tow_dep[i].addEventListener('click', function(e){
+            e.preventDefault()
+            gnb_inner.classList.toggle('sub_lnb');
+        })
+    }
 
 
 
