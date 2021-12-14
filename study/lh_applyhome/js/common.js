@@ -38,7 +38,7 @@
     }
 
     /*
-    위에처럼 변수화 시켜서 사용할수있다 (중복사용될 이벤트라면)
+    중복사용될 이벤트라면 위에처럼 변수화 시켜서 사용할수있다
     var nav = document.querySelector('.gnb_wrap');
 
     nav.addEventListener('mouseenter', function(){
@@ -75,19 +75,28 @@
     }
 
     /* 2dep 메뉴 클릭시 아코디언 */
-    const tow_dep = document.querySelectorAll('.lnb_active');
-    const gnb_inner = document.querySelector('.gnb_inner');
+    const acc = document.querySelectorAll('.lnb_active');
 
-    for(i =0; i<tow_dep.length; i++){
-        tow_dep[i].addEventListener('click', function(e){
-            e.preventDefault()
-            gnb_inner.classList.toggle('sub_lnb');
-        })
-    }
+	for (var i = 0; i < acc.length; i++) {
 
+        acc[i].onclick = function() {
+            // 클릭이 일어났을 때 기존에 열려 있던 아코디언을 접는다. (1개의 아코디언만 열리게)
+            for (var j = 0 ; j<acc.length; j++){
+            // 버튼 다음에 있는 div 콘텐츠 높이를 0으로 만든다. == 아코디언을 접는다.
+                if (this!==acc[j]) {
+                    acc[j].nextElementSibling.style.maxHeight = null;
+                }
+            }
 
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
 
-
+        }
+	}
 
 })();
 

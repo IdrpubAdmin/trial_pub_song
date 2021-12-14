@@ -12,6 +12,7 @@
     height: 100%;
     position: absolute;
     z-index: 0;
+    overflow: hidden;
     background: linear-gradient(to bottom, #4eadf4, #add8e6);
     .logo{
         width: 280px;
@@ -254,15 +255,16 @@
                 &>li{
                     position: relative;
                     width: 45%;
-                    height: 4rem;
+                    height: 3.7rem;
                     &>a{
                         width: 100%;
                         float: left;
                         text-align: left;
-                        padding: 10px 15px;
+                        padding: 8px 15px;
                         font-size: 1.4rem;
                         font-weight: 500;
                         background-color: #ededed;
+                        word-break: keep-all;
                         &:focus{
                             color: #0e4eb2;
                             text-decoration: underline;
@@ -290,7 +292,9 @@
                                 }
                             }
                             .gnb_inner{
-                                display: none;
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.2s ease-out;
                                 li{
                                     a{
                                         color: #666;
@@ -299,9 +303,18 @@
                                             top: -0.2rem;
                                         }
                                     }
+                                    &::after{
+                                        color: #666;
+                                        top: .3rem;
+                                    }
                                 }
                             }
                         }
+                    }
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        clear: both;
                     }
                 }
                 .menu{
@@ -315,7 +328,7 @@
                                 position: absolute;
                                 background: url(../images/ic_gnb.jpg) no-repeat right center;
                                 left: 15.4rem;
-                                top: 1.5rem;
+                                top: 1.4rem;
                             }
                         }
                         .gnb_list{
@@ -333,6 +346,7 @@
             }
             .foot_wrap{
                 width: 45%;
+                height: 28rem;
                 position: relative;
                 z-index: 4;
                 padding-top: 1rem;
