@@ -87,14 +87,12 @@
                     acc[j].nextElementSibling.style.maxHeight = null;
                 }
             }
-
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
         }
 	}
 

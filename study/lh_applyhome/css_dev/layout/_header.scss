@@ -240,7 +240,6 @@
 @media only screen and (max-width:1024px){
     .wrap{
         display: block;
-        overflow: hidden;
         .logo{
             width: 100%;
         }
@@ -327,7 +326,7 @@
                                 height: 10px;
                                 position: absolute;
                                 background: url(../images/ic_gnb.jpg) no-repeat right center;
-                                left: 15.4rem;
+                                right: 1.4rem;
                                 top: 1.4rem;
                             }
                         }

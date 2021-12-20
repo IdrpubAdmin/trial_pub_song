@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .m_wrap { display: none; }
 
-@media only screen and (max-width: 1024px) { .wrap { display: block; overflow: hidden; }
+@media only screen and (max-width: 1024px) { .wrap { display: block; }
   .wrap .logo { width: 100%; }
   .wrap .header { width: 100%; position: absolute; right: -130rem; transition: right 1s cubic-bezier(0.32, 0.03, 0.28, 0.99); }
   .wrap .header .gnb_wrap { width: 100%; background-color: transparent; }
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
   .wrap .header .gnb_wrap > li .gnb_list > li .gnb_inner li::after { color: #666; top: .3rem; }
   .wrap .header .gnb_wrap > li::after { content: ''; display: inline-block; clear: both; }
   .wrap .header .gnb_wrap .menu.m_on > a { background-color: #fff; }
-  .wrap .header .gnb_wrap .menu.m_on > a::after { content: ''; width: 6px; height: 10px; position: absolute; background: url(../images/ic_gnb.jpg) no-repeat right center; left: 15.4rem; top: 1.4rem; }
+  .wrap .header .gnb_wrap .menu.m_on > a::after { content: ''; width: 6px; height: 10px; position: absolute; background: url(../images/ic_gnb.jpg) no-repeat right center; right: 1.4rem; top: 1.4rem; }
   .wrap .header .gnb_wrap .menu.m_on .gnb_list { left: 100%; opacity: 1; background-color: #fff; }
   .wrap .header .gnb_wrap .menu.m_on .gnb_list .gnb_inner.sub_lnb { display: block; }
   .wrap .header .foot_wrap { width: 45%; height: 28rem; position: relative; z-index: 4; padding-top: 1rem; padding-left: .7rem; text-align: left; font-size: 1.15rem; }
