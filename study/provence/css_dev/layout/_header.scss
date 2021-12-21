@@ -122,6 +122,7 @@
                 width: 16.666%;
                 text-align: center;
                 position: relative;
+                font-family: $default-font3;
                 &:hover {
                     &>a{
                         .en{
@@ -141,6 +142,7 @@
                     .ko {
                         display: none;
                         margin-left: 60px;
+                        font-family: $default-font2;
                         font-weight: 500;
                     }
                 }
@@ -166,17 +168,20 @@
                         text-align: left;
                         padding:10px 20px;
                         > a{
+                            font-family: $default-font2;
                             display: inline-block;
+                            width: 177px;
                             color: #fff;
                             font-size: $font-16r;
                             padding:10px;
                         }
                         a:hover {
                             color: #81984e;
+                            font-weight: 700;
                             &::before {
                                 content: "-";
-                                font-size: $font-18r;
-                                padding:4px 5px 0 0;
+                                font-size: $font-16r;
+                                padding-right: 5px;
                             }
                         }
                     }
@@ -193,7 +198,7 @@
 
 
 /*모바일 지정 */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1060px) {
     .wrap{
         .header{
             height: 62px;

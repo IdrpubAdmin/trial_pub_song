@@ -22,6 +22,7 @@
             .title{
                 font-family: "Lato";
                 font-size: $font-36r;
+                text-transform: uppercase; //모든문자 대문자
                 position: relative;
                 margin:10px 0;
                 &::after{
@@ -58,10 +59,16 @@
             .swiper-wrapper{
                 .swiper-slide{
                     background: url('../images/dsc-2817-copy-3.png') no-repeat;
+                    background-size: cover;
                     height: 700px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    .item-img{
+                        img{
+                            width: 86%;
+                        }
+                    }
                 }
             }
             .main-swiper-next{
@@ -125,7 +132,15 @@
                             margin-bottom: 16px;
                             // padding-left: 10px;
                             &:hover{
-                                border:10px solid #8dbb6a;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: calc(100% - 16px);
+                                    height: calc(100% - 74px);
+                                    border: 8px solid #8dbb6a;
+                                }
                                 .btn-more{
                                     border: 1px solid #8dbb6a;
                                     background: #8dbb6a;
@@ -134,6 +149,7 @@
                             img{
                                 width: 100%;
                                 height: 100%;
+                                /* border:10px solid #fff; */
                             }
                             .btn-more{
                                 font-size: $font-16r;
@@ -187,7 +203,7 @@
 /*sns */
 .section-3{
     background: url('../images/3.png') no-repeat 0 0;
-    background-size: 100%;
+    background-size: cover;
     .review-more{
         display: inline-block;
         font-size: $font-16r;
@@ -287,6 +303,10 @@
             display: inline-block;
             content: "";
             clear: both;
+        }
+        .wrap-4{
+            display: flex;
+            justify-content: space-between;
         }
         .location-map{
             float: left;
@@ -411,7 +431,25 @@
 
 
 /*모바일 지정 */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1275px) {
+    .section-2{
+        width: 100%;
+        margin: 0 auto;
+        .section-wrap{
+            position: relative;
+            .swiper-button-next{
+                right: 22px;
+                background-color: #fff;
+            }
+            .swiper-button-prev{
+                left: 4px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
 
 /* 공통 */
 .section{
@@ -439,7 +477,7 @@
                     background-size: cover;
                     .item-img{
                         img{
-                            width: 100%;
+                            width: 75%;
                             height: 100%;
                             object-fit: cover;
                         }
@@ -448,9 +486,15 @@
             }
             .main-swiper-next{
                 right: 0;
+                &::after{
+                    background-size: 40%;
+                }
             }
             .main-swiper-prev{
                 left: 0;
+                &::after{
+                    background-size: 40%;
+                }
             }
         }
     }
@@ -532,6 +576,9 @@
 .section-4 {
     padding-bottom: 80px;
     .section-wrap{
+        .wrap-4{
+            display: block;
+        }
         .location-map{
             float: none;
             width: 100%;
@@ -566,7 +613,19 @@
         }
     }
 }
-
+.footer{
+    padding-left: 14px;
+    padding-right: 15px;
+    .wrap-inner{
+        .contact{
+            .tel{
+                a{
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+}
 .top{
     .top-btn{
         bottom: 56%;

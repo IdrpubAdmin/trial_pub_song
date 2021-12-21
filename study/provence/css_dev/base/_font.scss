@@ -6,6 +6,9 @@
 /* ========================================================== */
 /* ---------------------------------------------------------- */
 /* Noto Sans KR s =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 @font-face {
   font-family: 'Noto Sans KR';
   src: url('../../fonts/NotoSansKr/NotoSansKR-Regular.woff2') format('woff2'),
@@ -28,9 +31,9 @@
           url("../../fonts/NanumSquare/NanumSquare.woff") format("woff"), /* Modern Browsers */
           url("../../fonts/NanumSquare/NanumSquare.ttf") format("truetype"); /* Safari, Android, iOS */
 }
-/* NanumSquare s ======================================= */
+/* NanumSquare e ======================================= */
 /* ---------------------------------------------------------- */
-/* NanumSquare s ======================================= */
+/* Lato s ======================================= */
 @font-face {
   font-family: 'Lato';
   font-weight: normal;
@@ -38,5 +41,5 @@
   src: local("../../fonts/Lato/Lato-Regular");
   src:url("../../fonts/Lato/Lato-Regular.ttf") format("truetype");
 }
-/* NanumSquare s ======================================= */
+/* Lato e ======================================= */
 /* ---------------------------------------------------------- */
