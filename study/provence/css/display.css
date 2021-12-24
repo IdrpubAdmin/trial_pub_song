@@ -156,7 +156,7 @@ td, th { padding: 0; }
 
 html { font-size: 62.5%; }
 
-html, body { width: 100%; height: 100%; }
+html, body { width: 100%; height: 100%; display: grid; }
 
 html.back, body.back { background-color: #f5f5f5; }
 
@@ -285,13 +285,37 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .wrap .nav .nav-menu .menu .active { display: block !important; }
 
+/* subPage gnb */
+.sub_gnb { position: relative; }
+
+.sub_gnb .secon_gnb { width: 100%; max-width: 1200px; display: flex; justify-content: space-between; align-items: center; position: absolute; left: 50%; bottom: 0; transform: translate(-50%); border-bottom: 1px solid #ddd; background-color: #fff; }
+
+.sub_gnb .secon_gnb .list_1 { display: flex; }
+
+.sub_gnb .secon_gnb .list_1 p { width: 200px; border-right: 1px solid #ddd; }
+
+.sub_gnb .secon_gnb .list_1 .home_icon img { padding: 17px; background-color: #8dbb6a; }
+
+.sub_gnb .secon_gnb .list_1 .home_icon span { display: inline-block; padding-left: 20px; }
+
+.sub_gnb .secon_gnb .list_1 .home_gnb > a { display: inline-block; width: 200px; padding: 16px 0 16px 20px; background: url(../images/gnb_icon/s+pluse.png) no-repeat right 20px center; }
+
+.sub_gnb .secon_gnb .list_2 > ul { display: flex; }
+
+.sub_gnb .secon_gnb .list_2 > ul li a { display: block; width: 58px; height: 55px; line-height: 55px; text-align: center; background-color: #c0dd58; border-right: 1px solid #fff; }
+
+/* //---------subPage gnb---------// */
 /*모바일 지정 */
 @media only screen and (max-width: 1060px) { .wrap .header { height: 62px; }
   .wrap .wrap-inner .lang { display: none; }
   .wrap .wrap-inner .logo { top: 0; }
   .wrap .wrap-inner .sns-list { display: none; }
   .wrap .wrap-inner .mo-menu-btn { display: block; }
-  .wrap .nav { display: none; } }
+  .wrap .nav { display: none; }
+  /* subPage gnb */
+  .sub_gnb .secon_gnb { width: auto; display: block; }
+  .sub_gnb .secon_gnb .list_2 { display: none; }
+  /* //---------subPage gnb---------// */ }
 
 /* header e ================================================= */
 /* ---------------------------------------------------------- */
@@ -318,25 +342,30 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .sub_wrap .sub_gnb .page_tit { height: 100%; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 3.6rem; }
 
-.sub_wrap .sub_content { max-width: 1200px; margin: 0 auto; }
+.sub_wrap .sub_content { max-width: 1200px; margin: 0 auto; padding-top: 70px; padding-bottom: 140px; }
 
-.sub_wrap .sub_content .small-tit .tit_txt { font-size: 4rem; }
+.sub_wrap .sub_content .small-tit .tit_txt { font-size: 4rem; font-weight: 600; }
 
 .sub_wrap .sub_content .small-tit .sub_txt { margin-top: 16px; }
 
 .sub_wrap .sub_content .content { margin-top: 88px; }
 
-.sub_wrap .sub_content .content ul { display: flex; }
+.sub_wrap .sub_content .content ul { display: flex; flex-wrap: wrap; }
 
-.sub_wrap .sub_content .content ul li { padding: 0 20px; }
+.sub_wrap .sub_content .content ul li { padding: 8px; }
 
-.sub_wrap .sub_content .content ul li:first-child { padding-left: 0; }
+.sub_wrap .sub_content .content ul li a { display: flex; justify-content: space-evenly; flex-direction: column; align-items: center; width: 186px; height: 220px; border: 1px solid #eee; }
 
-.sub_wrap .sub_content .content ul li a { display: flex; justify-content: center; align-items: end; padding-bottom: 42px; width: 186px; height: 220px; border: 1px solid #eee; background: url(../images/subPage/icon-store.png) no-repeat center 30%; }
+.sub_wrap .sub_content .content ul li a:hover::after { content: ''; display: block; clear: both; width: 186px; height: 220px; position: absolute; background: rgba(0, 0, 0, 0.5) url(../images/subPage/pluse.png) no-repeat center; }
 
 /* 모바일 */
-@media only screen and (max-width: 1060px) { .sub_wrap .sub_gnb { height: 120px; }
-  .sub_wrap .sub_gnb .page_tit { justify-content: flex-start; padding-left: 20px; font-size: 2.6rem; } }
+@media only screen and (max-width: 1060px) { .sub_wrap .sub_gnb { height: 160px; }
+  .sub_wrap .sub_gnb .page_tit { justify-content: flex-start; padding-left: 20px; font-size: 2.6rem; }
+  .sub_wrap .sub_content .small-tit { padding-right: 20px; padding-left: 20px; }
+  .sub_wrap .sub_content .small-tit .tit_txt { font-size: 3rem; }
+  .sub_wrap .sub_content .small-tit .sub_txt { font-size: 1.6rem; } }
+
+@media only screen and (max-width: 1060px) and (max-width: 600px) { .sub_wrap .sub_content .content ul { justify-content: center; } }
 
 /* container e ============================================== */
 /* ---------------------------------------------------------- */

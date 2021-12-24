@@ -194,6 +194,66 @@
     }
 }
 
+/* subPage gnb */
+.sub_gnb{
+    position: relative;
+    .secon_gnb{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        .list_1{
+            display: flex;
+            p{
+                width: 200px;
+                border-right: 1px solid #ddd;
+            }
+            .home_icon{
+                img{
+                    padding: 17px;
+                    background-color: #8dbb6a;
+                }
+                span{
+                    display: inline-block;
+                    padding-left: 20px;
+                }
+            }
+            .home_gnb{
+                >a{
+                    display: inline-block;
+                    width: 200px;
+                    padding: 16px 0 16px 20px;
+                    background: url(../images/gnb_icon/s+pluse.png) no-repeat right 20px center;
+                }
+            }
+        }
+        .list_2{
+            > ul{
+                display: flex;
+                li{
+                    a{
+                        display: block;
+                        width: 58px;
+                        height: 55px;
+                        line-height: 55px;
+                        text-align: center;
+                        background-color: #c0dd58;
+                        border-right: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/* //---------subPage gnb---------// */
+
 
 
 
@@ -221,6 +281,18 @@
             display: none;
         }
     }
+
+    /* subPage gnb */
+.sub_gnb{
+    .secon_gnb{
+        width: auto;
+        display: block;
+        .list_2{
+            display: none;
+        }
+    }
+}
+/* //---------subPage gnb---------// */
 
 
 }

@@ -28,9 +28,12 @@
     .sub_content{
         max-width: 1200px;
         margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 140px;
         .small-tit{
             .tit_txt{
                 font-size: $font-40r;
+                font-weight: 600;
             }
             .sub_txt{
                 margin-top: 16px;
@@ -40,20 +43,28 @@
             margin-top: 88px;
             ul{
                 display: flex;
+                flex-wrap: wrap;
                 li{
-                    padding: 0 20px;
-                    &:first-child{
-                        padding-left: 0;
-                    }
+                    padding: 8px;
                     a{
                         display: flex;
-                        justify-content: center;
-                        align-items: end;
-                        padding-bottom: 42px;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        align-items: center;
                         width: 186px;
                         height: 220px;
                         border: 1px solid #eee;
-                        background: url(../images/subPage/icon-store.png) no-repeat center 30%;
+                        &:hover{
+                            &::after{
+                                content: '';
+                                display: block;
+                                clear: both;
+                                width: 186px;
+                                height: 220px;
+                                position: absolute;
+                                background: rgba(0, 0, 0, 0.5) url(../images/subPage/pluse.png) no-repeat center;
+                            }
+                        }
                     }
                 }
             }
@@ -67,16 +78,34 @@
 
     .sub_wrap{
         .sub_gnb{
-            height: 120px;
+            height: 160px;
             .page_tit{
                 justify-content:flex-start;
                 padding-left: 20px;
                 font-size: $font-26r;
             }
         }
+        .sub_content{
+            .small-tit{
+                padding-right: 20px;
+                    padding-left: 20px;
+                .tit_txt{
+                    font-size: $font-30r;
+                }
+                .sub_txt{
+                    font-size: $font-16r;
+                }
+            }
+            @media only screen and (max-width: 600px){
+                .content{
+                    ul{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
     }
 
 }
-
 /* container e ============================================== */
 /* ---------------------------------------------------------- */
