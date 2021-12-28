@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
 
 .sub_gnb .secon_gnb .list_1 .home_icon img { padding: 17px; background-color: #8dbb6a; }
 
-.sub_gnb .secon_gnb .list_1 .home_icon span { display: inline-block; padding-left: 20px; }
+.sub_gnb .secon_gnb .list_1 .home_icon span { display: inline-block; vertical-align: middle; padding-left: 20px; }
 
 .sub_gnb .secon_gnb .list_1 .home_gnb > a { display: inline-block; width: 200px; padding: 16px 0 16px 20px; background: url(../images/gnb_icon/s+pluse.png) no-repeat right 20px center; }
 
@@ -313,7 +313,9 @@ h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
   .wrap .wrap-inner .mo-menu-btn { display: block; }
   .wrap .nav { display: none; }
   /* subPage gnb */
-  .sub_gnb .secon_gnb { width: auto; display: block; }
+  .sub_gnb .secon_gnb { width: 100%; display: block; }
+  .sub_gnb .secon_gnb .list_1 p { width: 100%; }
+  .sub_gnb .secon_gnb .list_1 .home_gnb > a { width: 100%; }
   .sub_gnb .secon_gnb .list_2 { display: none; }
   /* //---------subPage gnb---------// */ }
 

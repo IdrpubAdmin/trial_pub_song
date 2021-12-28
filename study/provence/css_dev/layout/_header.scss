@@ -222,6 +222,7 @@
                 }
                 span{
                     display: inline-block;
+                    vertical-align: middle;
                     padding-left: 20px;
                 }
             }
@@ -285,8 +286,18 @@
     /* subPage gnb */
 .sub_gnb{
     .secon_gnb{
-        width: auto;
+        width: 100%;
         display: block;
+        .list_1{
+            p{
+                width: 100%;
+            }
+            .home_gnb{
+                >a{
+                    width: 100%;
+                }
+            }
+        }
         .list_2{
             display: none;
         }
