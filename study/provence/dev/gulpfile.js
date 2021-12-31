@@ -1,8 +1,8 @@
 
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
-/* const webserver = require('gulp-webserver');
-const connect =connect = require('gulp-connect'); */
+const browserSync = require('browser-sync').create();
+
 
 // html파일 인클루드
 gulp.task('fileinclude', async function () {
@@ -21,23 +21,34 @@ gulp.task('default', function () {
 })
 
 
-// 실시간 반영
-// gulp.task('connect', function(){
-//     connect.server({
-//         root: '**/*.html',
-//         livereload: true,
-//         port: 8001
-//     });
-// });
 
-// gulp.task('html', function(){
-//     gulp.src('**/*.html')
-//     .pipe(connect.reload());
-// });
+//liveserver
 
-// gulp.task('watch', function(){
-//     gulp.watch(['**/*.html'], ['html']); // html 리로드
-// });
+gulp.task('browserSync', function() {
+    browserSync.init({ server: { baseDir: "page", // 서버에 띄울 폴더 위치 지정
+    directory: true
+    }
+});
+gulp.watch("page/*").on("change", browserSync.reload);
+// page 안의 파일들을 감시하고 있다가, 내용이 변동되면 재실행
+});
+gulp.task( "default", gulp.parallel("browserSync") );
 
-// gulp.task('default', gulp.parallel('connect', 'watch'));
+
+
+
+//sass
+
+/* const sass = require("gulp-sass");
+
+// compile scss into css
+gulp.task('sass', function(){
+    return gulp.src('./css_dev/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('../css'))
+});
+
+ */
+
+
 
