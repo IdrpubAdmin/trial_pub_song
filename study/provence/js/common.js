@@ -29,8 +29,13 @@
             })
         });
 
-    })
+    });
 
+    //브로드캐스트
+        const title = document.querySelector('.page_tit').textContent;
+        const cast = document.getElementById('dep_cast');
+
+        cast.innerHTML = title;
 
 })()
 

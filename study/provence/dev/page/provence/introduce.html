@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('../../page_dev/head.html')
+    <title>프로방스</title>
+</head>
+<body>
+    @@include('../../page_dev/header_gnb.html')
+    <div class="sub_wrap sub_introduce">
+        <div class="sub_gnb">
+            <h2 class="page_tit">프로방스 소개</h2>
+            @@include('../../page_dev/sub_inner_gnb.html')
+        </div>
+        <div class="sub_content">
+            <div class="small-tit">
+                <p class="tit_txt">프로방스 소개</p>
+                <p class="sub_txt">내 삶의 온전한 주인공으로 느긋하게 거닐 수 있는 시간을 프로방스마을에서 가득 담아 가세요.</p>
+            </div>
+            <div class="content">
+                <img src="../../../images/subPage/sub-layer.png" alt="img">
+                <div class="guid_txt">
+                    <p>낮은 언덕 위로 쏟아지는 햇빛, 맑고 푸른 하늘, 천천히 흐르는 강물, 밤이면 쏟아지는 별빛과 불빛 그리고 아름다운 꽃들의 향기,
+                        프로방스마을은 남프로방스의 목가적인 정취와 문화로 가득합니다.</p>
+                    <p>남프랑스의 정취가 가득한 예쁜 마을과 아기자기한 골목들, 꿈길 같은 꽃밭과 정원, 갓 구운 고소한 빵 냄새, 자연을 닮은 갖가지 허브의 향기들,
+                        동화 속 한 장면에 들어온 듯한 포토존과 문화 체험 공간들 그리고, 오래 사랑받아온 맛집들까지 프로방스마을에는 언제나 풍요로움이 가득합니다.</p>
+                </div>
+                <div class="info_list">
+                    <ul>
+                        <li><a href="#"><img src="../../../images/subPage/sub-list-1.png" alt="food"></a></li>
+                        <li><a href="#"><img src="../../../images/subPage/sub-list-2.png" alt="fashion"></a></li>
+                        <li><a href="#"><img src="../../../images/subPage/sub-list-3.png" alt="living"></a></li>
+                        <li><a href="#"><img src="../../../images/subPage/sub-list-4.png" alt="life"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const title = document.querySelector('.sub_gnb>.page_tit').textContent;
+        const cast = document.getElementById('dep_cast');
+
+        cast.innerHTML = title;
+    </script>
+    @@include('../../page_dev/footer.html')
+</body>
+</html>
