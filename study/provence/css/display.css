@@ -897,7 +897,7 @@ h6 {
   min-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
-  padding-bottom: 140px;
+  padding-bottom: 80px;
 }
 .sub_wrap .sub_content .small-tit .tit_txt {
   font-size: 4rem;
@@ -937,9 +937,9 @@ h6 {
 }
 
 /* introduce page */
-/* subpage bg change */
 .sub_introduce .sub_gnb {
   background: url(../images/subPage/subMain-2.png) no-repeat center;
+  /* subpage bg change */
 }
 .sub_introduce .content {
   text-align: center;
@@ -959,6 +959,61 @@ h6 {
 }
 .sub_introduce .content .info_list ul li:nth-child(1), .sub_introduce .content .info_list ul li:nth-child(3) {
   margin-top: 8.3rem;
+}
+.sub_introduce .content .info_section {
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem 4rem 2rem;
+  border: 1px solid #eee;
+  text-align: left;
+}
+.sub_introduce .content .info_section .fee_info .fee_tit {
+  font-size: 4rem;
+}
+.sub_introduce .content .info_section .fee_info .fee_con {
+  margin-top: 2rem;
+  line-height: 1.67;
+}
+.sub_introduce .content .info_section .fee_info .fee_con > span {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #8dbb6a;
+}
+.sub_introduce .content .info_section .fee_info > ul {
+  width: calc(100% - 59px);
+  margin-top: 7.2rem;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #6b6666;
+}
+.sub_introduce .content .info_section .fee_info > ul li {
+  text-indent: -8px;
+}
+.sub_introduce .content .info_section .open_time {
+  position: relative;
+}
+.sub_introduce .content .info_section .open_time::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.sub_introduce .content .info_section .open_time > p {
+  position: absolute;
+  right: 13%;
+  top: 19%;
+  font-family: "Lato";
+  font-size: 5.6rem;
+  font-weight: bold;
+  color: #835129;
+  text-align: center;
+}
+.sub_introduce .content .info_section .open_time > p > span {
+  display: block;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #000;
 }
 
 /* 모바일 */
@@ -985,6 +1040,8 @@ h6 {
   .sub_wrap .sub_content .small-tit .sub_txt {
     font-size: 1.6rem;
   }
+
+  /* introduce page */
 }
 @media only screen and (max-width: 1060px) and (max-width: 600px) {
   .sub_wrap .sub_content .content ul {
@@ -995,30 +1052,66 @@ h6 {
     padding: 0;
   }
 }
-/* introduce page */
-.sub_introduce .content {
-  text-align: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  /* .guid_txt{
-      margin-top: 6.4rem;
-      p{
-          &:nth-child(2){
-              margin-top: 4rem;
-          }
-      }
-  } */
+@media only screen and (max-width: 1060px) {
+  .sub_introduce .content {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .sub_introduce .content img {
+    width: 100%;
+  }
+  .sub_introduce .content .info_list ul {
+    flex-wrap: wrap;
+  }
+  .sub_introduce .content .info_list ul li {
+    width: 50%;
+    padding-right: 0.5rem;
+  }
+  .sub_introduce .content .info_list ul li:nth-child(1), .sub_introduce .content .info_list ul li:nth-child(3) {
+    margin-top: 4.6rem;
+  }
+  .sub_introduce .content .info_section {
+    flex-flow: column;
+    padding: 3rem 1rem;
+  }
+  .sub_introduce .content .info_section .fee_info .fee_tit {
+    font-size: 2.4rem;
+  }
+  .sub_introduce .content .info_section .fee_info .fee_con {
+    font-size: 1.6rem;
+  }
+  .sub_introduce .content .info_section .fee_info .fee_con > span {
+    font-size: 2.4rem;
+  }
+  .sub_introduce .content .info_section .fee_info > ul {
+    width: 100%;
+    margin-top: 2.2rem;
+    font-size: 1.4rem;
+  }
 }
-.sub_introduce .content img {
-  width: 100%;
+@media only screen and (max-width: 1060px) and (max-width: 580px) {
+  .sub_introduce .content .info_section .open_time > p {
+    right: 14%;
+    top: 18%;
+    font-size: 3.5rem;
+  }
+  .sub_introduce .content .info_section .open_time > p > span {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
 }
-.sub_introduce .content .info_list ul {
-  flex-wrap: wrap;
+@media only screen and (max-width: 1060px) and (max-width: 380px) {
+  .sub_introduce .content .info_section .open_time > p {
+    right: 12%;
+    top: 16%;
+    font-size: 3rem;
+  }
+  .sub_introduce .content .info_section .open_time > p > span {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
 }
-.sub_introduce .content .info_list ul li:nth-child(1), .sub_introduce .content .info_list ul li:nth-child(3) {
-  margin-top: 8.3rem;
-}
-
 /* container e ============================================== */
 /* ---------------------------------------------------------- */
 /* ========================================================== */

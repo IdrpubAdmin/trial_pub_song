@@ -30,7 +30,7 @@
         min-width: 1200px;
         margin: 0 auto;
         padding-top: 70px;
-        padding-bottom: 140px;
+        padding-bottom: 80px;
         .small-tit{
             .tit_txt{
                 font-size: $font-40r;
@@ -75,11 +75,9 @@
 }
 
 /* introduce page */
-
-/* subpage bg change */
 .sub_introduce{
     .sub_gnb{
-        background: url(../images/subPage/subMain-2.png) no-repeat center;
+        background: url(../images/subPage/subMain-2.png) no-repeat center; /* subpage bg change */
     }
     .content{
         text-align: center;
@@ -99,6 +97,63 @@
                 li{
                     &:nth-child(1), &:nth-child(3){
                         margin-top: 8.3rem;
+                    }
+                }
+            }
+        }
+        .info_section{
+            display: flex;
+            align-items: center;
+            padding: 6rem 2rem 4rem 2rem;
+            border: 1px solid #eee;
+            text-align: left;
+            .fee_info{
+                .fee_tit{
+                    font-size: $font-40r;
+                }
+                .fee_con{
+                    margin-top: 2rem;
+                    line-height: 1.67;
+                    & > span{
+                        font-size: $font-24r;
+                        font-weight: bold;
+                        color: #8dbb6a;
+                    }
+                }
+                & > ul{
+                    width: calc(100% - 59px);
+                    margin-top: 7.2rem;
+                    padding-left: 1rem;
+                    font-size: $font-14r;
+                    line-height: 1.71;
+                    color: rgb(107, 102, 102);
+                    li{
+                        text-indent: -8px;
+                    }
+                }
+            }
+            .open_time{
+                position: relative;
+                &::after{
+                    display: block;
+                    content: "";
+                    clear: both;
+                }
+                & > p{
+                    position: absolute;
+                    right: 13%;
+                    top: 19%;
+                    font-family: "Lato";
+                    font-size: 5.6rem;
+                    font-weight: bold;
+                    color: #835129;
+                    text-align: center;
+                    & > span{
+                        display: block;
+                        margin-top: 2rem;
+                        font-size: $font-22r;
+                        font-weight: normal;
+                        color: #000;
                     }
                 }
             }
@@ -145,37 +200,75 @@
             }
         }
     }
-}
-/* introduce page */
-.sub_introduce{
-    .content{
-        text-align: center;
-        padding-right: 20px;
-        padding-left: 20px;
-        img{
-            width: 100%;
-        }
-        /* .guid_txt{
-            margin-top: 6.4rem;
-            p{
-                &:nth-child(2){
-                    margin-top: 4rem;
+    /* introduce page */
+    .sub_introduce{
+        .content{
+            text-align: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            img{
+                width: 100%;
+            }
+            .info_list{
+                ul{
+                    flex-wrap: wrap;
+                    li{
+                        width: 50%;
+                        padding-right: .5rem;
+                        &:nth-child(1), &:nth-child(3){
+                            margin-top: 4.6rem;
+                        }
+                    }
                 }
             }
-        } */
-        .info_list{
-            ul{
-                flex-wrap: wrap;
-                li{
-                    &:nth-child(1), &:nth-child(3){
-                        margin-top: 8.3rem;
+            .info_section{
+                flex-flow: column;
+                padding: 3rem 1rem;
+                .fee_info{
+                    .fee_tit{
+                        font-size: $font-24r;
+                    }
+                    .fee_con{
+                        font-size: $font-16r;
+                        & > span{
+                            font-size: $font-24r;
+                        }
+                    }
+                    & > ul{
+                        width: 100%;
+                        margin-top: 2.2rem;
+                        font-size: $font-14r;
+                    }
+                }
+                .open_time{
+                    @media only screen and (max-width: 580px){
+                        & > p{
+                            right: 14%;
+                            top: 18%;
+                            font-size: 3.5rem;
+                            & > span{
+                                margin-top: 1rem;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                    @media only screen and (max-width: 380px){
+                        & > p{
+                            right: 12%;
+                            top: 16%;
+                            font-size: 3rem;
+                            & > span{
+                                margin-top: 1rem;
+                                font-size: 1.3rem;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
 }
+
 
 /* container e ============================================== */
 /* ---------------------------------------------------------- */
