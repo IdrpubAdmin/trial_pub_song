@@ -31,13 +31,30 @@
 
     });
 
-    //subPage breadcrumb
-        const title = document.querySelector('.sub_gnb>.page_tit').textContent;
-        const cast = document.getElementById('dep_cast');
+    /* ------subPage breadcrumb ---------*/
 
-        cast.innerHTML = title;
+    // first gnb txt
+    const sub_title = document.querySelector('.menu>a>.ko').textContent;
+    const sub_cast = document.getElementById('sub_cast');
+
+    //second gnb txt
+    const title = document.querySelector('.sub_gnb>.page_tit').textContent;
+    const cast = document.getElementById('dep_cast');
+
+    sub_cast.innerHTML = sub_title;
+    cast.innerHTML = title;
+
+    /*---------// subPage breadcrumb---- */
+
 
 })()
+
+
+/* function ChnImg(){
+
+    document.getElementById("imgId").src = "../../../images/subPage/sub-list-2.png";
+
+}; */
 
 
 /* ready e --------------------------------------------------
