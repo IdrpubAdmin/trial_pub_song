@@ -33,28 +33,78 @@
 
     /* ------subPage breadcrumb ---------*/
 
-    // first gnb txt
-    const sub_title = document.querySelector('.menu>a>.ko').textContent;
-    const sub_cast = document.getElementById('sub_cast');
+    // subPage first gnb txt
+    // const sub_title = document.querySelector('.menu>a>.ko').textContent;
+    // const sub_cast = document.getElementById('sub_cast');
 
-    //second gnb txt
-    const title = document.querySelector('.sub_gnb>.page_tit').textContent;
-    const cast = document.getElementById('dep_cast');
+    // // subPage second gnb txt
+    // const title = document.querySelector('.sub_gnb>.page_tit').textContent;
+    // const cast = document.getElementById('dep_cast');
 
-    sub_cast.innerHTML = sub_title;
-    cast.innerHTML = title;
+    // sub_cast.innerHTML = sub_title;
+    // cast.innerHTML = title;
 
     /*---------// subPage breadcrumb---- */
 
 
+
+    // WorksNav
+    let WorksNav = WorksNav || {};
+    WorksNav = (function(doc, global) {
+        // ELEMENTS INITIALIZE
+        let obj = {},
+            body = doc.querySelector('body'),
+            container = doc.querySelector('#container'),
+            gnbD1 = doc.querySelector('.gnb_menu'),
+            lnbD1 = doc.querySelector('.lnb_d1_wrap');
+
+        function drawLnbNav(){ //handlebars draw
+            //reference
+            let hndBrWrap=$(".lnb_d1_wrap");
+            let hndBrSource=$("#drawLnbNavTmp").html();
+            let hndBrCompileTemp=Handlebars.compile(hndBrSource);
+            hndBrWrap.empty().html(hndBrCompileTemp(lnbInfoData));
+        }
+
+        // PRIVATE FUNCTIONS
+        function initialize(){
+            container.classList.add('has_wnd_nav');
+            gnbD1.classList.add('has_wnd_nav');
+            drawLnbNav(); //from lnb_data_works.js
+        }
+
+        obj.checkCurrentLnbNav = function(gnb,lnb1,lnb2) {
+            setTimeout(function(){
+                Array.prototype.slice.call(gnbD1.querySelectorAll('li')).forEach(function(_el,_idx){
+                    let tempTxt1 = _el.querySelector('a').getAttribute('data-menu-id');
+                    if(tempTxt1 === gnb){
+                        _el.classList.add('on');
+                    }
+                });
+                Array.prototype.slice.call(lnbD1.querySelectorAll('.d1_li')).forEach(function(_el1,_idx1){
+                    let tempTxt1 = _el1.querySelector('a').getAttribute('data-menu-id');
+                    if(tempTxt1 === lnb1){
+                        _el1.classList.add('on');
+                    }
+                    let lnbD2 = _el1.querySelector('.lnb_d2_wrap');
+                    if(lnbD2) {
+                        lnbD2.querySelectorAll('.d2_li').forEach(function(_el2,_idx2) {
+                            let tempTxt2 = _el2.querySelector('a').getAttribute('data-menu-id');
+                            if(tempTxt2 === lnb2 && _el1.classList.contains('on')){
+                                _el2.classList.add('on');
+                            }
+                        });
+                    }
+                });
+            },100);
+        }
+
+        return obj;
+    })(document, window);
+
+
 })()
 
-
-/* function ChnImg(){
-
-    document.getElementById("imgId").src = "../../../images/subPage/sub-list-2.png";
-
-}; */
 
 
 /* ready e --------------------------------------------------

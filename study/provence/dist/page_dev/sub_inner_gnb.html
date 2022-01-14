@@ -1,13 +1,25 @@
         <div class="secon_gnb">
-            <div class="list_1">
-                <p class="home_icon">
-                    <img src="../../images/gnb_icon/home_icon.png" alt="home">
-                    <span id="sub_cast"></span>
-                </p>
-                <p class="home_gnb">
-                    <a href="#none" id="dep_cast"></a>
-                </p>
+            <!-- lnb_wrap -->
+            <div class="list_1 lnb_wrap lnb_d1_wrap">
+                <script id="drawLnbNavTmp" type="text/x-handlebars-template">
+                    {{#lnb_d1}}
+                        <p class="home_icon d1_li {{state}}">
+                            <img src="../../images/gnb_icon/home_icon.png" alt="home">
+                            <span id="sub_cast" data-menu-id="{{num}}">{{txt}}</span>
+                        </p>
+                        {{#if lnb_d2}}
+                        <div class="lnb_d2_wrap">
+                            {{#lnb_d2}}
+                                <p class="home_gnb d2_li {{state}}">
+                                    <a href="#none" id="dep_cast" data-menu-id="{{num}}">{{txt}}</a>
+                                </p>
+                            {{#lnb_d2}}
+                        </div>
+                    {{#lnb_d1}}
+                </script>
             </div>
+            <!-- //lnb_wrap -->
+
             <div class="list_2">
                 <ul>
                     <li>
