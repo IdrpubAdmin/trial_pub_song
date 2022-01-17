@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="../../../js/common.js" defer></script>
+<script type='text/javascript' src="../../../js/common.js" defer></script>
+<script type='text/javascript' src="../../../js/lnb_data.js" defer></script>
 <link rel="stylesheet" type="text/css" href="../../../css/display.css">
 <!-- swiper -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.2.0/handlebars.min.js"></script>
     <title>프로방스</title>
 </head>
 <body>
@@ -56,7 +58,7 @@
     <nav class="nav">
         <ul class="nav-menu">
             <li class="menu">
-                <a href="#none" onclick="dp_menu()" data-menu-id="gnb_01">
+                <a href="#none" onclick="dp_menu()">
                     <span class="en">PROVENCE</span>
                     <span class="ko">프로방스</span>
                 </a>
@@ -67,7 +69,7 @@
                 </ul>
             </li>
             <li class="menu">
-                <a href="#none" data-menu-id="gnb_02">
+                <a href="#none">
                     <span class="en">VILLAGE</span>
                     <span class="ko">마을동</span>
                 </a>
@@ -121,27 +123,28 @@
         </ul>
     </nav>
 </header>
-    <div class="sub_wrap">
+    <div id="container" class="sub_wrap">
         <div class="sub_gnb">
             <h2 class="page_tit">식당&카페</h2>
                     <div class="secon_gnb">
             <!-- lnb_wrap -->
-            <div class="list_1 lnb_wrap lnb_d1_wrap">
-                <script id="drawLnbNavTmp" type="text/x-handlebars-template">
+            <div id="commentUl" class="list_1 lnb_wrap lnb_d1_wrap">
+                <script id="commentTemplate" type="text/x-handlebars-template">
                     {{#lnb_d1}}
-                        <p class="home_icon d1_li {{state}}">
+                        <p class="home_icon d1_li">
                             <img src="../../../images/gnb_icon/home_icon.png" alt="home">
-                            <span id="sub_cast" data-menu-id="{{num}}">{{txt}}</span>
+                            <span data-menu-id="{{num}}">{{txt}}</span>
                         </p>
                         {{#if lnb_d2}}
                         <div class="lnb_d2_wrap">
                             {{#lnb_d2}}
-                                <p class="home_gnb d2_li {{state}}">
-                                    <a href="#none" id="dep_cast" data-menu-id="{{num}}">{{txt}}</a>
-                                </p>
-                            {{#lnb_d2}}
+                            <p class="home_gnb d2_li">
+                                <a href="#none" data-menu-id="{{num}}">{{txt}}</a>
+                            </p>
+                            {{/lnb_d2}}
                         </div>
-                    {{#lnb_d1}}
+                        {{/if}}
+                    {{/lnb_d1}}
                 </script>
             </div>
             <!-- //lnb_wrap -->
@@ -171,6 +174,8 @@
                 </ul>
             </div>
         </div>
+
+
         </div>
         <div class="sub_content">
             <div class="small-tit">
@@ -278,12 +283,13 @@
         </div>
     </footer>
 
-    <script>
+
+<!--     <script>
         (function(){
-            WorksNav.checkCurrentLnbNav("gnb_02","lnb1_20","lnb2_01"); //현재 페이지 체크
-            StyleCommon.updateDocTitle('식당&카페');
+            WorksNav.checkCurrentLnbNav("lnb1_20","lnb2_01"); //현재 페이지 체크
+            StyleCommon.updateDocTitle('카페');
         })();
-    </script>
+    </script> -->
 
 </body>
 </html>

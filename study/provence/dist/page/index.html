@@ -4,11 +4,13 @@
 		<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="../../js/common.js" defer></script>
+<script type='text/javascript' src="../../js/common.js" defer></script>
+<script type='text/javascript' src="../../js/lnb_data.js" defer></script>
 <link rel="stylesheet" type="text/css" href="../../css/display.css">
 <!-- swiper -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.2.0/handlebars.min.js"></script>
 		<title>프로방스</title>
 	</head>
 	<body>
@@ -56,7 +58,7 @@
     <nav class="nav">
         <ul class="nav-menu">
             <li class="menu">
-                <a href="#none" onclick="dp_menu()" data-menu-id="gnb_01">
+                <a href="#none" onclick="dp_menu()">
                     <span class="en">PROVENCE</span>
                     <span class="ko">프로방스</span>
                 </a>
@@ -67,7 +69,7 @@
                 </ul>
             </li>
             <li class="menu">
-                <a href="#none" data-menu-id="gnb_02">
+                <a href="#none">
                     <span class="en">VILLAGE</span>
                     <span class="ko">마을동</span>
                 </a>

@@ -1,21 +1,22 @@
         <div class="secon_gnb">
             <!-- lnb_wrap -->
-            <div class="list_1 lnb_wrap lnb_d1_wrap">
-                <script id="drawLnbNavTmp" type="text/x-handlebars-template">
+            <div id="commentUl" class="list_1 lnb_wrap lnb_d1_wrap">
+                <script id="commentTemplate" type="text/x-handlebars-template">
                     {{#lnb_d1}}
-                        <p class="home_icon d1_li {{state}}">
+                        <p class="home_icon d1_li">
                             <img src="@@webRoot/../images/gnb_icon/home_icon.png" alt="home">
-                            <span id="sub_cast" data-menu-id="{{num}}">{{txt}}</span>
+                            <span data-menu-id="{{num}}">{{txt}}</span>
                         </p>
                         {{#if lnb_d2}}
                         <div class="lnb_d2_wrap">
                             {{#lnb_d2}}
-                                <p class="home_gnb d2_li {{state}}">
-                                    <a href="#none" id="dep_cast" data-menu-id="{{num}}">{{txt}}</a>
-                                </p>
-                            {{#lnb_d2}}
+                            <p class="home_gnb d2_li">
+                                <a href="#none" data-menu-id="{{num}}">{{txt}}</a>
+                            </p>
+                            {{/lnb_d2}}
                         </div>
-                    {{#lnb_d1}}
+                        {{/if}}
+                    {{/lnb_d1}}
                 </script>
             </div>
             <!-- //lnb_wrap -->
@@ -45,3 +46,4 @@
                 </ul>
             </div>
         </div>
+

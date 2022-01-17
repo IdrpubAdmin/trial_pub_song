@@ -6,7 +6,7 @@
 </head>
 <body>
     @@include('../../page_dev/header_gnb.html')
-    <div class="sub_wrap">
+    <div id="container" class="sub_wrap">
         <div class="sub_gnb">
             <h2 class="page_tit">식당&카페</h2>
             @@include('../../page_dev/sub_inner_gnb.html')
@@ -66,12 +66,13 @@
     </div>
     @@include('../../page_dev/footer.html')
 
-    <script>
+
+<!--     <script>
         (function(){
-            WorksNav.checkCurrentLnbNav("gnb_02","lnb1_20","lnb2_01"); //현재 페이지 체크
-            StyleCommon.updateDocTitle('식당&카페');
+            WorksNav.checkCurrentLnbNav("lnb1_20","lnb2_01"); //현재 페이지 체크
+            StyleCommon.updateDocTitle('카페');
         })();
-    </script>
+    </script> -->
 
 </body>
 </html>

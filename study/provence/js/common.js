@@ -48,62 +48,14 @@
 
 
 
-    // WorksNav
-    let WorksNav = WorksNav || {};
-    WorksNav = (function(doc, global) {
-        // ELEMENTS INITIALIZE
-        let obj = {},
-            body = doc.querySelector('body'),
-            container = doc.querySelector('#container'),
-            gnbD1 = doc.querySelector('.gnb_menu'),
-            lnbD1 = doc.querySelector('.lnb_d1_wrap');
+   /*  let cities = ["서울", "대전", "대구", "부산", "광주", "제주도"];
+    let KOSPI = [2062.82, 2053.2, 2045.92, 2058.82, 2053.12, 2055.7];
 
-        function drawLnbNav(){ //handlebars draw
-            //reference
-            let hndBrWrap=$(".lnb_d1_wrap");
-            let hndBrSource=$("#drawLnbNavTmp").html();
-            let hndBrCompileTemp=Handlebars.compile(hndBrSource);
-            hndBrWrap.empty().html(hndBrCompileTemp(lnbInfoData));
-        }
+    for(var i=0;i<3;i++){
+        console.log(cities[i] + KOSPI[i]);
+    } */
 
-        // PRIVATE FUNCTIONS
-        function initialize(){
-            container.classList.add('has_wnd_nav');
-            gnbD1.classList.add('has_wnd_nav');
-            drawLnbNav(); //from lnb_data_works.js
-        }
-
-        obj.checkCurrentLnbNav = function(gnb,lnb1,lnb2) {
-            setTimeout(function(){
-                Array.prototype.slice.call(gnbD1.querySelectorAll('li')).forEach(function(_el,_idx){
-                    let tempTxt1 = _el.querySelector('a').getAttribute('data-menu-id');
-                    if(tempTxt1 === gnb){
-                        _el.classList.add('on');
-                    }
-                });
-                Array.prototype.slice.call(lnbD1.querySelectorAll('.d1_li')).forEach(function(_el1,_idx1){
-                    let tempTxt1 = _el1.querySelector('a').getAttribute('data-menu-id');
-                    if(tempTxt1 === lnb1){
-                        _el1.classList.add('on');
-                    }
-                    let lnbD2 = _el1.querySelector('.lnb_d2_wrap');
-                    if(lnbD2) {
-                        lnbD2.querySelectorAll('.d2_li').forEach(function(_el2,_idx2) {
-                            let tempTxt2 = _el2.querySelector('a').getAttribute('data-menu-id');
-                            if(tempTxt2 === lnb2 && _el1.classList.contains('on')){
-                                _el2.classList.add('on');
-                            }
-                        });
-                    }
-                });
-            },100);
-        }
-
-        return obj;
-    })(document, window);
-
-
-})()
+})() /* //---end--- */
 
 
 
