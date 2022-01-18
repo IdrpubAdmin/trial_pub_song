@@ -31,29 +31,8 @@
 
     });
 
-    /* ------subPage breadcrumb ---------*/
-
-    // subPage first gnb txt
-    // const sub_title = document.querySelector('.menu>a>.ko').textContent;
-    // const sub_cast = document.getElementById('sub_cast');
-
-    // // subPage second gnb txt
-    // const title = document.querySelector('.sub_gnb>.page_tit').textContent;
-    // const cast = document.getElementById('dep_cast');
-
-    // sub_cast.innerHTML = sub_title;
-    // cast.innerHTML = title;
-
-    /*---------// subPage breadcrumb---- */
 
 
-
-   /*  let cities = ["서울", "대전", "대구", "부산", "광주", "제주도"];
-    let KOSPI = [2062.82, 2053.2, 2045.92, 2058.82, 2053.12, 2055.7];
-
-    for(var i=0;i<3;i++){
-        console.log(cities[i] + KOSPI[i]);
-    } */
 
 })() /* //---end--- */
 

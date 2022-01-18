@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type='text/javascript' src="../../../js/common.js" defer></script>
-<script type='text/javascript' src="../../../js/lnb_data.js" defer></script>
 <link rel="stylesheet" type="text/css" href="../../../css/display.css">
 <!-- swiper -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -128,24 +127,16 @@
             <h2 class="page_tit">프로방스 소개</h2>
                     <div class="secon_gnb">
             <!-- lnb_wrap -->
-            <div id="commentUl" class="list_1 lnb_wrap lnb_d1_wrap">
-                <script id="commentTemplate" type="text/x-handlebars-template">
-                    {{#lnb_d1}}
-                        <p class="home_icon d1_li">
-                            <img src="../../../images/gnb_icon/home_icon.png" alt="home">
-                            <span data-menu-id="{{num}}">{{txt}}</span>
-                        </p>
-                        {{#if lnb_d2}}
-                        <div class="lnb_d2_wrap">
-                            {{#lnb_d2}}
-                            <p class="home_gnb d2_li">
-                                <a href="#none" data-menu-id="{{num}}">{{txt}}</a>
-                            </p>
-                            {{/lnb_d2}}
-                        </div>
-                        {{/if}}
-                    {{/lnb_d1}}
-                </script>
+            <div id="commentUl" class="list_1 lnb_d1_wrap">
+                <p class="home_icon d1_li">
+                    <img src="../../../images/gnb_icon/home_icon.png" alt="home">
+                    <span class="txt"></span>
+                </p>
+                <div class="lnb_d2_wrap">
+                    <p class="home_gnb d2_li">
+                        <a href="#none" class="txt"></a>
+                    </p>
+                </div>
             </div>
             <!-- //lnb_wrap -->
 
@@ -276,5 +267,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- subPage breadcrumb -->
+    <script type='text/javascript' src="../../../js/lnb_data.js"></script>
+    <script>
+        WorksNav_v2.checkCurrentLnbNav("gnb1","gnb1_01"); //현재 페이지 체크
+    </script>
+
 </body>
 </html>

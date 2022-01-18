@@ -66,13 +66,11 @@
     </div>
     @@include('../../page_dev/footer.html')
 
-
-<!--     <script>
-        (function(){
-            WorksNav.checkCurrentLnbNav("lnb1_20","lnb2_01"); //현재 페이지 체크
-            StyleCommon.updateDocTitle('카페');
-        })();
-    </script> -->
+    <!-- subPage breadcrumb -->
+    <script type='text/javascript' src="@@webRoot/../js/lnb_data.js"></script>
+    <script>
+            WorksNav_v2.checkCurrentLnbNav("gnb2","gnb2_1"); //현재 페이지 체크
+    </script>
 
 </body>
 </html>
