@@ -893,16 +893,6 @@ h6 {
   color: #fff;
   font-size: 3.6rem;
 }
-.sub_wrap .bg_imb1 {
-  background: url(../images/subPage/subMain.png) no-repeat center;
-}
-.sub_wrap .bg_imb2 {
-  background: url(../images/subPage/subMain-2.png) no-repeat center;
-  /* subpage bg change */
-}
-.sub_wrap .bg_imb3 {
-  background: url(../images/subPage/subMain-3.png) no-repeat center;
-}
 .sub_wrap .sub_content {
   max-width: 1200px;
   min-width: 1200px;
@@ -948,6 +938,10 @@ h6 {
 }
 
 /* introduce page */
+.sub_introduce .sub_gnb {
+  background: url(../images/subPage/subMain-2.png) no-repeat center;
+  /* subpage bg change */
+}
 .sub_introduce .content {
   text-align: center;
 }

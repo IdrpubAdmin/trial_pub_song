@@ -35,6 +35,8 @@
 
 })() /* //---end--- */
 
+
+/*subPage bg change
 function ChangeImg(subBg)
 {
     let firstDepth = subBg.substr(0,1);
@@ -58,7 +60,7 @@ function ChangeImg(subBg)
             location.href = "../../page/tower/tower.html";
         }
     }
-}
+} */
 
 
 /* ready e --------------------------------------------------
