@@ -57,14 +57,14 @@
     <nav class="nav">
         <ul class="nav-menu">
             <li class="menu">
-                <a href="#none" onclick="dp_menu()">
+                <a href="#none">
                     <span class="en">PROVENCE</span>
                     <span class="ko">프로방스</span>
                 </a>
-                <ul id="drop-content" class="sub-menu" >
-                    <li><a href="../../page/provence/introduce.html">프로방스 소개</a></li>
-                    <li><a href="#none">단지안내도</a></li>
-                    <li><a href="#none">오시는길</a></li>
+                <ul id="drop-content" class="sub-menu">
+                    <li onclick="ChangeImg('11');"><a href="#none">프로방스 소개</a></li>
+                    <li onclick="ChangeImg('12');"><a href="#none">단지안내도</a></li>
+                    <li onclick="ChangeImg('13');"><a href="#none">오시는길</a></li>
                 </ul>
             </li>
             <li class="menu">
@@ -72,9 +72,9 @@
                     <span class="en">VILLAGE</span>
                     <span class="ko">마을동</span>
                 </a>
-                <ul id="drop-content" class="sub-menu" >
-                    <li><a href="../../page/village/cafe.html">식당&카페</a></li>
-                    <li><a href="#none">패션</a></li>
+                <ul id="drop-content" class="sub-menu">
+                    <li onclick="ChangeImg('21');"><a href="#none">식당&카페</a></li>
+                    <li onclick="ChangeImg('22');"><a href="#none">패션</a></li>
                     <li><a href="#none">홈리빙</a></li>
                     <li><a href="#none">체험</a></li>
                 </ul>
@@ -84,8 +84,8 @@
                     <span class="en">TOWER</span>
                     <span class="ko">주차타워</span>
                 </a>
-                <ul id="drop-content" class="sub-menu" >
-                    <li><a href="#none">주차타워</a></li>
+                <ul id="drop-content" class="sub-menu">
+                    <li onclick="ChangeImg('31');"><a href="#none">주차타워</a></li>
                 </ul>
             </li>
             <li class="menu">
@@ -123,7 +123,7 @@
     </nav>
 </header>
     <div id="container" class="sub_wrap sub_introduce">
-        <div class="sub_gnb">
+        <div id="here" class="sub_gnb subBg">
             <h2 class="page_tit">프로방스 소개</h2>
                     <div class="secon_gnb">
             <!-- lnb_wrap -->

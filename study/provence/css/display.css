@@ -8,6 +8,7 @@
 /* Noto Sans KR s =========================================== */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 @font-face {
   font-family: "Noto Sans KR";
   src: url("../../fonts/NotoSansKr/NotoSansKR-Regular.woff2") format("woff2"), url("../../fonts/NotoSansKr/NotoSansKR-Regular.woff") format("woff"), url("../../fonts/NotoSansKr/NotoSansKR-Regular.otf") format("opentype");
@@ -892,6 +893,16 @@ h6 {
   color: #fff;
   font-size: 3.6rem;
 }
+.sub_wrap .bg_imb1 {
+  background: url(../images/subPage/subMain.png) no-repeat center;
+}
+.sub_wrap .bg_imb2 {
+  background: url(../images/subPage/subMain-2.png) no-repeat center;
+  /* subpage bg change */
+}
+.sub_wrap .bg_imb3 {
+  background: url(../images/subPage/subMain-3.png) no-repeat center;
+}
 .sub_wrap .sub_content {
   max-width: 1200px;
   min-width: 1200px;
@@ -937,10 +948,6 @@ h6 {
 }
 
 /* introduce page */
-.sub_introduce .sub_gnb {
-  background: url(../images/subPage/subMain-2.png) no-repeat center;
-  /* subpage bg change */
-}
 .sub_introduce .content {
   text-align: center;
 }

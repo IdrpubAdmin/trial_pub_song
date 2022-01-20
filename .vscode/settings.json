@@ -30,5 +30,6 @@
     "editor.parameterHints.enabled": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "html.suggest.html5": false,
+    "liveServer.settings.port": 5501,
 
 }

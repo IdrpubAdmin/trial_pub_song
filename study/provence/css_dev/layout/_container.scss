@@ -25,6 +25,15 @@
             font-size: $font-36r;
         }
     }
+    .bg_imb1{
+        background: url(../images/subPage/subMain.png) no-repeat center;
+    }
+    .bg_imb2{
+        background: url(../images/subPage/subMain-2.png) no-repeat center; /* subpage bg change */
+    }
+    .bg_imb3{
+        background: url(../images/subPage/subMain-3.png) no-repeat center;
+    }
     .sub_content{
         max-width: 1200px;
         min-width: 1200px;
@@ -76,9 +85,6 @@
 
 /* introduce page */
 .sub_introduce{
-    .sub_gnb{
-        background: url(../images/subPage/subMain-2.png) no-repeat center; /* subpage bg change */
-    }
     .content{
         text-align: center;
         .guid_txt{
