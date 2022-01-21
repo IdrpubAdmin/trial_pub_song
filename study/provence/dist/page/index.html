@@ -281,9 +281,7 @@
 					</div>
 					<div class="wrap-4">
 						<div class="location-map">
-							<div>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.87025816604!2d126.6851041!3d37.7907999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37498ec5d78fe937!2z7ZSE66Gc67Cp7IqkIOuniOydhA!5e0!3m2!1sko!2skr!4v1642726694712!5m2!1sko!2skr" width="600" height="572px;" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-							</div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12611.87025816604!2d126.6851041!3d37.7907999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x37498ec5d78fe937!2z7ZSE66Gc67Cp7IqkIOuniOydhA!5e0!3m2!1sko!2skr!4v1642726694712!5m2!1sko!2skr" width="600" height="572px;" style="border:0;" allowfullscreen="" loading="lazy" class="mobile-map"></iframe>
 						</div>
 						<div class="location-info">
 							<div class="location-wrap">
@@ -442,16 +440,14 @@
 				resize: function () {
 					swiper.changeDirection(getDirection());
 				}
-				}
+				},
 			});
-
 			function getDirection() {
 				var windowWidth = window.innerWidth;
-				var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+				var direction = window.innerWidth <= 1060 ? "vertical" : "horizontal";
 
 				return direction;
 			}
-
 		</script>
 	</body>
 </html>

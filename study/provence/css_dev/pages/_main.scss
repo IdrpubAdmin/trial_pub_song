@@ -431,19 +431,69 @@
 
 
 /*모바일 지정 */
-@media only screen and (max-width: 1275px) {
-    .section-2{
-        width: 100%;
-        margin: 0 auto;
+@media only screen and (max-width: 1375px) {
+    /* main page Swiper JS with provence */
+    .section-2 {
         .section-wrap{
-            position: relative;
+            .slider-2{
+                ul{
+                    display: flex;
+                    height: 100%;
+                    li{
+                        .list-item{
+                            .item-img{
+                                width: 100%;
+                                height: 310px;
+                                margin-bottom: 16px;
+                                padding:0 10px;
+                                &:hover{
+                                    &::before{
+                                        left: 2px;
+                                        width: calc(100% - 7%);
+                                        height: calc(100% - 72px);
+                                    }
+                                }
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .item-tit{
+                                font-size: $font-20r;
+                                color: #2a2f2f;
+                            }
+                            .item-day{
+                                font-size: $font-12r;
+                                color:#969496;
+                            }
+                        }
+                    }
+                }
+            }
             .swiper-button-next{
-                right: 22px;
+                right: 0px;
+                transform: rotate(0deg);
                 background-color: #fff;
             }
             .swiper-button-prev{
-                left: 4px;
+                left: 0px;
+                transform: rotate(0deg);
                 background-color: #fff;
+            }
+        }
+    }
+    .section-4{
+        .section-wrap{
+            .location-map{
+                float: none;
+                width: 523px;
+                .mobile-map{
+                    width: 100%;
+                }
+            }
+            .location-info{
+                width: 54%;
+                padding-left: 10px;
             }
         }
     }
@@ -460,9 +510,6 @@
                 &::after{
                     width: calc(100% - 40px);
                 }
-            }
-            p:last-child{
-                font-size: $font-12r;
             }
         }
     }
@@ -524,10 +571,6 @@
                                     width: calc(100% - 20px);
                                     height: calc(100% - 99px);
                                 }
-                            }
-                            img{
-                                width: 100%;
-                                height: 100%;
                             }
                         }
                         .item-tit{
