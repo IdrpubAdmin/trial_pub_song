@@ -32,35 +32,8 @@
     });
 
 
-
 })() /* //---end--- */
 
-
-/*subPage bg change
-function ChangeImg(subBg)
-{
-    let firstDepth = subBg.substr(0,1);
-    let secondDepth = subBg.substr(1,1);
-    if( firstDepth == '1' ){
-        document.getElementById('here').classList.add('bg_imb1');
-
-    }else if( firstDepth == '2' ) {
-        document.getElementById('here').classList.add('bg_imb2');
-        if( secondDepth == '1'){
-            location.href = "../../page/provence/introduce.html";
-        } else {
-            location.href = "../../page/village/cafe.html";
-        }
-
-    }else if( firstDepth == '3' ) {
-        document.getElementById('here').classList.add('bg_imb3');
-        if( secondDepth == '1'){
-            location.href = "../../page/provence/introduce.html";
-        } else {
-            location.href = "../../page/tower/tower.html";
-        }
-    }
-} */
 
 
 /* ready e --------------------------------------------------
