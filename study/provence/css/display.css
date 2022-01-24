@@ -844,9 +844,6 @@ h6 {
     width: 100%;
     display: block;
   }
-  .sub_gnb .secon_gnb .list_1 p {
-    width: 100%;
-  }
   .sub_gnb .secon_gnb .list_1 .home_gnb > a {
     width: 100%;
   }
@@ -911,14 +908,14 @@ h6 {
 .sub_wrap .sub_content .content {
   margin-top: 88px;
 }
-.sub_wrap .sub_content .content .cafe {
+.sub_wrap .sub_content .content .store_list {
   display: flex;
   flex-wrap: wrap;
 }
-.sub_wrap .sub_content .content .cafe li {
-  padding: 8px;
+.sub_wrap .sub_content .content .store_list li {
+  padding: 7px;
 }
-.sub_wrap .sub_content .content .cafe li a {
+.sub_wrap .sub_content .content .store_list li a {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -927,7 +924,7 @@ h6 {
   height: 220px;
   border: 1px solid #eee;
 }
-.sub_wrap .sub_content .content .cafe li a:hover::after {
+.sub_wrap .sub_content .content .store_list li a:hover::after {
   content: "";
   display: block;
   clear: both;
@@ -1017,7 +1014,64 @@ h6 {
   color: #000;
 }
 
-/* 모바일 */
+/* tower page */
+.sub_tower .sub_gnb {
+  background: url(../images/subPage/subMain-4.png) no-repeat center;
+  /* subpage bg change */
+}
+.sub_tower .sub_content .content {
+  margin-top: 60px;
+}
+.sub_tower .sub_content .content .floors {
+  background-color: #eee;
+  padding: 15px 0;
+  margin-bottom: 40px;
+}
+.sub_tower .sub_content .content .floors ul {
+  display: flex;
+}
+.sub_tower .sub_content .content .floors ul li {
+  margin: 0 45px;
+  line-height: 45px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.sub_tower .sub_content .content .floors ul li.active {
+  min-width: 45px;
+  height: 45px;
+  padding: 0 10px;
+  border-radius: 22px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.sub_tower .sub_content .content .tower_txt {
+  margin-bottom: 40px;
+  font-size: 2.4rem;
+}
+.sub_tower .sub_content .content .tower_tab {
+  display: flex;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #b1aeae;
+}
+.sub_tower .sub_content .content .tower_tab li {
+  font-size: 2rem;
+  color: #b4b1b1;
+}
+.sub_tower .sub_content .content .tower_tab li::after {
+  display: inline-block;
+  content: "|";
+  clear: both;
+  padding: 0 25px;
+}
+.sub_tower .sub_content .content .tower_tab li.on {
+  color: #000;
+}
+
+/* ------// pc----- */
+/*----- mobile -----*/
 @media only screen and (max-width: 1060px) {
   /* cafe page */
   .sub_wrap .sub_gnb {
@@ -1113,6 +1167,7 @@ h6 {
     font-size: 1.3rem;
   }
 }
+/* ----// mobile----- */
 /* container e ============================================== */
 /* ---------------------------------------------------------- */
 /* ========================================================== */

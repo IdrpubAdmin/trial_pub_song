@@ -43,11 +43,11 @@
         }
         .content{
             margin-top: 88px;
-            .cafe{
+            .store_list{
                 display: flex;
                 flex-wrap: wrap;
                 li{
-                    padding: 8px;
+                    padding: 7px;
                     a{
                         display: flex;
                         justify-content: space-evenly;
@@ -161,9 +161,71 @@
     }
 }
 
+/* tower page */
+.sub_tower{
+    .sub_gnb{
+        background: url(../images/subPage/subMain-4.png) no-repeat center; /* subpage bg change */
+    }
+    .sub_content{
+        .content{
+            margin-top: 60px;
+            .floors{
+                background-color: #eee;
+                padding: 15px 0;
+                margin-bottom: 40px;
+                ul{
+                    display: flex;
+                    li{
+                        margin: 0 45px;
+                        line-height: 45px;
+                        font-size: $font-24r;
+                        font-weight: bold;
+                        vertical-align: middle;
+                        &.active{
+                            min-width: 45px;
+                            height: 45px;
+                            padding: 0 10px;
+                            border-radius: 22px;
+                            text-align: center;
+                            background-color: #000;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .tower_txt{
+                margin-bottom: 40px;
+                font-size: $font-24r;
+            }
+            .tower_tab{
+                display: flex;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+                border-bottom: 1px solid #b1aeae;
+                li{
+                    font-size: $font-20r;
+                    color: #b4b1b1;
+                    &::after{
+                        display: inline-block;
+                        content: "|";
+                        clear: both;
+                        padding: 0 25px;
+                    }
+                    &.on{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------// pc----- */
 
 
-/* 모바일 */
+
+
+/*----- mobile -----*/
 @media only screen and (max-width: 1060px) {
 /* cafe page */
     .sub_wrap{
@@ -267,7 +329,7 @@
             }
         }
     }
-}
+} /* ----// mobile----- */
 
 
 

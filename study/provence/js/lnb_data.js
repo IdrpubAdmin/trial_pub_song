@@ -21,7 +21,8 @@ var gnbNavData = {
         },{
 		num: "gnb3", txt: "주차타워", url: "", state: "",
 		gnb_d2:[
-			{num: "gnb3_1", txt: "주차타워", url: "", state: ""}
+			{num: "gnb3_1", txt: "주차타워", url: "", state: ""},
+			{num: "", txt: "", url: "", state: ""}
 		]
 		},{
 		num: "gnb4", txt: "힐링테마", url: "", state: "",
