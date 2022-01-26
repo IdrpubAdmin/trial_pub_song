@@ -873,7 +873,6 @@ h6 {
 /* container s ============================================== */
 /* cafe page */
 .sub_wrap {
-  display: grid;
   font-size: 1.8rem;
 }
 .sub_wrap .sub_gnb {
@@ -892,10 +891,9 @@ h6 {
 }
 .sub_wrap .sub_content {
   max-width: 1200px;
-  min-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
-  padding-bottom: 80px;
+  padding-bottom: 180px;
 }
 .sub_wrap .sub_content .small-tit .tit_txt {
   font-size: 4rem;
@@ -957,6 +955,9 @@ h6 {
 }
 .sub_introduce .content .info_list ul li:nth-child(1), .sub_introduce .content .info_list ul li:nth-child(3) {
   margin-top: 8.3rem;
+}
+.sub_introduce .content .info_list ul li a img {
+  width: 100%;
 }
 .sub_introduce .content .info_section {
   display: flex;
@@ -1036,6 +1037,7 @@ h6 {
   font-size: 2.4rem;
   font-weight: bold;
   vertical-align: middle;
+  cursor: pointer;
 }
 .sub_tower .sub_content .content .floors ul li.active {
   min-width: 45px;
@@ -1058,7 +1060,6 @@ h6 {
 }
 .sub_tower .sub_content .content .tower_tab li {
   font-size: 2rem;
-  color: #b4b1b1;
 }
 .sub_tower .sub_content .content .tower_tab li::after {
   display: inline-block;
@@ -1066,8 +1067,18 @@ h6 {
   clear: both;
   padding: 0 25px;
 }
-.sub_tower .sub_content .content .tower_tab li.on {
+.sub_tower .sub_content .content .tower_tab li a {
+  color: #808080;
+}
+.sub_tower .sub_content .content .tower_tab li a.on {
+  color: #81984e;
+}
+.sub_tower .sub_content .content .tower_tab li:first-child a {
   color: #000;
+  font-weight: bold;
+}
+.sub_tower .sub_content .content .tab_off {
+  display: none;
 }
 
 /* ------// pc----- */
@@ -1084,10 +1095,8 @@ h6 {
   }
   .sub_wrap .sub_content {
     min-width: 0;
-  }
-  .sub_wrap .sub_content .small-tit {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .sub_wrap .sub_content .small-tit .tit_txt {
     font-size: 3rem;
@@ -1097,6 +1106,8 @@ h6 {
   }
 
   /* introduce page */
+
+  /* tower page */
 }
 @media only screen and (max-width: 1060px) and (max-width: 600px) {
   .sub_wrap .sub_content .content ul {
@@ -1106,12 +1117,16 @@ h6 {
     float: left;
     padding: 0;
   }
+  .sub_wrap .sub_content .content .store_list > li > a {
+    width: 156px;
+  }
+  .sub_wrap .sub_content .content .store_list > li > a:hover::after {
+    width: 156px;
+  }
 }
 @media only screen and (max-width: 1060px) {
   .sub_introduce .content {
     text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
   }
   .sub_introduce .content img {
     width: 100%;
@@ -1165,6 +1180,35 @@ h6 {
   .sub_introduce .content .info_section .open_time > p > span {
     margin-top: 1rem;
     font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .sub_tower .sub_content .content .floors {
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  .sub_tower .sub_content .content .floors ul li {
+    margin: 0 25px;
+    line-height: 25px;
+    font-size: 1.8rem;
+  }
+  .sub_tower .sub_content .content .floors ul li.active {
+    min-width: 25px;
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 22px;
+  }
+  .sub_tower .sub_content .content .tower_txt {
+    font-size: 2.4rem;
+  }
+  .sub_tower .sub_content .content .tower_tab li {
+    font-size: 1.8rem;
+  }
+  .sub_tower .sub_content .content .tower_tab li::after {
+    padding: 0 6px;
+  }
+  .sub_tower .sub_content .content .tab_off {
+    justify-content: left;
   }
 }
 /* ----// mobile----- */

@@ -9,7 +9,7 @@
 
 /* cafe page */
 .sub_wrap{
-    display: grid;
+    //display: grid;
     font-size: $font-18r;
     .sub_gnb{
         width: 100%;
@@ -27,10 +27,10 @@
     }
     .sub_content{
         max-width: 1200px;
-        min-width: 1200px;
+        //min-width: 1200px;
         margin: 0 auto;
         padding-top: 70px;
-        padding-bottom: 80px;
+        padding-bottom: 180px;
         .small-tit{
             .tit_txt{
                 font-size: $font-40r;
@@ -97,6 +97,9 @@
                 li{
                     &:nth-child(1), &:nth-child(3){
                         margin-top: 8.3rem;
+                    }
+                    a{
+                        img{width: 100%;}
                     }
                 }
             }
@@ -181,6 +184,7 @@
                         font-size: $font-24r;
                         font-weight: bold;
                         vertical-align: middle;
+                        cursor: pointer;
                         &.active{
                             min-width: 45px;
                             height: 45px;
@@ -204,17 +208,28 @@
                 border-bottom: 1px solid #b1aeae;
                 li{
                     font-size: $font-20r;
-                    color: #b4b1b1;
                     &::after{
                         display: inline-block;
                         content: "|";
                         clear: both;
                         padding: 0 25px;
                     }
-                    &.on{
-                        color: #000;
+                    a{
+                        color: #808080;
+                        &.on{
+                            color: #81984e;
+                        }
+                    }
+                    &:first-child{
+                        a{
+                            color: #000;
+                            font-weight: bold;
+                        }
                     }
                 }
+            }
+            .tab_off{
+                display: none;
             }
         }
     }
@@ -239,9 +254,9 @@
         }
         .sub_content{
             min-width: 0;
+            padding-left: 10px;
+            padding-right: 10px;
             .small-tit{
-                padding-right: 20px;
-                padding-left: 20px;
                 .tit_txt{
                     font-size: $font-30r;
                 }
@@ -258,6 +273,18 @@
                             padding:0;
                         }
                     }
+                    .store_list{
+                        &> li{
+                            &> a{
+                                width: 156px;
+                                &:hover{
+                                    &::after{
+                                        width: 156px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -266,8 +293,6 @@
     .sub_introduce{
         .content{
             text-align: center;
-            padding-right: 20px;
-            padding-left: 20px;
             img{
                 width: 100%;
             }
@@ -329,6 +354,53 @@
             }
         }
     }
+    /* tower page */
+    .sub_tower{
+        .sub_content{
+            .content{
+                .floors{
+                    padding: 15px 0;
+                    margin-bottom: 20px;
+                    ul{
+                        li{
+                            margin: 0 25px;
+                            line-height: 25px;
+                            font-size: $font-18r;
+                            &.active{
+                                min-width: 25px;
+                                height: 25px;
+                                padding: 0 5px;
+                                border-radius: 22px;
+                            }
+                        }
+                    }
+                }
+                .tower_txt{
+                    font-size: $font-24r;
+                }
+                .tower_tab{
+                    li{
+                        font-size: $font-18r;
+                        &::after{
+                            padding: 0 6px;
+                        }
+                    }
+                }
+                .tab_off{
+                    justify-content: left;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
 } /* ----// mobile----- */
 
 

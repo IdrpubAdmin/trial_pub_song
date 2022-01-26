@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="../../../js/common.js" defer></script>
-<script src="../../../js/lnb_data.js" defer></script>
+<meta name="format-detection" content="telephone=no">
+<!-- og-tag -->
+<meta property="og:title" content="프로방스">
+<meta property="og:url" content="https://www.url.com">
+<meta property="og:type" content="website">
+<meta property="og:description" content="프로방스 소개">
+<meta property="og:image" content="https://www.url.com/img/img.png">
+<!-- //og-tag -->
 <link rel="stylesheet" type="text/css" href="../../../css/display.css">
 <!-- swiper -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../../../js/common.js" defer></script>
+<script src="../../../js/lnb_data.js" defer></script>
+
+
     <title>프로방스</title>
 </head>
 <body>
@@ -185,13 +195,13 @@
                 </div>
                 <p class="tower_txt">1F 안내</p>
                 <ul class="tower_tab">
-                    <li class="on"><a href="#none">전체</a></li>
-                    <li><a href="#none">식당&카페</a></li>
-                    <li><a href="#none">패션</a></li>
-                    <li><a href="#none">홈리빙</a></li>
-                    <li><a href="#none">체험</a></li>
+                    <li><a href="#tab1">전체</a></li>
+                    <li><a href="#tab2" class="on">식당&카페</a></li>
+                    <li><a href="#tab3">패션</a></li>
+                    <li><a href="#tab4">홈리빙</a></li>
+                    <li><a href="#tab5">체험</a></li>
                 </ul>
-                <ul class="store_list">
+                <ul id="tab1" class="store_list tab_off">
                     <li>
                         <a href="#none">
                             <img src="../../../images/subPage/icon-store.png" alt="logo">
@@ -232,6 +242,50 @@
                         <a href="#none">
                             <img src="../../../images/subPage/icon-store.png" alt="logo">
                             <span>백담원</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab2" class="store_list tab_off" style="display:flex;">
+                    <li>
+                        <a href="#none">
+                            <img src="../../../images/subPage/icon-store.png" alt="logo">
+                            <span>백담원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="../../../images/subPage/adidas.png" alt="logo">
+                            <span>아디다스</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab3" class="store_list tab_off">
+                    <li>
+                        <a href="#none">
+                            <img src="../../../images/subPage/icon-store.png" alt="logo">
+                            <span>백담원</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab4" class="store_list tab_off">
+                    <li>
+                        <a href="#none">
+                            <img src="../../../images/subPage/icon-store.png" alt="logo">
+                            <span>백담원</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="../../../images/subPage/icon-store.png" alt="logo">
+                            <span>백담원</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab5" class="store_list tab_off">
+                    <li>
+                        <a href="#none">
+                            <img src="../../../images/subPage/adidas.png" alt="logo">
+                            <span>아디다스</span>
                         </a>
                     </li>
                 </ul>
