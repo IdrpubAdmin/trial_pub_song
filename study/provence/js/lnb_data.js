@@ -34,9 +34,9 @@ var gnbNavData = {
 		},{
 		num: "gnb5", txt: "고객센터", url: "", state: "",
 		gnb_d2:[
-			{num: "gnb3_1", txt: "공지사항", url: "", state: ""},
-			{num: "gnb3_2", txt: "이벤트", url: "", state: ""},
-			{num: "gnb3_2", txt: "자주묻는질문", url: "", state: ""}
+			{num: "gnb5_1", txt: "공지사항", url: "", state: ""},
+			{num: "gnb5_2", txt: "이벤트", url: "", state: ""},
+			{num: "gnb5_3", txt: "자주묻는질문", url: "", state: ""}
 		]
 		}
     ]

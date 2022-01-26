@@ -31,7 +31,24 @@
     });
     /*-------// menu hover dropdown -------*/
 
-    /*------ tower tab ------*/
+    /*---- tower tab_1 -----*/
+    const towerTab = document.querySelector('.floors > ul');
+
+        function select(ulEl, liEl){
+            Array.from(ulEl.children).forEach(
+                v => v.classList.remove('active')
+            )
+            if(liEl) liEl.classList.add('active');
+        }
+
+        towerTab.addEventListener('click', e => {
+            const selected = e.target;
+            select(towerTab, selected);
+        })
+
+    /* ----//tower tab_1 -----*/
+
+    /*------ tower tab_2 ------*/
     const tabMenu = document.querySelectorAll('.content .tower_tab > li > a'),
     tabContent = document.querySelectorAll('.content .tab_off');
 
@@ -50,7 +67,32 @@
             document.querySelector(target).style.display='flex';
         });
     }
-    /* -----// tower tab -----*/
+    /* -----// tower tab_2 -----*/
+
+    /*----- qna page accordion -----*/
+    const acc = document.querySelectorAll('.lnb_active');
+
+	for (var i = 0; i < acc.length; i++) {
+
+        acc[i].onclick = function() {
+            // 클릭이 일어났을 때 기존에 열려 있던 아코디언을 접는다. (1개의 아코디언만 열리게)
+            for (var j = 0 ; j<acc.length; j++){
+            // 버튼 다음에 있는 div 콘텐츠 높이를 0으로 만든다. == 아코디언을 접는다.
+                if (this!==acc[j]) {
+                    acc[j].nextElementSibling.style.maxHeight = null;
+                }
+            }
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+	}
+
+    /*-----// qna page accordion -----*/
+
 })()
 
 
