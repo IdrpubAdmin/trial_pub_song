@@ -5,8 +5,17 @@
 /* ========================================================== */
 /*----------------------------------------------------------- */
 
+/*---- tower tab_1 -----*/
+function floors_select(ulEl, liEl){
+    Array.from(ulEl.children).forEach(
+        v => v.classList.remove('active')
+    )
+    if(liEl) liEl.classList.add('active');
+}
+/*---- //tower tab_1 -----*/
+
 (function() {
-/*     'use strict'; */
+    /* 'use strict'; */
 
     /*------- menu hover dropdown -------*/
     document.addEventListener('DOMContentLoaded',  () => {
@@ -33,18 +42,12 @@
 
     /*---- tower tab_1 -----*/
     const towerTab = document.querySelector('.floors > ul');
-
-        function select(ulEl, liEl){
-            Array.from(ulEl.children).forEach(
-                v => v.classList.remove('active')
-            )
-            if(liEl) liEl.classList.add('active');
-        }
-
+    if(towerTab){
         towerTab.addEventListener('click', e => {
             const selected = e.target;
-            select(towerTab, selected);
+            floors_select(towerTab, selected);
         })
+    }
 
     /* ----//tower tab_1 -----*/
 
@@ -70,14 +73,11 @@
     /* -----// tower tab_2 -----*/
 
     /*----- qna page accordion -----*/
-    const acc = document.querySelectorAll('.lnb_active');
+    const acc = document.querySelectorAll('.acc_tit');
 
 	for (var i = 0; i < acc.length; i++) {
-
         acc[i].onclick = function() {
-            // 클릭이 일어났을 때 기존에 열려 있던 아코디언을 접는다. (1개의 아코디언만 열리게)
             for (var j = 0 ; j<acc.length; j++){
-            // 버튼 다음에 있는 div 콘텐츠 높이를 0으로 만든다. == 아코디언을 접는다.
                 if (this!==acc[j]) {
                     acc[j].nextElementSibling.style.maxHeight = null;
                 }
@@ -92,6 +92,9 @@
 	}
 
     /*-----// qna page accordion -----*/
+
+
+
 
 })()
 

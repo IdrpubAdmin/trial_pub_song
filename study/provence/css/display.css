@@ -1070,7 +1070,7 @@ h6 {
   color: #808080;
 }
 .sub_tower .sub_content .content .tower_tab li a.on {
-  color: #81984e;
+  color: #95b450;
 }
 .sub_tower .sub_content .content .tower_tab li:first-child a {
   color: #000;
@@ -1144,10 +1144,12 @@ h6 {
   display: none;
 }
 .photo_list_wrap .photo_ul li .item-img:hover .item_hover {
+  width: 100%;
   display: block;
   position: absolute;
-  left: 23%;
+  left: 50%;
   top: 42%;
+  transform: translate(-50%);
   z-index: 11;
   text-align: center;
 }
@@ -1175,6 +1177,7 @@ h6 {
 .sub_qna .content .qna_list li a {
   display: flex;
   align-items: center;
+  transition: 0.5s;
 }
 .sub_qna .content .qna_list li a .qna_num {
   font-size: 4rem;
@@ -1192,15 +1195,19 @@ h6 {
 .sub_qna .content .qna_list li a .qna_tit {
   margin-left: 43px;
 }
-.sub_qna .content .qna_list li .gnb_inner {
+.sub_qna .content .qna_list li .acc_inner {
   max-width: 1020px;
   margin: 0 auto;
   font-size: 1.6rem;
   background-color: #eee;
   max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
-.sub_qna .content .qna_list li .gnb_inner span {
+.sub_qna .content .qna_list li .acc_inner .acc_txt {
+  padding: 20px;
+}
+.sub_qna .content .qna_list li .acc_inner .acc_txt span {
   color: #83ad62;
 }
 
@@ -1340,8 +1347,14 @@ h6 {
   }
 }
 @media only screen and (max-width: 1060px) {
+  .sub_photo .content .paging ul li {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 1060px) {
   .photo_list_wrap .photo_ul li {
     margin-bottom: 10px;
+    padding: 0;
   }
   .photo_list_wrap .photo_ul li .item-img {
     position: relative;

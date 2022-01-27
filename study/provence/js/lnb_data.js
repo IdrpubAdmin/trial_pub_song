@@ -62,7 +62,7 @@ WorksNav_v2 = (function(doc, global) {
 						lnbD1.querySelector('.d1_li .txt').innerHTML = gnbNavData.gnb_d1[i].txt;
 						if(gnb_d2) {
 							for (var r = 0; r < gnbNavData.gnb_d1[i].gnb_d2.length; r++) {
-								console.log(gnbNavData.gnb_d1[i].gnb_d2[1].num)
+								//console.log(gnbNavData.gnb_d1[i].gnb_d2[1].num)
 								if (gnbNavData.gnb_d1[i].gnb_d2[r].num == gnb_d2) {
 									lnbD1.querySelector('.d2_li .txt').innerHTML = gnbNavData.gnb_d1[i].gnb_d2[r].txt;
 								}
