@@ -818,6 +818,11 @@ h6 {
 /* //---------subPage gnb---------// */
 /*모바일 지정 */
 @media only screen and (max-width: 1060px) {
+  .wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
   .wrap .header {
     height: 62px;
   }
@@ -834,7 +839,34 @@ h6 {
     display: block;
   }
   .wrap .nav {
-    display: none;
+    width: 100%;
+    position: absolute;
+    top: 91%;
+    right: 0;
+    z-index: 10;
+  }
+  .wrap .nav .nav-menu .menu {
+    width: 100%;
+    background-color: #fff;
+  }
+  .wrap .nav .nav-menu .menu > a .ko {
+    width: 100%;
+    margin-left: 0;
+  }
+  .wrap .nav .nav-menu .menu .sub-menu {
+    width: 100%;
+    max-height: 0;
+    position: inherit;
+    top: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .wrap .nav .nav-menu .menu .sub-menu li {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .wrap .nav .nav-menu .menu .sub-menu li > a {
+    color: #000;
   }
 
   /* subPage gnb */
@@ -850,6 +882,10 @@ h6 {
   }
 
   /* //---------subPage gnb---------// */
+  /*-----menu click ----- */
+  .menu-on {
+    display: none;
+  }
 }
 /* header e ================================================= */
 /* ---------------------------------------------------------- */

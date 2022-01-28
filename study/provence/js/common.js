@@ -14,6 +14,7 @@ function floors_select(ulEl, liEl){
 }
 /*---- //tower tab_1 -----*/
 
+
 (function() {
     /* 'use strict'; */
 
@@ -92,6 +93,39 @@ function floors_select(ulEl, liEl){
 	}
 
     /*-----// qna page accordion -----*/
+
+    /*------ 햄버거메뉴 클릭시 ------*/
+    const open_menu = document.querySelector('.mo-menu-btn');
+    const header = document.querySelector('.nav');
+    const conBg =document.querySelector('.sub_wrap');
+    const footer = document.querySelector('.footer');
+
+    open_menu.addEventListener('click', click);
+
+    function click(){
+        header.classList.toggle('menu-on');
+        conBg.classList.toggle('menu-on');
+        footer.classList.toggle('menu-on');
+    }
+
+    const gnbacc = document.querySelectorAll('.nav-menu .menu > a');
+
+    for (var i = 0; i < gnbacc.length; i++) {
+        gnbacc[i].onclick = function() {
+            for (var j = 0 ; j<gnbacc.length; j++){
+                if (this!==gnbacc[j]) {
+                    gnbacc[j].nextElementSibling.style.maxHeight = null;
+                }
+            }
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    }
+    /* ---// 햄버거메뉴 클릭시  -----*/
 
 
 

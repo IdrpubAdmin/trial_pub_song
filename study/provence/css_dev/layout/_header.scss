@@ -261,6 +261,11 @@
 /*모바일 지정 */
 @media only screen and (max-width: 1060px) {
     .wrap{
+        &::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
         .header{
             height: 62px;
         }
@@ -279,7 +284,38 @@
             }
         }
         .nav{
-            display: none;
+            width: 100%;
+            position: absolute;
+            top: 91%;
+            right: 0;
+            z-index: 10;
+            .nav-menu{
+                .menu{
+                    width: 100%;
+                    background-color: #fff;
+                    &>a{
+                        .ko {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+                    }
+                    .sub-menu{
+                        width: 100%;
+                        max-height: 0;
+                        position: inherit;
+                        top:0;
+                        overflow: hidden;
+                        background-color: #f1f1f1;
+                        li{
+                            text-align: center;
+                            padding:10px 20px;
+                            > a{
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -302,6 +338,11 @@
 }
 /* //---------subPage gnb---------// */
 
+/*-----menu click ----- */
+    .menu-on{
+        display: none;
+
+    }
 
 }
 
