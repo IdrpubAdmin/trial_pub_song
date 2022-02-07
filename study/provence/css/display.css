@@ -971,6 +971,7 @@ h6 {
 .sub_introduce .sub_gnb {
   background: url(../images/subPage/subMain-2.png) no-repeat center;
   /* subpage bg change */
+  background-size: cover;
 }
 .sub_introduce .content {
   text-align: center;
@@ -1054,6 +1055,7 @@ h6 {
 .sub_tower .sub_gnb {
   background: url(../images/subPage/subMain-4.png) no-repeat center;
   /* subpage bg change */
+  background-size: cover;
 }
 .sub_tower .sub_content .content {
   margin-top: 60px;
@@ -1120,6 +1122,7 @@ h6 {
 .sub_photo .sub_gnb {
   background: url(../images/subPage/subMain-3.png) no-repeat center;
   /* subpage bg change */
+  background-size: cover;
 }
 .sub_photo .content .paging {
   display: flex;
@@ -1205,6 +1208,7 @@ h6 {
 .sub_qna .sub_gnb {
   background: url(../images/subPage/subMain-5.png) no-repeat center;
   /* subpage bg change */
+  background-size: cover;
 }
 .sub_qna .content .qna_list li {
   padding: 40px 0;
