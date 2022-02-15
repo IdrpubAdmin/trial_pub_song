@@ -52,3 +52,31 @@ var app6 = new Vue({
         message: '안녕하세요 Vue!'
     }
 })
+
+
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+})
+
+var app7 = new Vue({
+    el: '#app-7',
+    data: {
+        groceryList: [
+            { id: 0, text: 'Vegetables' },
+            { id: 1, text: 'Cheese' },
+            { id: 2, text: 'Whatever else humans are supposed to eat' }
+        ]
+    }
+})
+
+
+var obj = {
+    foo: 'bar'
+}
+//Object.freeze(obj)  이걸 작성하면 버튼을 클릭해도 obj의 bar는 변경이 되지않는다
+new Vue({
+    el: '#app-8',
+    data: obj
+})
+
